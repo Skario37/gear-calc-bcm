@@ -1,0 +1,341 @@
+
+body {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0;
+    background-color: aliceblue;
+}
+
+.column {
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column > .column {
+    border-top: none;
+    border-bottom: none;
+}
+
+.column > .column:first-child {
+    border-left: none;
+}
+
+.column > .column:last-child {
+    border-right: none;
+}
+
+.column:has(.column) {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.column .gear {
+    margin: 5px;
+}
+
+.column .accessory {
+    margin: 5px;
+}
+
+.gear-column {
+    flex: 1;
+}
+
+.inventory-column {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: normal;
+}
+
+.accessory-column, .talent-column {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: normal;
+}
+
+.character-column {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: normal;
+    gap: 5px;
+}
+
+.grid-column {
+    flex: 1;
+}
+
+.stats-column {
+    flex: 4;
+}
+
+.grid {
+    display: grid;
+    gap: 2px;
+    margin-bottom: 20px;
+    border: 2px solid #000;
+}
+
+.grid-accessory {
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 220px;
+    max-width: 220px; 
+    min-height: 72px;
+    max-height: 72px; 
+}
+
+.grid-talent {
+    grid-template-columns: repeat(3, 1fr);
+    min-width: 220px;
+    max-width: 220px; 
+    min-height: 72px;
+    max-height: 72px; 
+}
+
+.grid-talent .cell.attack {
+    background-color: #f75b5b60;
+}
+
+.grid-talent .cell.defense {
+    background-color: #649dff60;
+}
+
+.grid-talent .cell.support {
+    background-color: #4faf4f60;
+}
+
+.grid-gear {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    min-width: 310px;
+    max-width: 310px; 
+    min-height: 310px;
+    max-height: 310px; 
+}
+
+.grid div {
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+}
+
+
+.accessory {
+    cursor: grab;
+    box-sizing: border-box;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    min-width: 70px;
+    max-width: 70px;
+    min-height: 70px;
+    max-height: 70px;
+    background-color: #886de1;
+    font-size: 1.2em;
+}
+
+
+.accessory.mysterious {
+    box-shadow: inset 0px 0px 14px 7px skyblue;
+}
+
+.accessory.precious {
+    box-shadow: inset 0px 0px 14px 7px lightgoldenrodyellow;
+}
+
+.talent {
+    cursor: grab;
+    box-sizing: border-box;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    min-width: 70px;
+    max-width: 70px;
+    min-height: 70px;
+    max-height: 70px;
+    font-size: 1em;
+}
+
+.talent.normal {
+    box-shadow: inset 0px 0px 20px 5px #bafdb9;
+}
+
+.talent.rare {
+    box-shadow: inset 0px 0px 20px 5px #ffdb97;
+}
+
+.talent.legendary {
+    box-shadow: inset 0px 0px 20px 5px #bfadfa;
+}
+
+.talent.shiny {
+    box-shadow: inset 0px 0px 20px 5px #bfadfa, inset 0px 0px 0px 3px #dbdd86;
+}
+
+.talent.attack {
+    background-color: #f75b5b;
+}
+
+.talent.defense {
+    background-color: #3d60ff;
+}
+
+.talent.support {
+    background-color: #008d1d;
+}
+
+
+
+.gear, .gear.on-grid {
+    cursor: grab;
+    box-sizing: border-box;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.grid-gear .gear {
+    position: absolute;
+}
+
+.grid-accessory .accessory {
+    position: absolute;
+}
+
+.grid-talent .talent {
+    position: absolute;
+}
+
+.gear-2x2 {
+    min-width: 100px;
+    max-width: 100px;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.gear-3x2 {
+    min-width: 100px;
+    max-width: 100px;
+    min-height: 150px;
+    max-height: 150px;
+}
+
+.gear-2x3 {
+    min-width: 150px;
+    max-width: 150px;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.gear.on-grid {
+    margin: 0;
+}
+
+.accessory.on-grid {
+    margin: 0;
+}
+
+.talent.on-grid {
+    margin: 0;
+}
+
+
+.magic {
+    background-color: #f75b5b;
+}
+
+.physical {
+    background-color: #ffc252;
+}
+
+.defensive {
+    background-color: #649dff;
+}
+
+.health {
+    background-color: #4faf4f;
+}
+
+.parameters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 10px;
+    justify-content: space-evenly;
+}
+
+.parameters > div {
+    background-color: ghostwhite;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.parameters input.input-level, .parameters input.input-trans, .parameters input.input-slot, .parameters input.input-ench {
+    width: 5ch;
+}
+
+.parameters label + input  {
+    margin-left: 5px;
+}
+
+.parameters .main-level-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-slot {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.grid-slot:first-child {
+    justify-items: start;
+}
+
+.grid-slot h4 {
+    width: fit-content;
+    margin: 0;
+}
+
+.details {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.stats-details {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.stats-details div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.stats-details h4 {
+    margin: 0;
+    width: 100px;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.stats-details p {
+    margin: 0;
+    flex-grow: 1;
+}

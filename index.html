@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Skario">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gear Calculator — Black Clover M</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+
+    <meta name="title" content="Gear Calculator — Black Clover M">
+    <meta name="description" content="A gear calculator for the game Black Clover Mobile.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://skario37.github.io/gear-calc-bcm/">
+    <meta property="og:title" content="Gear Calculator — Black Clover M">
+    <meta property="og:description" content="A gear calculator for the game Black Clover Mobile.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Skario37/gear-calc-bcm/main/logo.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://skario37.github.io/gear-calc-bcm/">
+    <meta property="twitter:title" content="Gear Calculator — Black Clover M">
+    <meta property="twitter:description" content="A gear calculator for the game Black Clover Mobile.">
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/Skario37/gear-calc-bcm/main/logo.png">
+
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+</head>
+<body>
+
+    <div class="column inventory-column">
+        <div>
+            <div>
+                <div class="column accessory-column" id="accessory-column">
+                    <div class="column" id="acc-earrings">
+                        <h3>Earrings:</h3>
+                    </div>
+                    <div class="column" id="acc-necklaces">
+                        <h3>Necklaces:</h3>
+                    </div>
+                    <div class="column" id="acc-rings">
+                        <h3>Rings:</h3>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="column talent-column" id="talent-column">
+                    <div class="column" id="talent-attack">
+                        <h3>Attack:</h3>
+                    </div>
+                    <div class="column" id="talent-defense">
+                        <h3>Defense:</h3>
+                    </div>
+                    <div class="column" id="talent-support">
+                        <h3>Support:</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="column gear-column" id="gear-column">
+            <h3>Gears:</h3>
+        </div>
+    </div>
+    
+
+    
+    <div class="column grid-column" id="grid-column">
+        <h2>Accessories:</h2>
+        <div class="grid grid-accessory">
+            <div id="earring"></div><div id="necklace"></div><div id="ring"></div>
+        </div>
+        
+        <h2>Gears:</h2>
+        <div class="grid grid-gear">
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+            <div></div><div></div><div></div><div></div><div></div><div></div>
+        </div>
+
+        <h2>Talents:</h2>
+        <div class="grid grid-talent">
+            <div class="cell attack" id="attack"></div><div class="cell defense" id="defense"></div><div class="cell support" id="support"></div>
+        </div>
+    </div>
+
+    
+    <div class="column stats-column" id="stats-column">
+        <div>
+            <div class="column">
+                <h2>Accessory Parameters:</h2>
+                <div class="parameters" id="acc-stats"></div>
+            </div>
+            <div class="column">
+                <h2>Gear Parameters:</h2>
+                <div class="parameters" id="gear-stats"></div>
+            </div>
+            
+        </div>
+        <div class="details">
+            <div class="column">
+                <h2>Character</h2>
+                <div class="character-column">
+                    <div><select id="characters"></select></div>
+                    <div>
+                        <label>Dupes:</label>
+                        <input class="input-dupe" id="input-dupe" type="number" disabled="true" value="0" min="0" max="5" step="1">
+                    </div>
+                    <div><img id="character-img"></div>
+                </div>
+            </div>
+            <div class="column">
+                <h2>Details</h2>
+                <div class="stats-details" id="stats-details">
+                    <div><h4>ATK:</h4><p id="detail-atk">0</p></div>
+                    <div><h4>MATK:</h4><p id="detail-matk">0</p></div>
+                    <div><h4>DEF:</h4><p id="detail-def">0</p></div>
+                    <div><h4>HP:</h4><p id="detail-hp">0</p></div>
+                    <div><h4>ACC:</h4><p id="detail-acc">0</p></div>
+                    <div><h4>CRIT Rate:</h4><p id="detail-crate">0</p></div>
+                    <div><h4>CRIT DMG:</h4><p id="detail-cdmg">0</p></div>
+                    <div><h4>CRIT RES:</h4><p id="detail-cres">0</p></div>
+                    <div><h4>SPD:</h4><p id="detail-spd">0</p></div>
+                    <div><h4>PEN:</h4><p id="detail-pen">0</p></div>
+                    <div><h4>Endurance:</h4><p id="detail-end">0</p></div>
+                    <div><h4>DMG RES:</h4><p id="detail-dmgres">0</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

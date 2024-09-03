@@ -1,0 +1,6912 @@
+{
+    "accessory": [
+        {
+            "name": "DEF %",
+            "title": "normal",
+            "type": "necklace",
+            "min_lvl": 0,
+            "max_lvl": 12,
+            "main_stat": {
+                "type": "def%",
+                "min_value": 19.8,
+                "max_value": 33,
+                "step": 1.1
+            },
+            "min_slots": 1,
+            "max_slots": 4,
+            "slot_incr": 4,
+            "slot_stats": [
+                {
+                    "name":"ATK",
+                    "type":"atk",
+                    "min_value":315,
+                    "max_value":630,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"ATK %",
+                    "type":"atk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name": "MATK",
+                    "type":"matk",
+                    "min_value":315,
+                    "max_value":630,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name": "MATK %",
+                    "type":"matk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"DEF",
+                    "type":"def",
+                    "min_value":46,
+                    "max_value":92,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DEF %",
+                    "type":"def%",
+                    "min_value":1,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"HP",
+                    "type":"hp",
+                    "min_value":225,
+                    "max_value":450,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"HP %",
+                    "type":"hp%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"ACC",
+                    "type":"acc",
+                    "min_value":9,
+                    "max_value":19,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DMG RES",
+                    "type":"dmgres",
+                    "min_value":9,
+                    "max_value":19,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"CRIT Rate",
+                    "type":"crate",
+                    "min_value":0.41,
+                    "max_value":0.82,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT DMG",
+                    "type":"cdmg",
+                    "min_value":0.33,
+                    "max_value":0.66,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT RES",
+                    "type":"cres",
+                    "min_value":0.33,
+                    "max_value":0.66,
+                    "genre": "%",
+                    "step": 0.01
+                }
+            ]
+        },
+        {
+            "name": "CRIT RES",
+            "title": "normal",
+            "type": "necklace",
+            "min_lvl": 0,
+            "max_lvl": 12,
+            "main_stat": {
+                "type": "cres",
+                "min_value": 6,
+                "max_value": 9.72,
+                "step": 0.31
+            },
+            "min_slots": 1,
+            "max_slots": 4,
+            "slot_incr": 4,
+            "slot_stats": [
+                {
+                    "name":"ATK",
+                    "type":"atk",
+                    "min_value":315,
+                    "max_value":630,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"ATK %",
+                    "type":"atk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name": "MATK",
+                    "type":"matk",
+                    "min_value":315,
+                    "max_value":630,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name": "MATK %",
+                    "type":"matk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"DEF",
+                    "type":"def",
+                    "min_value":46,
+                    "max_value":92,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DEF %",
+                    "type":"def%",
+                    "min_value":1,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"HP",
+                    "type":"hp",
+                    "min_value":225,
+                    "max_value":450,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"HP %",
+                    "type":"hp%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"ACC",
+                    "type":"acc",
+                    "min_value":9,
+                    "max_value":19,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DMG RES",
+                    "type":"dmgres",
+                    "min_value":9,
+                    "max_value":19,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"CRIT Rate",
+                    "type":"crate",
+                    "min_value":0.41,
+                    "max_value":0.82,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT DMG",
+                    "type":"cdmg",
+                    "min_value":0.33,
+                    "max_value":0.66,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT RES",
+                    "type":"cres",
+                    "min_value":0.33,
+                    "max_value":0.66,
+                    "genre": "%",
+                    "step": 0.01
+                }
+            ]
+        },
+        {
+            "name": "CRIT Rate",
+            "title": "normal",
+            "type": "ring",
+            "min_lvl": 0,
+            "max_lvl": 12,
+            "main_stat": {
+                "type": "crate",
+                "min_value": 7.5,
+                "max_value": 12.18,
+                "step": 0.34
+            },
+            "min_slots": 1,
+            "max_slots": 4,
+            "slot_incr": 4,
+            "slot_stats": [
+                {
+                    "name":"ATK",
+                    "type":"atk",
+                    "min_value":315,
+                    "max_value":630,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"ATK %",
+                    "type":"atk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name": "MATK",
+                    "type":"matk",
+                    "min_value":315,
+                    "max_value":630,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name": "MATK %",
+                    "type":"matk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"DEF",
+                    "type":"def",
+                    "min_value":46,
+                    "max_value":92,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DEF %",
+                    "type":"def%",
+                    "min_value":1,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"HP",
+                    "type":"hp",
+                    "min_value":225,
+                    "max_value":450,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"HP %",
+                    "type":"hp%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"ACC",
+                    "type":"acc",
+                    "min_value":9,
+                    "max_value":19,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DMG RES",
+                    "type":"dmgres",
+                    "min_value":9,
+                    "max_value":19,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"CRIT Rate",
+                    "type":"crate",
+                    "min_value":0.41,
+                    "max_value":0.82,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT DMG",
+                    "type":"cdmg",
+                    "min_value":0.33,
+                    "max_value":0.66,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT RES",
+                    "type":"cres",
+                    "min_value":0.33,
+                    "max_value":0.66,
+                    "genre": "%",
+                    "step": 0.01
+                }
+            ]
+        },
+        {
+            "name": "CRIT DMG",
+            "title": "normal",
+            "type": "earring",
+            "min_lvl": 0,
+            "max_lvl": 12,
+            "main_stat": {
+                "type": "cdmg",
+                "min_value": 6,
+                "max_value": 9.72,
+                "step": 0.31
+            },
+            "min_slots": 1,
+            "max_slots": 4,
+            "slot_incr": 4,
+            "slot_stats": [
+                {
+                    "name":"ATK",
+                    "type":"atk",
+                    "min_value":315,
+                    "max_value":630,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"ATK %",
+                    "type":"atk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name": "MATK",
+                    "type":"matk",
+                    "min_value":315,
+                    "max_value":630,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name": "MATK %",
+                    "type":"matk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"DEF",
+                    "type":"def",
+                    "min_value":46,
+                    "max_value":92,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DEF %",
+                    "type":"def%",
+                    "min_value":1,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"HP",
+                    "type":"hp",
+                    "min_value":225,
+                    "max_value":450,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"HP %",
+                    "type":"hp%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"ACC",
+                    "type":"acc",
+                    "min_value":9,
+                    "max_value":19,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DMG RES",
+                    "type":"dmgres",
+                    "min_value":9,
+                    "max_value":19,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"CRIT Rate",
+                    "type":"crate",
+                    "min_value":0.41,
+                    "max_value":0.82,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT DMG",
+                    "type":"cdmg",
+                    "min_value":0.33,
+                    "max_value":0.66,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT RES",
+                    "type":"cres",
+                    "min_value":0.33,
+                    "max_value":0.66,
+                    "genre": "%",
+                    "step": 0.01
+                }
+            ]
+        },
+        {
+            "name": "DEF %",
+            "title": "normal",
+            "type": "earring",
+            "min_lvl": 0,
+            "max_lvl": 12,
+            "main_stat": {
+                "type": "def%",
+                "min_value": 19.8,
+                "max_value": 33,
+                "step": 1.1
+            },
+            "min_slots": 1,
+            "max_slots": 4,
+            "slot_incr": 4,
+            "slot_stats": [
+                {
+                    "name":"ATK",
+                    "type":"atk",
+                    "min_value":315,
+                    "max_value":630,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"ATK %",
+                    "type":"atk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name": "MATK",
+                    "type":"matk",
+                    "min_value":315,
+                    "max_value":630,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name": "MATK %",
+                    "type":"matk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"DEF",
+                    "type":"def",
+                    "min_value":46,
+                    "max_value":92,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DEF %",
+                    "type":"def%",
+                    "min_value":1,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"HP",
+                    "type":"hp",
+                    "min_value":225,
+                    "max_value":450,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"HP %",
+                    "type":"hp%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"ACC",
+                    "type":"acc",
+                    "min_value":9,
+                    "max_value":19,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DMG RES",
+                    "type":"dmgres",
+                    "min_value":9,
+                    "max_value":19,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"CRIT Rate",
+                    "type":"crate",
+                    "min_value":0.41,
+                    "max_value":0.82,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT DMG",
+                    "type":"cdmg",
+                    "min_value":0.33,
+                    "max_value":0.66,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT RES",
+                    "type":"cres",
+                    "min_value":0.33,
+                    "max_value":0.66,
+                    "genre": "%",
+                    "step": 0.01
+                }
+            ]
+        },
+        {
+            "name": "ATK %",
+            "title": "mysterious",
+            "type": "necklace",
+            "min_lvl": 0,
+            "max_lvl": 12,
+            "main_stat": {
+                "type": "atk%",
+                "min_value": 10.56,
+                "max_value": 17.64,
+                "step": 0.59
+            },
+            "min_slots": 1,
+            "max_slots": 4,
+            "slot_incr": 4,
+            "slot_stats": [
+                {
+                    "name":"ATK",
+                    "type":"atk",
+                    "min_value":84,
+                    "max_value":168,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"ATK %",
+                    "type":"atk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name": "MATK",
+                    "type":"matk",
+                    "min_value":64,
+                    "max_value":168,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name": "MATK %",
+                    "type":"matk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"DEF",
+                    "type":"def",
+                    "min_value":23,
+                    "max_value":46,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DEF %",
+                    "type":"def%",
+                    "min_value":1,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"HP",
+                    "type":"hp",
+                    "min_value":239,
+                    "max_value":478,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"HP %",
+                    "type":"hp%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"ACC",
+                    "type":"acc",
+                    "min_value":10,
+                    "max_value":20,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DMG RES",
+                    "type":"dmgres",
+                    "min_value":10,
+                    "max_value":20,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"CRIT Rate",
+                    "type":"crate",
+                    "min_value":0.44,
+                    "max_value":0.88,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT DMG",
+                    "type":"cdmg",
+                    "min_value":0.44,
+                    "max_value":0.88,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT RES",
+                    "type":"cres",
+                    "min_value":0.44,
+                    "max_value":0.88,
+                    "genre": "%",
+                    "step": 0.01
+                }
+            ]
+        },
+        {
+            "name": "MATK %",
+            "title": "mysterious",
+            "type": "necklace",
+            "min_lvl": 0,
+            "max_lvl": 12,
+            "main_stat": {
+                "type": "matk%",
+                "min_value": 10.56,
+                "max_value": 17.64,
+                "step": 0.59
+            },
+            "min_slots": 1,
+            "max_slots": 4,
+            "slot_incr": 4,
+            "slot_stats": [
+                {
+                    "name":"ATK",
+                    "type":"atk",
+                    "min_value":84,
+                    "max_value":168,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"ATK %",
+                    "type":"atk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name": "MATK",
+                    "type":"matk",
+                    "min_value":64,
+                    "max_value":168,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name": "MATK %",
+                    "type":"matk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"DEF",
+                    "type":"def",
+                    "min_value":23,
+                    "max_value":46,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DEF %",
+                    "type":"def%",
+                    "min_value":1,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"HP",
+                    "type":"hp",
+                    "min_value":239,
+                    "max_value":478,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"HP %",
+                    "type":"hp%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"ACC",
+                    "type":"acc",
+                    "min_value":10,
+                    "max_value":20,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DMG RES",
+                    "type":"dmgres",
+                    "min_value":10,
+                    "max_value":20,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"CRIT Rate",
+                    "type":"crate",
+                    "min_value":0.44,
+                    "max_value":0.88,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT DMG",
+                    "type":"cdmg",
+                    "min_value":0.44,
+                    "max_value":0.88,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT RES",
+                    "type":"cres",
+                    "min_value":0.44,
+                    "max_value":0.88,
+                    "genre": "%",
+                    "step": 0.01
+                }
+            ]
+        },
+        {
+            "name": "HP %",
+            "title": "mysterious",
+            "type": "ring",
+            "min_lvl": 0,
+            "max_lvl": 12,
+            "main_stat": {
+                "type": "hp%",
+                "min_value": 9.6,
+                "max_value": 15.96,
+                "step": 0.53
+            },
+            "min_slots": 1,
+            "max_slots": 4,
+            "slot_incr": 4,
+            "slot_stats": [
+                {
+                    "name":"ATK",
+                    "type":"atk",
+                    "min_value":84,
+                    "max_value":168,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"ATK %",
+                    "type":"atk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name": "MATK",
+                    "type":"matk",
+                    "min_value":64,
+                    "max_value":168,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name": "MATK %",
+                    "type":"matk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"DEF",
+                    "type":"def",
+                    "min_value":23,
+                    "max_value":46,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DEF %",
+                    "type":"def%",
+                    "min_value":1,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"HP",
+                    "type":"hp",
+                    "min_value":239,
+                    "max_value":478,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"HP %",
+                    "type":"hp%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"ACC",
+                    "type":"acc",
+                    "min_value":10,
+                    "max_value":20,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DMG RES",
+                    "type":"dmgres",
+                    "min_value":10,
+                    "max_value":20,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"CRIT Rate",
+                    "type":"crate",
+                    "min_value":0.44,
+                    "max_value":0.88,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT DMG",
+                    "type":"cdmg",
+                    "min_value":0.44,
+                    "max_value":0.88,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT RES",
+                    "type":"cres",
+                    "min_value":0.44,
+                    "max_value":0.88,
+                    "genre": "%",
+                    "step": 0.01
+                }
+            ]
+        },
+        {
+            "name": "CRIT Rate",
+            "title": "mysterious",
+            "type": "earring",
+            "min_lvl": 0,
+            "max_lvl": 12,
+            "main_stat": {
+                "type": "crate",
+                "min_value": 8,
+                "max_value": 13.04,
+                "step": 0.42
+            },
+            "min_slots": 1,
+            "max_slots": 4,
+            "slot_incr": 4,
+            "slot_stats": [
+                {
+                    "name":"ATK",
+                    "type":"atk",
+                    "min_value":84,
+                    "max_value":168,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"ATK %",
+                    "type":"atk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name": "MATK",
+                    "type":"matk",
+                    "min_value":64,
+                    "max_value":168,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name": "MATK %",
+                    "type":"matk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"DEF",
+                    "type":"def",
+                    "min_value":23,
+                    "max_value":46,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DEF %",
+                    "type":"def%",
+                    "min_value":1,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"HP",
+                    "type":"hp",
+                    "min_value":239,
+                    "max_value":478,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"HP %",
+                    "type":"hp%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"ACC",
+                    "type":"acc",
+                    "min_value":10,
+                    "max_value":20,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DMG RES",
+                    "type":"dmgres",
+                    "min_value":10,
+                    "max_value":20,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"CRIT Rate",
+                    "type":"crate",
+                    "min_value":0.44,
+                    "max_value":0.88,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT DMG",
+                    "type":"cdmg",
+                    "min_value":0.44,
+                    "max_value":0.88,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT RES",
+                    "type":"cres",
+                    "min_value":0.44,
+                    "max_value":0.88,
+                    "genre": "%",
+                    "step": 0.01
+                }
+            ]
+        },
+        {
+            "name": "CRIT RES",
+            "title": "mysterious",
+            "type": "earring",
+            "min_lvl": 0,
+            "max_lvl": 12,
+            "main_stat": {
+                "type": "cres",
+                "min_value": 8,
+                "max_value": 13.04,
+                "step": 0.42
+            },
+            "min_slots": 1,
+            "max_slots": 4,
+            "slot_incr": 4,
+            "slot_stats": [
+                {
+                    "name":"ATK",
+                    "type":"atk",
+                    "min_value":84,
+                    "max_value":168,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"ATK %",
+                    "type":"atk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name": "MATK",
+                    "type":"matk",
+                    "min_value":64,
+                    "max_value":168,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name": "MATK %",
+                    "type":"matk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"DEF",
+                    "type":"def",
+                    "min_value":23,
+                    "max_value":46,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DEF %",
+                    "type":"def%",
+                    "min_value":1,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"HP",
+                    "type":"hp",
+                    "min_value":239,
+                    "max_value":478,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"HP %",
+                    "type":"hp%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"ACC",
+                    "type":"acc",
+                    "min_value":10,
+                    "max_value":20,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DMG RES",
+                    "type":"dmgres",
+                    "min_value":10,
+                    "max_value":20,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"CRIT Rate",
+                    "type":"crate",
+                    "min_value":0.44,
+                    "max_value":0.88,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT DMG",
+                    "type":"cdmg",
+                    "min_value":0.44,
+                    "max_value":0.88,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT RES",
+                    "type":"cres",
+                    "min_value":0.44,
+                    "max_value":0.88,
+                    "genre": "%",
+                    "step": 0.01
+                }
+            ]
+        },
+        {
+            "name": "ATK %",
+            "title": "precious",
+            "type": "necklace",
+            "min_lvl": 0,
+            "max_lvl": 12,
+            "main_stat": {
+                "type": "atk%",
+                "min_value": 13.2,
+                "max_value": 21.96,
+                "step": 0.73
+            },
+            "min_slots": 1,
+            "max_slots": 4,
+            "slot_incr": 4,
+            "slot_stats": [
+                {
+                    "name":"ATK",
+                    "type":"atk",
+                    "min_value":105,
+                    "max_value":210,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"ATK %",
+                    "type":"atk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name": "MATK",
+                    "type":"matk",
+                    "min_value":105,
+                    "max_value":210,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name": "MATK %",
+                    "type":"matk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"DEF",
+                    "type":"def",
+                    "min_value":29,
+                    "max_value":58,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DEF %",
+                    "type":"def%",
+                    "min_value":1,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"HP",
+                    "type":"hp",
+                    "min_value":298,
+                    "max_value":597,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"HP %",
+                    "type":"hp%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"ACC",
+                    "type":"acc",
+                    "min_value":12,
+                    "max_value":25,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DMG RES",
+                    "type":"dmgres",
+                    "min_value":12,
+                    "max_value":25,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"CRIT Rate",
+                    "type":"crate",
+                    "min_value":0.54,
+                    "max_value":1.09,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT DMG",
+                    "type":"cdmg",
+                    "min_value":0.54,
+                    "max_value":0.88,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT RES",
+                    "type":"cres",
+                    "min_value":0.54,
+                    "max_value":1.09,
+                    "genre": "%",
+                    "step": 0.01
+                }
+            ]
+        },
+        {
+            "name": "MATK %",
+            "title": "precious",
+            "type": "necklace",
+            "min_lvl": 0,
+            "max_lvl": 12,
+            "main_stat": {
+                "type": "matk%",
+                "min_value": 13.2,
+                "max_value": 21.96,
+                "step": 0.73
+            },
+            "min_slots": 1,
+            "max_slots": 4,
+            "slot_incr": 4,
+            "slot_stats": [
+                {
+                    "name":"ATK",
+                    "type":"atk",
+                    "min_value":105,
+                    "max_value":210,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"ATK %",
+                    "type":"atk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name": "MATK",
+                    "type":"matk",
+                    "min_value":105,
+                    "max_value":210,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name": "MATK %",
+                    "type":"matk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"DEF",
+                    "type":"def",
+                    "min_value":29,
+                    "max_value":58,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DEF %",
+                    "type":"def%",
+                    "min_value":1,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"HP",
+                    "type":"hp",
+                    "min_value":298,
+                    "max_value":597,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"HP %",
+                    "type":"hp%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"ACC",
+                    "type":"acc",
+                    "min_value":12,
+                    "max_value":25,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DMG RES",
+                    "type":"dmgres",
+                    "min_value":12,
+                    "max_value":25,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"CRIT Rate",
+                    "type":"crate",
+                    "min_value":0.54,
+                    "max_value":1.09,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT DMG",
+                    "type":"cdmg",
+                    "min_value":0.54,
+                    "max_value":0.88,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT RES",
+                    "type":"cres",
+                    "min_value":0.54,
+                    "max_value":1.09,
+                    "genre": "%",
+                    "step": 0.01
+                }
+            ]
+        },
+        {
+            "name": "HP %",
+            "title": "precious",
+            "type": "ring",
+            "min_lvl": 0,
+            "max_lvl": 12,
+            "main_stat": {
+                "type": "hp%",
+                "min_value": 12,
+                "max_value": 20.04,
+                "step": 0.67
+            },
+            "min_slots": 1,
+            "max_slots": 4,
+            "slot_incr": 4,
+            "slot_stats": [
+                {
+                    "name":"ATK",
+                    "type":"atk",
+                    "min_value":105,
+                    "max_value":210,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"ATK %",
+                    "type":"atk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name": "MATK",
+                    "type":"matk",
+                    "min_value":105,
+                    "max_value":210,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name": "MATK %",
+                    "type":"matk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"DEF",
+                    "type":"def",
+                    "min_value":29,
+                    "max_value":58,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DEF %",
+                    "type":"def%",
+                    "min_value":1,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"HP",
+                    "type":"hp",
+                    "min_value":298,
+                    "max_value":597,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"HP %",
+                    "type":"hp%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"ACC",
+                    "type":"acc",
+                    "min_value":12,
+                    "max_value":25,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DMG RES",
+                    "type":"dmgres",
+                    "min_value":12,
+                    "max_value":25,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"CRIT Rate",
+                    "type":"crate",
+                    "min_value":0.54,
+                    "max_value":1.09,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT DMG",
+                    "type":"cdmg",
+                    "min_value":0.54,
+                    "max_value":0.88,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT RES",
+                    "type":"cres",
+                    "min_value":0.54,
+                    "max_value":1.09,
+                    "genre": "%",
+                    "step": 0.01
+                }
+            ]
+        },
+        {
+            "name": "CRIT Rate",
+            "title": "precious",
+            "type": "earring",
+            "min_lvl": 0,
+            "max_lvl": 12,
+            "main_stat": {
+                "type": "crate",
+                "min_value": 10,
+                "max_value": 16.24,
+                "step": 0.52
+            },
+            "min_slots": 1,
+            "max_slots": 4,
+            "slot_incr": 4,
+            "slot_stats": [
+                {
+                    "name":"ATK",
+                    "type":"atk",
+                    "min_value":105,
+                    "max_value":210,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"ATK %",
+                    "type":"atk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name": "MATK",
+                    "type":"matk",
+                    "min_value":105,
+                    "max_value":210,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name": "MATK %",
+                    "type":"matk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"DEF",
+                    "type":"def",
+                    "min_value":29,
+                    "max_value":58,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DEF %",
+                    "type":"def%",
+                    "min_value":1,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"HP",
+                    "type":"hp",
+                    "min_value":298,
+                    "max_value":597,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"HP %",
+                    "type":"hp%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"ACC",
+                    "type":"acc",
+                    "min_value":12,
+                    "max_value":25,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DMG RES",
+                    "type":"dmgres",
+                    "min_value":12,
+                    "max_value":25,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"CRIT Rate",
+                    "type":"crate",
+                    "min_value":0.54,
+                    "max_value":1.09,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT DMG",
+                    "type":"cdmg",
+                    "min_value":0.54,
+                    "max_value":0.88,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT RES",
+                    "type":"cres",
+                    "min_value":0.54,
+                    "max_value":1.09,
+                    "genre": "%",
+                    "step": 0.01
+                }
+            ]
+        },
+        {
+            "name": "CRIT RES",
+            "title": "precious",
+            "type": "earring",
+            "min_lvl": 0,
+            "max_lvl": 12,
+            "main_stat": {
+                "type": "cres",
+                "min_value": 10,
+                "max_value": 16.24,
+                "step": 0.52
+            },
+            "min_slots": 1,
+            "max_slots": 4,
+            "slot_incr": 4,
+            "slot_stats": [
+                {
+                    "name":"ATK",
+                    "type":"atk",
+                    "min_value":105,
+                    "max_value":210,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"ATK %",
+                    "type":"atk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name": "MATK",
+                    "type":"matk",
+                    "min_value":105,
+                    "max_value":210,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name": "MATK %",
+                    "type":"matk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"DEF",
+                    "type":"def",
+                    "min_value":29,
+                    "max_value":58,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DEF %",
+                    "type":"def%",
+                    "min_value":1,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"HP",
+                    "type":"hp",
+                    "min_value":298,
+                    "max_value":597,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"HP %",
+                    "type":"hp%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"ACC",
+                    "type":"acc",
+                    "min_value":12,
+                    "max_value":25,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DMG RES",
+                    "type":"dmgres",
+                    "min_value":12,
+                    "max_value":25,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"CRIT Rate",
+                    "type":"crate",
+                    "min_value":0.54,
+                    "max_value":1.09,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT DMG",
+                    "type":"cdmg",
+                    "min_value":0.54,
+                    "max_value":0.88,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT RES",
+                    "type":"cres",
+                    "min_value":0.54,
+                    "max_value":1.09,
+                    "genre": "%",
+                    "step": 0.01
+                }
+            ]
+        }
+    ],
+    "gear": [
+        {
+            "name": "MATK",
+            "title": "magic",
+            "col": 2,
+            "row": 2,
+            "min_lvl": 0,
+            "max_lvl": 12,
+            "main_stat": {
+                "type": "matk",
+                "min_value": 1300,
+                "max_value": 1948,
+                "step": 54
+            },
+            "min_slots": 1,
+            "max_slots": 4,
+            "slot_incr": 4,
+            "slot_stats": [
+                {
+                    "name":"ATK",
+                    "type":"atk",
+                    "min_value":40,
+                    "max_value":80,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"ATK %",
+                    "type":"atk%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name": "MATK",
+                    "type":"matk",
+                    "min_value":40,
+                    "max_value":80,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name": "MATK %",
+                    "type":"matk%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"DEF",
+                    "type":"def",
+                    "min_value":22,
+                    "max_value":45,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DEF %",
+                    "type":"def%",
+                    "min_value":1,
+                    "max_value":2,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"HP",
+                    "type":"hp",
+                    "min_value":91,
+                    "max_value":183,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"HP %",
+                    "type":"hp%",
+                    "min_value":1,
+                    "max_value":2,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"ACC",
+                    "type":"acc",
+                    "min_value":5,
+                    "max_value":11,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DMG RES",
+                    "type":"dmgres",
+                    "min_value":5,
+                    "max_value":11,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"CRIT Rate",
+                    "type":"crate",
+                    "min_value":2.44,
+                    "max_value":4.88,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT DMG",
+                    "type":"cdmg",
+                    "min_value":1.62,
+                    "max_value":3.25,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT RES",
+                    "type":"cres",
+                    "min_value":2.44,
+                    "max_value":4.88,
+                    "genre": "%",
+                    "step": 0.01
+                }
+            ],
+            "lvl_to_trans": 12,
+            "min_trans": 0,
+            "max_trans": 4,
+            "gain_per_trans": 147,
+            "trans_slot": 1
+        },
+        {
+            "name": "ATK",
+            "title": "physical",
+            "col": 2,
+            "row": 2,
+            "min_lvl": 0,
+            "max_lvl": 12,
+            "main_stat": {
+                "type": "atk",
+                "min_value": 1300,
+                "max_value": 1948,
+                "step": 54
+            },
+            "min_slots": 1,
+            "max_slots": 4,
+            "slot_incr": 4,
+            "slot_stats": [
+                {
+                    "name":"ATK",
+                    "type":"atk",
+                    "min_value":40,
+                    "max_value":80,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"ATK %",
+                    "type":"atk%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name": "MATK",
+                    "type":"matk",
+                    "min_value":40,
+                    "max_value":80,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name": "MATK %",
+                    "type":"matk%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"DEF",
+                    "type":"def",
+                    "min_value":22,
+                    "max_value":45,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DEF %",
+                    "type":"def%",
+                    "min_value":1,
+                    "max_value":2,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"HP",
+                    "type":"hp",
+                    "min_value":91,
+                    "max_value":183,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"HP %",
+                    "type":"hp%",
+                    "min_value":1,
+                    "max_value":2,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"ACC",
+                    "type":"acc",
+                    "min_value":5,
+                    "max_value":11,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DMG RES",
+                    "type":"dmgres",
+                    "min_value":5,
+                    "max_value":11,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"CRIT Rate",
+                    "type":"crate",
+                    "min_value":2.44,
+                    "max_value":4.88,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT DMG",
+                    "type":"cdmg",
+                    "min_value":1.62,
+                    "max_value":3.25,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT RES",
+                    "type":"cres",
+                    "min_value":2.44,
+                    "max_value":4.88,
+                    "genre": "%",
+                    "step": 0.01
+                }
+            ],
+            "lvl_to_trans": 12,
+            "min_trans": 0,
+            "max_trans": 4,
+            "gain_per_trans": 147,
+            "trans_slot": 1
+        },
+        {
+            "name": "MATK",
+            "title": "magic",
+            "col": 3,
+            "row": 2,
+            "min_lvl": 0,
+            "max_lvl": 12,
+            "main_stat": {
+                "type": "matk",
+                "min_value": 2000,
+                "max_value": 2996,
+                "step": 83
+            },
+            "min_slots": 1,
+            "max_slots": 4,
+            "slot_incr": 4,
+            "slot_stats": [
+                {
+                    "name":"ATK",
+                    "type":"atk",
+                    "min_value":62,
+                    "max_value":125,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"ATK %",
+                    "type":"atk%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name": "MATK",
+                    "type":"matk",
+                    "min_value":62,
+                    "max_value":125,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name": "MATK %",
+                    "type":"matk%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"DEF",
+                    "type":"def",
+                    "min_value":32,
+                    "max_value":65,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DEF %",
+                    "type":"def%",
+                    "min_value":1,
+                    "max_value":2,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"HP",
+                    "type":"hp",
+                    "min_value":140,
+                    "max_value":280,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"HP %",
+                    "type":"hp%",
+                    "min_value":1,
+                    "max_value":2,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"ACC",
+                    "type":"acc",
+                    "min_value":9,
+                    "max_value":18,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DMG RES",
+                    "type":"dmgres",
+                    "min_value":9,
+                    "max_value":18,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"CRIT Rate",
+                    "type":"crate",
+                    "min_value":3.75,
+                    "max_value":7.5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT DMG",
+                    "type":"cdmg",
+                    "min_value":2.5,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT RES",
+                    "type":"cres",
+                    "min_value":3.75,
+                    "max_value":7.5,
+                    "genre": "%",
+                    "step": 0.01
+                }
+            ],
+            "lvl_to_trans": 12,
+            "min_trans": 0,
+            "max_trans": 4,
+            "gain_per_trans": 225,
+            "trans_slot": 1
+        },
+        {
+            "name": "ATK",
+            "title": "physical",
+            "col": 3,
+            "row": 2,
+            "min_lvl": 0,
+            "max_lvl": 12,
+            "main_stat": {
+                "type": "atk",
+                "min_value": 2000,
+                "max_value": 2996,
+                "step": 83
+            },
+            "min_slots": 1,
+            "max_slots": 4,
+            "slot_incr": 4,
+            "slot_stats": [
+                {
+                    "name":"ATK",
+                    "type":"atk",
+                    "min_value":62,
+                    "max_value":125,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"ATK %",
+                    "type":"atk%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name": "MATK",
+                    "type":"matk",
+                    "min_value":62,
+                    "max_value":125,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name": "MATK %",
+                    "type":"matk%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"DEF",
+                    "type":"def",
+                    "min_value":32,
+                    "max_value":65,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DEF %",
+                    "type":"def%",
+                    "min_value":1,
+                    "max_value":2,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"HP",
+                    "type":"hp",
+                    "min_value":140,
+                    "max_value":280,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"HP %",
+                    "type":"hp%",
+                    "min_value":1,
+                    "max_value":2,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"ACC",
+                    "type":"acc",
+                    "min_value":9,
+                    "max_value":18,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DMG RES",
+                    "type":"dmgres",
+                    "min_value":9,
+                    "max_value":18,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"CRIT Rate",
+                    "type":"crate",
+                    "min_value":3.75,
+                    "max_value":7.5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT DMG",
+                    "type":"cdmg",
+                    "min_value":2.5,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT RES",
+                    "type":"cres",
+                    "min_value":3.75,
+                    "max_value":7.5,
+                    "genre": "%",
+                    "step": 0.01
+                }
+            ],
+            "lvl_to_trans": 12,
+            "min_trans": 0,
+            "max_trans": 4,
+            "gain_per_trans": 225,
+            "trans_slot": 1
+        },
+        {
+            "name": "DEF",
+            "title": "defensive",
+            "col": 3,
+            "row": 2,
+            "min_lvl": 0,
+            "max_lvl": 12,
+            "main_stat": {
+                "type": "def",
+                "min_value": 1075,
+                "max_value": 1615,
+                "step": 45
+            },
+            "min_slots": 1,
+            "max_slots": 4,
+            "slot_incr": 4,
+            "slot_stats": [
+                {
+                    "name":"ATK",
+                    "type":"atk",
+                    "min_value":62,
+                    "max_value":125,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"ATK %",
+                    "type":"atk%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name": "MATK",
+                    "type":"matk",
+                    "min_value":62,
+                    "max_value":125,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name": "MATK %",
+                    "type":"matk%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"DEF",
+                    "type":"def",
+                    "min_value":32,
+                    "max_value":65,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DEF %",
+                    "type":"def%",
+                    "min_value":1,
+                    "max_value":2,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"HP",
+                    "type":"hp",
+                    "min_value":140,
+                    "max_value":280,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"HP %",
+                    "type":"hp%",
+                    "min_value":1,
+                    "max_value":2,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"ACC",
+                    "type":"acc",
+                    "min_value":9,
+                    "max_value":18,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DMG RES",
+                    "type":"dmgres",
+                    "min_value":9,
+                    "max_value":18,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"CRIT Rate",
+                    "type":"crate",
+                    "min_value":3.75,
+                    "max_value":7.5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT DMG",
+                    "type":"cdmg",
+                    "min_value":2.5,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT RES",
+                    "type":"cres",
+                    "min_value":3.75,
+                    "max_value":7.5,
+                    "genre": "%",
+                    "step": 0.01
+                }
+            ],
+            "lvl_to_trans": 12,
+            "min_trans": 0,
+            "max_trans": 4,
+            "gain_per_trans": 81,
+            "trans_slot": 1
+        },
+        {
+            "name": "HP",
+            "title": "health",
+            "col": 2,
+            "row": 3,
+            "min_lvl": 0,
+            "max_lvl": 12,
+            "main_stat": {
+                "type": "hp",
+                "min_value": 4500,
+                "max_value": 6756,
+                "step": 188
+            },
+            "min_slots": 1,
+            "max_slots": 4,
+            "slot_incr": 4,
+            "slot_stats": [
+                {
+                    "name":"ATK",
+                    "type":"atk",
+                    "min_value":62,
+                    "max_value":125,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"ATK %",
+                    "type":"atk%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name": "MATK",
+                    "type":"matk",
+                    "min_value":62,
+                    "max_value":125,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name": "MATK %",
+                    "type":"matk%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"DEF",
+                    "type":"def",
+                    "min_value":32,
+                    "max_value":65,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DEF %",
+                    "type":"def%",
+                    "min_value":1,
+                    "max_value":2,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"HP",
+                    "type":"hp",
+                    "min_value":140,
+                    "max_value":280,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"HP %",
+                    "type":"hp%",
+                    "min_value":1,
+                    "max_value":2,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"ACC",
+                    "type":"acc",
+                    "min_value":9,
+                    "max_value":18,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DMG RES",
+                    "type":"dmgres",
+                    "min_value":9,
+                    "max_value":18,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"CRIT Rate",
+                    "type":"crate",
+                    "min_value":3.75,
+                    "max_value":7.5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT DMG",
+                    "type":"cdmg",
+                    "min_value":2.5,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT RES",
+                    "type":"cres",
+                    "min_value":3.75,
+                    "max_value":7.5,
+                    "genre": "%",
+                    "step": 0.01
+                }
+            ],
+            "lvl_to_trans": 12,
+            "min_trans": 0,
+            "max_trans": 4,
+            "gain_per_trans": 676,
+            "trans_slot": 1
+        }
+    ],
+    "character": [
+        {
+            "name": "Alecdora Sandler",
+            "type": "alecdora_sandler",
+            "atk": 6480,
+            "matk": 6480,
+            "hp": 40500,
+            "def": 2886,
+            "spd": 103,
+            "acc": 210,
+            "dmgres": 201,
+            "crate": 15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 150,
+                    "matk": 150,
+                    "pen": 3
+                },
+                {
+                    "dupe": 2,
+                    "atk": 150,
+                    "matk": 150,
+                    "pen": 3
+                },
+                {
+                    "dupe": 3,
+                    "atk": 150,
+                    "matk": 150,
+                    "pen": 3
+                },
+                {
+                    "dupe": 4,
+                    "atk": 150,
+                    "matk": 150,
+                    "pen": 3,
+                    "acc": 4
+                },
+                {
+                    "dupe": 5,
+                    "atk": 150,
+                    "matk": 150,
+                    "pen": 3,
+                    "acc": 4
+                }
+            ]
+        },
+        {
+            "name": "Asta",
+            "type": "asta",
+            "atk": 8640,
+            "matk": 0,
+            "hp": 68420,
+            "def": 4872,
+            "spd": 100,
+            "acc": 201,
+            "dmgres": 210,
+            "crate": 12.15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 96,
+            "end": 63,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "def": 130,
+                    "hp": 400
+                },
+                {
+                    "dupe": 2,
+                    "def": 130,
+                    "hp": 400
+                },
+                {
+                    "dupe": 3,
+                    "def": 130,
+                    "hp": 400
+                },
+                {
+                    "dupe": 4,
+                    "def": 130,
+                    "hp": 400,
+                    "dmgres": 8
+                },
+                {
+                    "dupe": 5,
+                    "def": 130,
+                    "hp": 400,
+                    "dmgres": 8
+                }
+            ]
+        },
+        {
+            "name": "Asta [Black]",
+            "type": "asta_black",
+            "atk": 10560,
+            "matk": 0,
+            "hp": 77489,
+            "def": 5142,
+            "spd": 100,
+            "acc": 201,
+            "dmgres": 210,
+            "crate": 12.15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 96,
+            "end": 82,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 500,
+                    "def": 200
+                },
+                {
+                    "dupe": 2,
+                    "atk": 500,
+                    "def": 200
+                },
+                {
+                    "dupe": 3,
+                    "atk": 500,
+                    "def": 200
+                },
+                {
+                    "dupe": 4,
+                    "atk": 500,
+                    "def": 200,
+                    "cres": 12
+                },
+                {
+                    "dupe": 5,
+                    "atk": 200,
+                    "def": 200,
+                    "cres": 12
+                }
+            ]
+        },
+        {
+            "name": "Asta [Black Divider]",
+            "type": "asta_black_divider",
+            "atk": 13680,
+            "matk": 0,
+            "hp": 45000,
+            "def": 3528,
+            "spd": 103,
+            "acc": 231,
+            "dmgres": 191,
+            "crate": 14.99,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 600,
+                    "def": 300,
+                    "crate": 5
+                },
+                {
+                    "dupe": 2,
+                    "atk": 600,
+                    "def": 300,
+                    "crate": 5
+                },
+                {
+                    "dupe": 3,
+                    "atk": 600,
+                    "def": 300,
+                    "crate": 5
+                },
+                {
+                    "dupe": 4,
+                    "atk": 600,
+                    "def": 300,
+                    "spd": 2
+                },
+                {
+                    "dupe": 5,
+                    "atk": 600,
+                    "def": 300,
+                    "spd": 2
+                }
+            ]
+        },
+        {
+            "name": "Asta [Clover Academy]",
+            "type": "asta_clover_academy",
+            "atk": 15839,
+            "matk": 0,
+            "hp": 40500,
+            "def": 3207,
+            "spd": 103,
+            "acc": 210,
+            "dmgres": 201,
+            "crate": 15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 400,
+                    "def": 200
+                },
+                {
+                    "dupe": 2,
+                    "atk": 400,
+                    "def": 200
+                },
+                {
+                    "dupe": 3,
+                    "atk": 400,
+                    "def": 200
+                },
+                {
+                    "dupe": 4,
+                    "atk": 400,
+                    "def": 200,
+                    "spd": 3
+                },
+                {
+                    "dupe": 5,
+                    "atk": 400,
+                    "def": 200,
+                    "spd": 3
+                }
+            ]
+        },
+        {
+            "name": "Asta [Swimsuit]",
+            "type": "asta_swimsuit",
+            "atk": 9600,
+            "matk": 0,
+            "hp": 70110,
+            "def": 6224,
+            "spd": 100,
+            "acc": 201,
+            "dmgres": 315,
+            "crate": 12.16,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 96,
+            "end": 63,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "def": 240,
+                    "hp": 2200
+                },
+                {
+                    "dupe": 2,
+                    "def": 240,
+                    "hp": 2200
+                },
+                {
+                    "dupe": 3,
+                    "def": 240,
+                    "hp": 2200
+                },
+                {
+                    "dupe": 4,
+                    "def": 240,
+                    "hp": 2200,
+                    "cres": 12
+                },
+                {
+                    "dupe": 5,
+                    "def": 240,
+                    "hp": 2200,
+                    "cres": 12
+                }
+            ]
+        },
+        {
+            "name": "Charlotte Roselei",
+            "type": "charlotte_roselei",
+            "atk": 8264,
+            "matk": 2754,
+            "hp": 46980,
+            "def": 3969,
+            "spd": 112,
+            "acc": 207,
+            "dmgres": 221,
+            "crate": 13.5,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 104,
+            "end": 47,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "def": 170,
+                    "hp": 1040
+                },
+                {
+                    "dupe": 2,
+                    "def": 170,
+                    "hp": 1040
+                },
+                {
+                    "dupe": 3,
+                    "def": 170,
+                    "hp": 1040
+                },
+                {
+                    "dupe": 4,
+                    "def": 170,
+                    "hp": 1040,
+                    "dmgres": 10
+                },
+                {
+                    "dupe": 5,
+                    "def": 170,
+                    "hp": 1040,
+                    "dmgres": 10
+                }
+            ]
+        },
+        {
+            "name": "Charlotte [Ceremony]",
+            "type": "charlotte_ceremony",
+            "atk": 6000,
+            "matk": 2000,
+            "hp": 57600,
+            "def": 5072,
+            "spd": 120,
+            "acc": 205,
+            "dmgres": 164,
+            "crate": 10.8,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 101,
+            "end": 51,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 400,
+                    "def": 200
+                },
+                {
+                    "dupe": 2,
+                    "atk": 400,
+                    "def": 200
+                },
+                {
+                    "dupe": 3,
+                    "atk": 400,
+                    "def": 200
+                },
+                {
+                    "dupe": 4,
+                    "atk": 400,
+                    "def": 200,
+                    "spd": 2
+                },
+                {
+                    "dupe": 5,
+                    "atk": 400,
+                    "def": 200,
+                    "spd": 2
+                }
+            ]
+        },
+        {
+            "name": "Charlotte [Clover Academy]",
+            "type": "charlotte_clover_academy",
+            "atk": 6000,
+            "matk": 2000,
+            "hp": 57600,
+            "def": 5072,
+            "spd": 120,
+            "acc": 205,
+            "dmgres": 164,
+            "crate": 10.8,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 101,
+            "end": 51,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "hp": 1600,
+                    "rcrit": 5
+                },
+                {
+                    "dupe": 2,
+                    "hp": 1600,
+                    "rcrit": 5
+                },
+                {
+                    "dupe": 3,
+                    "hp": 1600,
+                    "rcrit": 5
+                },
+                {
+                    "dupe": 4,
+                    "hp": 1600,
+                    "rcrit": 5,
+                    "spd": 3
+                },
+                {
+                    "dupe": 5,
+                    "hp": 1600,
+                    "rcrit": 5,
+                    "spd": 3
+                }
+            ]
+        },
+        {
+            "name": "Charmy Pappitson",
+            "type": "charmy_pappitson",
+            "atk": 4104,
+            "matk": 4104,
+            "hp": 55404,
+            "def": 3609,
+            "spd": 95,
+            "acc": 205,
+            "dmgres": 205,
+            "crate": 8.1,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 101,
+            "end": 60,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 60,
+                    "matk": 60,
+                    "def": 76
+                },
+                {
+                    "dupe": 2,
+                    "atk": 60,
+                    "matk": 60,
+                    "def": 76
+                },
+                {
+                    "dupe": 3,
+                    "atk": 60,
+                    "matk": 60,
+                    "def": 76
+                },
+                {
+                    "dupe": 4,
+                    "atk": 60,
+                    "matk": 60,
+                    "def": 76,
+                    "end": 4
+                },
+                {
+                    "dupe": 5,
+                    "atk": 60,
+                    "matk": 60,
+                    "def": 76,
+                    "end": 4
+                }
+            ]
+        },
+        {
+            "name": "Charmy [Halloween]",
+            "type": "charmy_halloween",
+            "atk": 3960,
+            "matk": 11880,
+            "hp": 40500,
+            "def": 3207,
+            "spd": 103,
+            "acc": 210,
+            "dmgres": 201,
+            "crate": 15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 200,
+                    "matk": 200,
+                    "def": 76
+                },
+                {
+                    "dupe": 2,
+                    "atk": 200,
+                    "matk": 200,
+                    "def": 76
+                },
+                {
+                    "dupe": 3,
+                    "atk": 200,
+                    "matk": 200,
+                    "def": 76
+                },
+                {
+                    "dupe": 4,
+                    "atk": 200,
+                    "matk": 200,
+                    "def": 76,
+                    "spd": 3
+                },
+                {
+                    "dupe": 5,
+                    "atk": 200,
+                    "matk": 200,
+                    "def": 76,
+                    "spd": 3
+                }
+            ]
+        },
+        {
+            "name": "Charmy [Swimsuit]",
+            "type": "charmy_swimsuit",
+            "atk": 1818,
+            "matk": 5456,
+            "hp": 63711,
+            "def": 4009,
+            "spd": 104,
+            "acc": 205,
+            "dmgres": 205,
+            "crate": 8.1,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 101,
+            "end": 60,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "hp": 1800,
+                    "def": 280
+                },
+                {
+                    "dupe": 2,
+                    "hp": 1800,
+                    "def": 280
+                },
+                {
+                    "dupe": 3,
+                    "hp": 1800,
+                    "def": 280
+                },
+                {
+                    "dupe": 4,
+                    "hp": 1800,
+                    "def": 280,
+                    "dmgres": 15
+                },
+                {
+                    "dupe": 5,
+                    "hp": 1800,
+                    "def": 280,
+                    "dmgres": 15
+                }
+            ]
+        },
+        {
+            "name": "Fana",
+            "type": "fana",
+            "atk": 3960,
+            "matk": 11880,
+            "hp": 40500,
+            "def": 3207,
+            "spd": 103,
+            "acc": 210,
+            "dmgres": 201,
+            "crate": 15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 375,
+                    "matk": 375,
+                    "pen": 6
+                },
+                {
+                    "dupe": 2,
+                    "atk": 375,
+                    "matk": 375,
+                    "pen": 6
+                },
+                {
+                    "dupe": 3,
+                    "atk": 375,
+                    "matk": 375,
+                    "pen": 6
+                },
+                {
+                    "dupe": 4,
+                    "atk": 375,
+                    "matk": 375,
+                    "pen": 6,
+                    "accc": 10
+                },
+                {
+                    "dupe": 5,
+                    "atk": 375,
+                    "matk": 375,
+                    "pen": 6,
+                    "accc": 10
+                }
+            ]
+        },
+        {
+            "name": "Fana [Hateful]",
+            "type": "fana_hateful",
+            "atk": 3960,
+            "matk": 11880,
+            "hp": 40500,
+            "def": 3207,
+            "spd": 109,
+            "acc": 210,
+            "dmgres": 201,
+            "crate": 15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "def": 200,
+                    "matk": 400
+                },
+                {
+                    "dupe": 2,
+                    "def": 200,
+                    "matk": 400
+                },
+                {
+                    "dupe": 3,
+                    "def": 200,
+                    "matk": 400
+                },
+                {
+                    "dupe": 4,
+                    "def": 200,
+                    "matk": 400,
+                    "crate": 3.5
+                },
+                {
+                    "dupe": 5,
+                    "def": 200,
+                    "matk": 400,
+                    "crate": 3.5
+                }
+            ]
+        },
+        {
+            "name": "Finral Roulacase",
+            "type": "finral_roulacase",
+            "atk": 1800,
+            "matk": 5400,
+            "hp": 51840,
+            "def": 4564,
+            "spd": 120,
+            "acc": 205,
+            "dmgres": 164,
+            "crate": 10.8,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 101,
+            "end": 51,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "def": 55,
+                    "hp": 320
+                },
+                {
+                    "dupe": 2,
+                    "def": 55,
+                    "hp": 320
+                },
+                {
+                    "dupe": 3,
+                    "def": 55,
+                    "hp": 320
+                },
+                {
+                    "dupe": 4,
+                    "def": 55,
+                    "hp": 320,
+                    "spd": 2
+                },
+                {
+                    "dupe": 5,
+                    "def": 55,
+                    "hp": 320,
+                    "spd": 2
+                }
+            ]
+        },
+        {
+            "name": "Finral Roulacase [Spatial Mage]",
+            "type": "finral_roulacase_spatial_mage",
+            "atk": 2000,
+            "matk": 6000,
+            "hp": 57600,
+            "def": 5072,
+            "spd": 120,
+            "acc": 205,
+            "dmgres": 164,
+            "crate": 10.8,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 101,
+            "end": 51,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "matk": 400,
+                    "hp": 1600,
+                    "crate": 3
+                },
+                {
+                    "dupe": 2,
+                    "matk": 400,
+                    "hp": 1600,
+                    "crate": 3
+                },
+                {
+                    "dupe": 3,
+                    "matk": 400,
+                    "hp": 1600,
+                    "crate": 3
+                },
+                {
+                    "dupe": 4,
+                    "matk": 400,
+                    "hp": 1600,
+                    "crate": 3,
+                    "spd": 2
+                },
+                {
+                    "dupe": 5,
+                    "matk": 400,
+                    "hp": 1600,
+                    "crate": 3,
+                    "spd": 2
+                }
+            ]
+        },
+        {
+            "name": "Fuegoleon Vermillion",
+            "type": "fuegoleon_vermillion",
+            "atk": 3550,
+            "matk": 10649,
+            "hp": 47340,
+            "def": 3207,
+            "spd": 103,
+            "acc": 210,
+            "dmgres": 201,
+            "crate": 15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 300,
+                    "matk": 300,
+                    "hp": 900
+                },
+                {
+                    "dupe": 2,
+                    "matk": 400,
+                    "hp": 900
+                },
+                {
+                    "dupe": 3,
+                    "matk": 400,
+                    "hp": 900
+                },
+                {
+                    "dupe": 4,
+                    "matk": 400,
+                    "hp": 900,
+                    "def": 250
+                },
+                {
+                    "dupe": 5,
+                    "matk": 400,
+                    "hp": 900,
+                    "def": 250
+                }
+            ]
+        },
+        {
+            "name": "Fuegoleon [Clover Academy]",
+            "type": "fuelogeon_clover_academy",
+            "atk": 4560,
+            "matk": 12480,
+            "hp": 40500,
+            "def": 3207,
+            "spd": 103,
+            "acc": 210,
+            "dmgres": 201,
+            "crate": 15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 200,
+                    "matk": 200
+                },
+                {
+                    "dupe": 2,
+                    "atk": 200,
+                    "matk": 200
+                },
+                {
+                    "dupe": 3,
+                    "atk": 200,
+                    "matk": 200
+                },
+                {
+                    "dupe": 4,
+                    "atk": 200,
+                    "matk": 200,
+                    "crate": 3.5
+                },
+                {
+                    "dupe": 5,
+                    "atk": 200,
+                    "matk": 200,
+                    "crate": 3.5
+                }
+            ]
+        },
+        {
+            "name": "Gauche Adlai",
+            "type": "gauche_adlai",
+            "atk": 2916,
+            "matk": 8749,
+            "hp": 38475,
+            "def": 2886,
+            "spd": 103,
+            "acc": 221,
+            "dmgres": 201,
+            "crate": 22.03,
+            "cdmg": 57.5,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 150,
+                    "matk": 150,
+                    "pen": 3
+                },
+                {
+                    "dupe": 2,
+                    "atk": 150,
+                    "matk": 150,
+                    "pen": 3
+                },
+                {
+                    "dupe": 3,
+                    "atk": 150,
+                    "matk": 150,
+                    "pen": 3
+                },
+                {
+                    "dupe": 4,
+                    "atk": 150,
+                    "matk": 150,
+                    "pen": 3,
+                    "acc": 4
+                },
+                {
+                    "dupe": 5,
+                    "atk": 150,
+                    "matk": 150,
+                    "pen": 3,
+                    "acc": 4
+                }
+            ]
+        },
+        {
+            "name": "Gauche [Swimsuit]",
+            "type": "gauche_swimsuit",
+            "atk": 2000,
+            "matk": 6000,
+            "hp": 57600,
+            "def": 4611,
+            "spd": 110,
+            "acc": 205,
+            "dmgres": 205,
+            "crate": 10.8,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 101,
+            "end": 60,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "hp": 1600,
+                    "crate": 3
+                },
+                {
+                    "dupe": 2,
+                    "hp": 1600,
+                    "crate": 3
+                },
+                {
+                    "dupe": 3,
+                    "hp": 1600,
+                    "crate": 3
+                },
+                {
+                    "dupe": 4,
+                    "hp": 1600,
+                    "crate": 3,
+                    "spd": 3
+                },
+                {
+                    "dupe": 5,
+                    "hp": 1600,
+                    "crate": 3,
+                    "spd": 3
+                }
+            ]
+        },
+        {
+            "name": "Gifso",
+            "type": "gifso",
+            "atk": 4856,
+            "matk": 1983,
+            "hp": 49248,
+            "def": 5187,
+            "spd": 110,
+            "acc": 205,
+            "dmgres": 226,
+            "crate": 10.8,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 101,
+            "end": 66,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "def": 110,
+                    "end": 3
+                },
+                {
+                    "dupe": 2,
+                    "def": 110,
+                    "end": 3
+                },
+                {
+                    "dupe": 3,
+                    "def": 110,
+                    "end": 3
+                },
+                {
+                    "dupe": 4,
+                    "def": 110,
+                    "end": 3,
+                    "dmgres": 4
+                },
+                {
+                    "dupe": 5,
+                    "def": 110,
+                    "end": 3,
+                    "dmgres": 4
+                }
+            ]
+        },
+        {
+            "name": "Grey",
+            "type": "grey",
+            "atk": 5700,
+            "matk": 1900,
+            "hp": 63360,
+            "def": 4611,
+            "spd": 115,
+            "acc": 215,
+            "dmgres": 205,
+            "crate": 10.8,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 101,
+            "end": 60,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "def": 200,
+                    "atk": 400
+                },
+                {
+                    "dupe": 2,
+                    "def": 200,
+                    "atk": 400
+                },
+                {
+                    "dupe": 3,
+                    "def": 200,
+                    "atk": 400
+                },
+                {
+                    "dupe": 4,
+                    "def": 200,
+                    "atk": 400,
+                    "dmgres": 10
+                },
+                {
+                    "dupe": 5,
+                    "def": 200,
+                    "atk": 400,
+                    "dmgres": 10
+                }
+            ]
+        },
+        {
+            "name": "Gueldre Poizot",
+            "type": "gueldre_poizot",
+            "atk": 1900,
+            "matk": 5700,
+            "hp": 63360,
+            "def": 4611,
+            "spd": 115,
+            "acc": 215,
+            "dmgres": 205,
+            "crate": 10.8,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 101,
+            "end": 60,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "def": 270,
+                    "end": 4
+                },
+                {
+                    "dupe": 2,
+                    "def": 270,
+                    "end": 4
+                },
+                {
+                    "dupe": 3,
+                    "def": 270,
+                    "end": 4
+                },
+                {
+                    "dupe": 4,
+                    "def": 270,
+                    "end": 4,
+                    "dmgres": 10
+                },
+                {
+                    "dupe": 5,
+                    "def": 270,
+                    "end": 4,
+                    "dmgres": 10
+                }
+            ]
+        },
+        {
+            "name": "Heath Grice",
+            "type": "heath_grice",
+            "atk": 4959,
+            "matk": 4959,
+            "hp": 42282,
+            "def": 3573,
+            "spd": 112,
+            "acc": 207,
+            "dmgres": 221,
+            "crate": 13.5,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 104,
+            "end": 47,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 50,
+                    "matk": 50,
+                    "hp": 420
+                },
+                {
+                    "dupe": 2,
+                    "atk": 50,
+                    "matk": 50,
+                    "hp": 420
+                },
+                {
+                    "dupe": 3,
+                    "atk": 50,
+                    "matk": 50,
+                    "hp": 420
+                },
+                {
+                    "dupe": 4,
+                    "atk": 50,
+                    "matk": 50,
+                    "hp": 420,
+                    "pen": 4
+                },
+                {
+                    "dupe": 5,
+                    "atk": 50,
+                    "matk": 50,
+                    "hp": 420,
+                    "pen": 4
+                }
+            ]
+        },
+        {
+            "name": "Jack the Ripper",
+            "type": "jack_the_ripper",
+            "atk": 10260,
+            "matk": 3420,
+            "hp": 49500,
+            "def": 3207,
+            "spd": 103,
+            "acc": 210,
+            "dmgres": 201,
+            "crate": 15,
+            "cdmg": 40,
+            "cres": 0,
+            "pen": 122,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 140,
+                    "matk": 140,
+                    "crate": 2.5
+                },
+                {
+                    "dupe": 2,
+                    "atk": 140,
+                    "matk": 140,
+                    "crate": 2.5
+                },
+                {
+                    "dupe": 3,
+                    "atk": 140,
+                    "matk": 140,
+                    "crate": 2.5
+                },
+                {
+                    "dupe": 4,
+                    "atk": 140,
+                    "matk": 140,
+                    "crate": 2.5,
+                    "cdmg": 7.5
+                },
+                {
+                    "dupe": 5,
+                    "atk": 140,
+                    "matk": 140,
+                    "crate": 2.5,
+                    "cdmg": 7.5
+                }
+            ]
+        },
+        {
+            "name": "Jack [Clover Academy]",
+            "type": "jack_clover_academy",
+            "atk": 10800,
+            "matk": 3600,
+            "hp": 45000,
+            "def": 3207,
+            "spd": 104,
+            "acc": 210,
+            "dmgres": 201,
+            "crate": 15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 140,
+                    "def": 200
+                },
+                {
+                    "dupe": 2,
+                    "atk": 140,
+                    "def": 200
+                },
+                {
+                    "dupe": 3,
+                    "atk": 140,
+                    "def": 200
+                },
+                {
+                    "dupe": 4,
+                    "atk": 140,
+                    "def": 200,
+                    "cdmg": 10
+                },
+                {
+                    "dupe": 5,
+                    "atk": 140,
+                    "def": 200,
+                    "cdmg": 10
+                }
+            ]
+        },
+        {
+            "name": "Julius",
+            "type": "julius",
+            "atk": 3600,
+            "matk": 10800,
+            "hp": 45000,
+            "def": 3207,
+            "spd": 104,
+            "acc": 210,
+            "dmgres": 201,
+            "crate": 15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "matk": 140,
+                    "crate": 1.4
+                },
+                {
+                    "dupe": 2,
+                    "matk": 140,
+                    "crate": 1.4
+                },
+                {
+                    "dupe": 3,
+                    "matk": 140,
+                    "crate": 1.4
+                },
+                {
+                    "dupe": 4,
+                    "matk": 140,
+                    "crate": 1.4,
+                    "spd": 1
+                },
+                {
+                    "dupe": 5,
+                    "matk": 140,
+                    "crate": 1.4,
+                    "spd": 1
+                }
+            ]
+        },
+        {
+            "name": "Kahono",
+            "type": "kahono",
+            "atk": 1862,
+            "matk": 5586,
+            "hp": 60264,
+            "def": 4009,
+            "spd": 104,
+            "acc": 205,
+            "dmgres": 205,
+            "crate": 8.1,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 101,
+            "end": 60,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 100,
+                    "matk": 100,
+                    "hp": 1300
+                },
+                {
+                    "dupe": 2,
+                    "atk": 100,
+                    "matk": 100,
+                    "hp": 1300
+                },
+                {
+                    "dupe": 3,
+                    "atk": 100,
+                    "matk": 100,
+                    "hp": 1300
+                },
+                {
+                    "dupe": 4,
+                    "atk": 100,
+                    "matk": 100,
+                    "hp": 1300,
+                    "def": 160
+                },
+                {
+                    "dupe": 5,
+                    "atk": 100,
+                    "matk": 100,
+                    "hp": 1300,
+                    "def": 160
+                }
+            ]
+        },
+        {
+            "name": "Kahono [Party]",
+            "type": "kahono_party",
+            "atk": 1900,
+            "matk": 5700,
+            "hp": 54720,
+            "def": 5764,
+            "spd": 110,
+            "acc": 205,
+            "dmgres": 226,
+            "crate": 10.8,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 101,
+            "end": 66,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "def": 200,
+                    "matk": 100
+                },
+                {
+                    "dupe": 2,
+                    "def": 200,
+                    "matk": 100
+                },
+                {
+                    "dupe": 3,
+                    "def": 200,
+                    "matk": 100
+                },
+                {
+                    "dupe": 4,
+                    "def": 200,
+                    "matk": 100,
+                    "spd": 2
+                },
+                {
+                    "dupe": 5,
+                    "def": 200,
+                    "matk": 100,
+                    "spd": 2
+                }
+            ]
+        },
+        {
+            "name": "Kiato",
+            "type": "kiato",
+            "atk": 11880,
+            "matk": 3960,
+            "hp": 40500,
+            "def": 3207,
+            "spd": 103,
+            "acc": 210,
+            "dmgres": 201,
+            "crate": 15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 300,
+                    "matk": 100,
+                    "hp": 900
+                },
+                {
+                    "dupe": 2,
+                    "atk": 300,
+                    "matk": 100,
+                    "hp": 900
+                },
+                {
+                    "dupe": 3,
+                    "atk": 300,
+                    "matk": 100,
+                    "hp": 900
+                },
+                {
+                    "dupe": 4,
+                    "atk": 300,
+                    "matk": 100,
+                    "hp": 900,
+                    "def": 250
+                },
+                {
+                    "dupe": 5,
+                    "atk": 300,
+                    "matk": 100,
+                    "hp": 900,
+                    "def": 250
+                }
+            ]
+        },
+        {
+            "name": "Langris Vaude",
+            "type": "langris_vaude",
+            "atk": 0,
+            "matk": 12960,
+            "hp": 42750,
+            "def": 3207,
+            "spd": 103,
+            "acc": 221,
+            "dmgres": 201,
+            "crate": 22.4,
+            "cdmg": 57.5,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "cres": 5,
+                    "matk": 400
+                },
+                {
+                    "dupe": 2,
+                    "cres": 5,
+                    "matk": 400
+                },
+                {
+                    "dupe": 3,
+                    "cres": 5,
+                    "matk": 400
+                },
+                {
+                    "dupe": 4,
+                    "cres": 5,
+                    "matk": 400,
+                    "spd": 3
+                },
+                {
+                    "dupe": 5,
+                    "cres": 5,
+                    "matk": 400,
+                    "spd": 3
+                }
+            ]
+        },
+        {
+            "name": "Leopold Vermillion",
+            "type": "leopold_vermillion",
+            "atk": 3960,
+            "matk": 11880,
+            "hp": 40500,
+            "def": 3207,
+            "spd": 103,
+            "acc": 210,
+            "dmgres": 201,
+            "crate": 15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 375,
+                    "matk": 375,
+                    "pen": 6
+                },
+                {
+                    "dupe": 2,
+                    "atk": 375,
+                    "matk": 375,
+                    "pen": 6
+                },
+                {
+                    "dupe": 3,
+                    "atk": 375,
+                    "matk": 375,
+                    "pen": 6
+                },
+                {
+                    "dupe": 4,
+                    "atk": 375,
+                    "matk": 375,
+                    "pen": 6,
+                    "acc": 10
+                },
+                {
+                    "dupe": 5,
+                    "atk": 375,
+                    "matk": 375,
+                    "pen": 6,
+                    "acc": 10
+                }
+            ]
+        },
+        {
+            "name": "Licht",
+            "type": "licht",
+            "atk": 3240,
+            "matk": 9720,
+            "hp": 42750,
+            "def": 3207,
+            "spd": 103,
+            "acc": 221,
+            "dmgres": 201,
+            "crate": 22.03,
+            "cdmg": 57.5,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 140,
+                    "matk": 140,
+                    "crate": 2.5
+                },
+                {
+                    "dupe": 2,
+                    "atk": 140,
+                    "matk": 140,
+                    "crate": 2.5
+                },
+                {
+                    "dupe": 3,
+                    "atk": 140,
+                    "matk": 140,
+                    "crate": 2.5
+                },
+                {
+                    "dupe": 4,
+                    "atk": 140,
+                    "matk": 140,
+                    "crate": 2.5,
+                    "cdmg": 7.5
+                },
+                {
+                    "dupe": 5,
+                    "atk": 140,
+                    "matk": 140,
+                    "crate": 2.5,
+                    "cdmg": 7.5
+                }
+            ]
+        },
+        {
+            "name": "Lotus Whomalt",
+            "type": "lotus_whomalt",
+            "atk": 3190,
+            "matk": 9570,
+            "hp": 57421,
+            "def": 2887,
+            "spd": 107,
+            "acc": 207,
+            "dmgres": 201,
+            "crate": 12.83,
+            "cdmg": 45,
+            "cres": 0,
+            "pen": 114,
+            "end": 53,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 230,
+                    "matk": 230,
+                    "def": 170
+                },
+                {
+                    "dupe": 2,
+                    "atk": 230,
+                    "matk": 230,
+                    "def": 170
+                },
+                {
+                    "dupe": 3,
+                    "atk": 230,
+                    "matk": 230,
+                    "def": 170
+                },
+                {
+                    "dupe": 4,
+                    "atk": 230,
+                    "matk": 230,
+                    "def": 170,
+                    "crate": 1.5
+                },
+                {
+                    "dupe": 5,
+                    "atk": 230,
+                    "matk": 230,
+                    "def": 170,
+                    "crate": 1.5
+                }
+            ]
+        },
+        {
+            "name": "Luck Voltia",
+            "type": "luck_voltia",
+            "atk": 6480,
+            "matk": 6480,
+            "hp": 40500,
+            "def": 2887,
+            "spd": 103,
+            "acc": 210,
+            "dmgres": 201,
+            "crate": 15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 120,
+                    "matk": 120,
+                    "hp": 360
+                },
+                {
+                    "dupe": 2,
+                    "atk": 120,
+                    "matk": 120,
+                    "hp": 360
+                },
+                {
+                    "dupe": 3,
+                    "atk": 120,
+                    "matk": 120,
+                    "hp": 360
+                },
+                {
+                    "dupe": 4,
+                    "atk": 120,
+                    "matk": 120,
+                    "hp": 360,
+                    "def": 100
+                },
+                {
+                    "dupe": 5,
+                    "atk": 120,
+                    "matk": 120,
+                    "hp": 360,
+                    "def": 100
+                }
+            ]
+        },
+        {
+            "name": "Luck [Ceremony]",
+            "type": "luck_ceremony",
+            "atk": 7920,
+            "matk": 9920,
+            "hp": 40500,
+            "def": 3207,
+            "spd": 103,
+            "acc": 210,
+            "dmgres": 201,
+            "crate": 15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "matk": 400,
+                    "hp": 1600
+                },
+                {
+                    "dupe": 2,
+                    "matk": 400,
+                    "hp": 1600
+                },
+                {
+                    "dupe": 3,
+                    "matk": 400,
+                    "hp": 1600
+                },
+                {
+                    "dupe": 4,
+                    "matk": 400,
+                    "hp": 1600,
+                    "cdmg": 10
+                },
+                {
+                    "dupe": 5,
+                    "matk": 400,
+                    "hp": 1600,
+                    "cdmg": 10
+                }
+            ]
+        },
+        {
+            "name": "Magna Swing",
+            "type": "magna_swing",
+            "atk": 2610,
+            "matk": 7830,
+            "hp": 46980,
+            "def": 3247,
+            "spd": 107,
+            "acc": 207,
+            "dmgres": 201,
+            "crate": 13.5,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 104,
+            "end": 59,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 50,
+                    "matk": 50,
+                    "hp": 420
+                },
+                {
+                    "dupe": 2,
+                    "atk": 50,
+                    "matk": 50,
+                    "hp": 420
+                },
+                {
+                    "dupe": 3,
+                    "atk": 50,
+                    "matk": 50,
+                    "hp": 420
+                },
+                {
+                    "dupe": 4,
+                    "atk": 50,
+                    "matk": 50,
+                    "hp": 420,
+                    "pen": 4
+                },
+                {
+                    "dupe": 5,
+                    "atk": 50,
+                    "matk": 50,
+                    "hp": 420,
+                    "pen": 4
+                }
+            ]
+        },
+        {
+            "name": "Magna [Ceremony]",
+            "type": "magna_ceremony",
+            "atk": 3240,
+            "matk": 9720,
+            "hp": 40500,
+            "def": 3207,
+            "spd": 106,
+            "acc": 231,
+            "dmgres": 181,
+            "crate": 16.48,
+            "cdmg": 55,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "matk": 400,
+                    "crate": 1.4
+                },
+                {
+                    "dupe": 2,
+                    "matk": 400,
+                    "crate": 1.4
+                },
+                {
+                    "dupe": 3,
+                    "matk": 400,
+                    "crate": 1.4
+                },
+                {
+                    "dupe": 4,
+                    "matk": 400,
+                    "crate": 1.4,
+                    "spd": 1
+                },
+                {
+                    "dupe": 5,
+                    "matk": 400,
+                    "crate": 1.4,
+                    "spd": 2
+                }
+            ]
+        },
+        {
+            "name": "Mars",
+            "type": "mars",
+            "atk": 6480,
+            "matk": 2160,
+            "hp": 66420,
+            "def": 7037,
+            "spd": 100,
+            "acc": 201,
+            "dmgres": 252,
+            "crate": 12.15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 96,
+            "end": 63,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "def": 325,
+                    "hp": 1000
+                },
+                {
+                    "dupe": 2,
+                    "def": 325,
+                    "hp": 1000
+                },
+                {
+                    "dupe": 3,
+                    "def": 325,
+                    "hp": 1000
+                },
+                {
+                    "dupe": 4,
+                    "def": 325,
+                    "hp": 1000,
+                    "dmgres": 20
+                },
+                {
+                    "dupe": 5,
+                    "def": 325,
+                    "hp": 1000,
+                    "dmgres": 20
+                }
+            ]
+        },
+        {
+            "name": "Mereoleona Vermillion",
+            "type": "mereoleon_vermillion",
+            "atk": 2400,
+            "matk": 7200,
+            "hp": 73800,
+            "def": 5413,
+            "spd": 100,
+            "acc": 201,
+            "dmgres": 210,
+            "crate": 12.15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 96,
+            "end": 63,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "matk": 500,
+                    "def": 200
+                },
+                {
+                    "dupe": 2,
+                    "matk": 500,
+                    "def": 200
+                },
+                {
+                    "dupe": 3,
+                    "matk": 500,
+                    "def": 200
+                },
+                {
+                    "dupe": 4,
+                    "matk": 500,
+                    "def": 200,
+                    "end": 15
+                },
+                {
+                    "dupe": 5,
+                    "matk": 500,
+                    "def": 200,
+                    "end": 15
+                }
+            ]
+        },
+        {
+            "name": "Mimosa Vermillion",
+            "type": "mimosa_vermillion",
+            "atk": 1710,
+            "matk": 5130,
+            "hp": 58320,
+            "def": 3609,
+            "spd": 95,
+            "acc": 205,
+            "dmgres": 205,
+            "crate": 8.1,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 101,
+            "end": 60,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "matk": 60,
+                    "atk": 60,
+                    "def": 76
+                },
+                {
+                    "dupe": 2,
+                    "matk": 60,
+                    "atk": 60,
+                    "def": 76
+                },
+                {
+                    "dupe": 3,
+                    "matk": 60,
+                    "atk": 60,
+                    "def": 76
+                },
+                {
+                    "dupe": 4,
+                    "matk": 60,
+                    "atk": 60,
+                    "def": 76,
+                    "end": 4
+                },
+                {
+                    "dupe": 5,
+                    "matk": 60,
+                    "atk": 60,
+                    "def": 76,
+                    "end": 4
+                }
+            ]
+        },
+        {
+            "name": "Mimosa [Clover Academy]",
+            "type": "mimosa_clover_academy",
+            "atk": 1900,
+            "matk": 5700,
+            "hp": 64800,
+            "def": 4009,
+            "spd": 95,
+            "acc": 205,
+            "dmgres": 205,
+            "crate": 8.1,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 101,
+            "end": 60,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "matk": 200,
+                    "hp": 1400
+                },
+                {
+                    "dupe": 2,
+                    "matk": 200,
+                    "hp": 1400
+                },
+                {
+                    "dupe": 3,
+                    "matk": 200,
+                    "hp": 1400
+                },
+                {
+                    "dupe": 4,
+                    "matk": 200,
+                    "hp": 1400,
+                    "spd": 3
+                },
+                {
+                    "dupe": 5,
+                    "matk": 200,
+                    "hp": 1400,
+                    "spd": 3
+                }
+            ]
+        },
+        {
+            "name": "Mimosa [Party]",
+            "type": "mimosa_party",
+            "atk": 1862,
+            "matk": 5586,
+            "hp": 60264,
+            "def": 4009,
+            "spd": 104,
+            "acc": 205,
+            "dmgres": 205,
+            "crate": 8.1,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 101,
+            "end": 60,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "matk": 400,
+                    "def": 200
+                },
+                {
+                    "dupe": 2,
+                    "matk": 400,
+                    "def": 200
+                },
+                {
+                    "dupe": 3,
+                    "matk": 400,
+                    "def": 200
+                },
+                {
+                    "dupe": 4,
+                    "matk": 400,
+                    "def": 200,
+                    "cres": 12
+                },
+                {
+                    "dupe": 5,
+                    "matk": 400,
+                    "def": 200,
+                    "cres": 12
+                }
+            ]
+        },
+        {
+            "name": "Nebra Silva",
+            "type": "nebra_silva",
+            "atk": 2871,
+            "matk": 8613,
+            "hp": 51678,
+            "def": 2598,
+            "spd": 107,
+            "acc": 207,
+            "dmgres": 201,
+            "crate": 12.83,
+            "cdmg": 45,
+            "cres": 0,
+            "pen": 117,
+            "end": 53,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "hp": 420,
+                    "def": 70
+                },
+                {
+                    "dupe": 2,
+                    "hp": 420,
+                    "def": 70
+                },
+                {
+                    "dupe": 3,
+                    "hp": 420,
+                    "def": 70
+                },
+                {
+                    "dupe": 4,
+                    "hp": 420,
+                    "def": 70,
+                    "dmgres": 4
+                },
+                {
+                    "dupe": 5,
+                    "hp": 420,
+                    "def": 70,
+                    "dmgres": 4
+                }
+            ]
+        },
+        {
+            "name": "Noelle Silva",
+            "type": "noelle_silva",
+            "atk": 1800,
+            "matk": 5400,
+            "hp": 51840,
+            "def": 4150,
+            "spd": 110,
+            "acc": 205,
+            "dmgres": 205,
+            "crate": 10.8,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 101,
+            "end": 60,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "hp": 540,
+                    "matk": 55,
+                    "atk": 55
+                },
+                {
+                    "dupe": 2,
+                    "hp": 540,
+                    "matk": 55,
+                    "atk": 55
+                },
+                {
+                    "dupe": 3,
+                    "hp": 540,
+                    "matk": 55,
+                    "atk": 55
+                },
+                {
+                    "dupe": 4,
+                    "hp": 540,
+                    "matk": 55,
+                    "atk": 55,
+                    "cres": 1.6
+                },
+                {
+                    "dupe": 5,
+                    "hp": 540,
+                    "matk": 55,
+                    "atk": 55,
+                    "cres": 1.6
+                }
+            ]
+        },
+        {
+            "name": "Noelle [Clover Academy]",
+            "type": "noelle_clover_academy",
+            "atk": 1862,
+            "matk": 5586,
+            "hp": 60264,
+            "def": 4009,
+            "spd": 104,
+            "acc": 205,
+            "dmgres": 205,
+            "crate": 8.1,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 101,
+            "end": 60,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "def": 200,
+                    "matk": 400,
+                    "dmgres": 10
+                },
+                {
+                    "dupe": 2,
+                    "hp": 540,
+                    "matk": 55,
+                    "atk": 55
+                },
+                {
+                    "dupe": 3,
+                    "hp": 540,
+                    "matk": 55,
+                    "atk": 55
+                },
+                {
+                    "dupe": 4,
+                    "hp": 540,
+                    "matk": 55,
+                    "atk": 55,
+                    "cres": 15
+                },
+                {
+                    "dupe": 5,
+                    "hp": 540,
+                    "matk": 55,
+                    "atk": 55,
+                    "cres": 15
+                }
+            ]
+        },
+        {
+            "name": "Noelle [Halloween]",
+            "type": "noelle_halloween",
+            "atk": 2754,
+            "matk": 8264,
+            "hp": 46979,
+            "def": 3969,
+            "spd": 112,
+            "acc": 207,
+            "dmgres": 221,
+            "crate": 13.5,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 104,
+            "end": 47,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "def": 200,
+                    "matk": 400
+                },
+                {
+                    "dupe": 2,
+                    "def": 200,
+                    "matk": 400
+                },
+                {
+                    "dupe": 3,
+                    "def": 200,
+                    "matk": 400
+                },
+                {
+                    "dupe": 4,
+                    "def": 200,
+                    "matk": 400,
+                    "end": 15
+                },
+                {
+                    "dupe": 5,
+                    "def": 200,
+                    "matk": 400,
+                    "end": 15
+                }
+            ]
+        },
+        {
+            "name": "Noelle [Swimsuit]",
+            "type": "noelle_swimsuit",
+            "atk": 3600,
+            "matk": 10800,
+            "hp": 45000,
+            "def": 3207,
+            "spd": 106,
+            "acc": 210,
+            "dmgres": 201,
+            "crate": 15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "hp": 1000,
+                    "matk": 400
+                },
+                {
+                    "dupe": 2,
+                    "def": 200,
+                    "matk": 400
+                },
+                {
+                    "dupe": 3,
+                    "def": 200,
+                    "matk": 400
+                },
+                {
+                    "dupe": 4,
+                    "def": 200,
+                    "matk": 400,
+                    "cres": 12
+                },
+                {
+                    "dupe": 5,
+                    "def": 200,
+                    "matk": 400,
+                    "cres": 12
+                }
+            ]
+        },
+        {
+            "name": "Noelle [Valkyrie Dress]",
+            "type": "noelle_valkyrie_dress",
+            "atk": 2808,
+            "matk": 8424,
+            "hp": 72324,
+            "def": 5034,
+            "spd": 100,
+            "acc": 201,
+            "dmgres": 210,
+            "crate": 13.61,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 96,
+            "end": 63,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "def": 200,
+                    "matk": 500,
+                    "cres": 5
+                },
+                {
+                    "dupe": 2,
+                    "def": 200,
+                    "matk": 500,
+                    "cres": 5
+                },
+                {
+                    "dupe": 3,
+                    "def": 200,
+                    "matk": 500,
+                    "cres": 5
+                },
+                {
+                    "dupe": 4,
+                    "def": 200,
+                    "matk": 500,
+                    "crate": 5
+                },
+                {
+                    "dupe": 5,
+                    "def": 200,
+                    "matk": 500,
+                    "crate": 5
+                }
+            ]
+        },
+        {
+            "name": "Nozel Silva",
+            "type": "nozel_silva",
+            "atk": 2900,
+            "matk": 8700,
+            "hp": 52200,
+            "def": 3608,
+            "spd": 109,
+            "acc": 207,
+            "dmgres": 201,
+            "crate": 13.5,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 104,
+            "end": 59,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "def": 170,
+                    "matk": 230,
+                    "atk": 230
+                },
+                {
+                    "dupe": 2,
+                    "def": 170,
+                    "matk": 230,
+                    "atk": 230
+                },
+                {
+                    "dupe": 3,
+                    "def": 170,
+                    "matk": 230,
+                    "atk": 230
+                },
+                {
+                    "dupe": 4,
+                    "def": 170,
+                    "matk": 230,
+                    "atk": 230,
+                    "crate": 1.5
+                },
+                {
+                    "dupe": 5,
+                    "def": 170,
+                    "matk": 230,
+                    "atk": 230,
+                    "crate": 1.5
+                }
+            ]
+        },
+        {
+            "name": "Nozel [Party]",
+            "type": "nozel_party",
+            "atk": 2697,
+            "matk": 8091,
+            "hp": 57421,
+            "def": 3608,
+            "spd": 107,
+            "acc": 186,
+            "dmgres": 241,
+            "crate": 13.5,
+            "cdmg": 45,
+            "cres": 0,
+            "pen": 104,
+            "end": 68,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "crate": 1.5,
+                    "matk": 400,
+                    "hp": 1600
+                },
+                {
+                    "dupe": 2,
+                    "crate": 1.5,
+                    "matk": 400,
+                    "hp": 1600
+                },
+                {
+                    "dupe": 3,
+                    "cres": 5,
+                    "matk": 400,
+                    "hp": 1600
+                },
+                {
+                    "dupe": 4,
+                    "cres": 5,
+                    "matk": 400,
+                    "hp": 1600
+                },
+                {
+                    "dupe": 5,
+                    "cres": 5,
+                    "matk": 400,
+                    "hp": 1600
+                }
+            ]
+        },
+        {
+            "name": "Witch Queen",
+            "type": "witch_queen",
+            "atk": 0,
+            "matk": 7448,
+            "hp": 60264,
+            "def": 4009,
+            "spd": 104,
+            "acc": 205,
+            "dmgres": 205,
+            "crate": 8.1,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 101,
+            "end": 60,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "hp": 1600,
+                    "matk": 400
+                },
+                {
+                    "dupe": 2,
+                    "hp": 1600,
+                    "matk": 400
+                },
+                {
+                    "dupe": 3,
+                    "hp": 1600,
+                    "matk": 400
+                },
+                {
+                    "dupe": 4,
+                    "hp": 1600,
+                    "matk": 400,
+                    "end": 15
+                },
+                {
+                    "dupe": 5,
+                    "hp": 1600,
+                    "matk": 400,
+                    "end": 15
+                }
+            ]
+        },
+        {
+            "name": "Rades Spirito",
+            "type": "rades_spirito",
+            "atk": 0,
+            "matk": 9600,
+            "hp": 73800,
+            "def": 5413,
+            "spd": 100,
+            "acc": 201,
+            "dmgres": 210,
+            "crate": 12.15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 96,
+            "end": 63,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "def": 160,
+                    "hp": 1500
+                },
+                {
+                    "dupe": 2,
+                    "def": 160,
+                    "hp": 1500
+                },
+                {
+                    "dupe": 3,
+                    "def": 160,
+                    "hp": 1500
+                },
+                {
+                    "dupe": 4,
+                    "def": 160,
+                    "hp": 1500,
+                    "end": 6
+                },
+                {
+                    "dupe": 5,
+                    "def": 160,
+                    "hp": 1500,
+                    "end": 6
+                }
+            ]
+        },
+        {
+            "name": "Rhya",
+            "type": "rhya",
+            "atk": 10800,
+            "matk": 3600,
+            "hp": 45000,
+            "def": 3207,
+            "spd": 103,
+            "acc": 210,
+            "dmgres": 201,
+            "crate": 15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 300,
+                    "matk": 300,
+                    "hp": 900
+                },
+                {
+                    "dupe": 2,
+                    "atk": 300,
+                    "matk": 300,
+                    "hp": 900
+                },
+                {
+                    "dupe": 3,
+                    "atk": 300,
+                    "matk": 300,
+                    "hp": 900
+                },
+                {
+                    "dupe": 4,
+                    "atk": 300,
+                    "matk": 300,
+                    "hp": 900,
+                    "def": 250
+                },
+                {
+                    "dupe": 5,
+                    "atk": 300,
+                    "matk": 300,
+                    "hp": 900,
+                    "def": 250
+                }
+            ]
+        },
+        {
+            "name": "Rill Boismortier",
+            "type": "rill_boismortier",
+            "atk": 2697,
+            "matk": 8091,
+            "hp": 57421,
+            "def": 3608,
+            "spd": 107,
+            "acc": 186,
+            "dmgres": 241,
+            "crate": 13.5,
+            "cdmg": 45,
+            "cres": 0,
+            "pen": 104,
+            "end": 68,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "def": 170,
+                    "hp": 1045
+                },
+                {
+                    "dupe": 2,
+                    "def": 170,
+                    "hp": 1045
+                },
+                {
+                    "dupe": 3,
+                    "def": 170,
+                    "hp": 1045
+                },
+                {
+                    "dupe": 4,
+                    "def": 170,
+                    "hp": 1045,
+                    "dmgres": 10
+                },
+                {
+                    "dupe": 5,
+                    "def": 170,
+                    "hp": 1045,
+                    "dmgres": 10
+                }
+            ]
+        },
+        {
+            "name": "Rill [Clover Academy]",
+            "type": "rill_clover_academy",
+            "atk": 2000,
+            "matk": 6000,
+            "hp": 57600,
+            "def": 5072,
+            "spd": 120,
+            "acc": 205,
+            "dmgres": 164,
+            "crate": 10.8,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 101,
+            "end": 51,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "matk": 400,
+                    "dmgres": 10
+                },
+                {
+                    "dupe": 2,
+                    "matk": 400,
+                    "dmgres": 10
+                },
+                {
+                    "dupe": 3,
+                    "matk": 400,
+                    "dmgres": 10
+                },
+                {
+                    "dupe": 4,
+                    "matk": 400,
+                    "dmgres": 10,
+                    "cres": 7.5
+                },
+                {
+                    "dupe": 5,
+                    "matk": 400,
+                    "dmgres": 10,
+                    "cres": 7.5
+                }
+            ]
+        },
+        {
+            "name": "Sally",
+            "type": "sally",
+            "atk": 4800,
+            "matk": 4800,
+            "hp": 51840,
+            "def": 4150,
+            "spd": 110,
+            "acc": 215,
+            "dmgres": 205,
+            "crate": 10.8,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 111,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "matk": 110,
+                    "atk": 110,
+                    "hp": 1350
+                },
+                {
+                    "dupe": 2,
+                    "matk": 110,
+                    "atk": 110,
+                    "hp": 1350
+                },
+                {
+                    "dupe": 3,
+                    "matk": 110,
+                    "atk": 110,
+                    "hp": 1350
+                },
+                {
+                    "dupe": 4,
+                    "matk": 110,
+                    "atk": 110,
+                    "hp": 1350,
+                    "cres": 4
+                },
+                {
+                    "dupe": 5,
+                    "matk": 110,
+                    "atk": 110,
+                    "hp": 1350,
+                    "cres": 4
+                }
+            ]
+        },
+        {
+            "name": "Shiren Tium",
+            "type": "shiren_tium",
+            "atk": 8613,
+            "matk": 2871,
+            "hp": 51678,
+            "def": 2598,
+            "spd": 107,
+            "acc": 207,
+            "dmgres": 201,
+            "crate": 12.83,
+            "cdmg": 45,
+            "cres": 0,
+            "pen": 114,
+            "end": 53,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "matk": 92,
+                    "atk": 92,
+                    "def": 68
+                },
+                {
+                    "dupe": 2,
+                    "matk": 92,
+                    "atk": 92,
+                    "def": 68
+                },
+                {
+                    "dupe": 3,
+                    "matk": 92,
+                    "atk": 92,
+                    "def": 68
+                },
+                {
+                    "dupe": 4,
+                    "matk": 92,
+                    "atk": 92,
+                    "def": 68,
+                    "crate": 0.6
+                },
+                {
+                    "dupe": 5,
+                    "matk": 92,
+                    "atk": 92,
+                    "def": 68,
+                    "crate": 0.6
+                }
+            ]
+        },
+        {
+            "name": "Sol Marron",
+            "type": "sol_marron",
+            "atk": 6480,
+            "matk": 2160,
+            "hp": 63099,
+            "def": 5603,
+            "spd": 100,
+            "acc": 201,
+            "dmgres": 315,
+            "crate": 12.15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 96,
+            "end": 63,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "hp": 600,
+                    "def": 64
+                },
+                {
+                    "dupe": 2,
+                    "hp": 600,
+                    "def": 64
+                },
+                {
+                    "dupe": 3,
+                    "hp": 600,
+                    "def": 64
+                },
+                {
+                    "dupe": 4,
+                    "hp": 600,
+                    "def": 64,
+                    "end": 2
+                },
+                {
+                    "dupe": 5,
+                    "hp": 600,
+                    "def": 64,
+                    "end": 2
+                }
+            ]
+        },
+        {
+            "name": "Solid Silva",
+            "type": "solid_silva",
+            "atk": 2916,
+            "matk": 8749,
+            "hp": 38475,
+            "def": 2887,
+            "spd": 103,
+            "acc": 221,
+            "dmgres": 201,
+            "crate": 22.03,
+            "cdmg": 57.5,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 56,
+                    "matk": 56,
+                    "crate": 1
+                },
+                {
+                    "dupe": 2,
+                    "atk": 56,
+                    "matk": 56,
+                    "crate": 1
+                },
+                {
+                    "dupe": 3,
+                    "atk": 56,
+                    "matk": 56,
+                    "crate": 1
+                },
+                {
+                    "dupe": 4,
+                    "atk": 56,
+                    "matk": 56,
+                    "crate": 1,
+                    "cdmg": 3
+                },
+                {
+                    "dupe": 5,
+                    "atk": 56,
+                    "matk": 56,
+                    "crate": 1,
+                    "cdmg": 3
+                }
+            ]
+        },
+        {
+            "name": "Theresa",
+            "type": "theresa",
+            "atk": 2052,
+            "matk": 6156,
+            "hp": 55404,
+            "def": 3609,
+            "spd": 95,
+            "acc": 205,
+            "dmgres": 205,
+            "crate": 8.1,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 101,
+            "end": 60,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 60,
+                    "matk": 60,
+                    "def": 76
+                },
+                {
+                    "dupe": 2,
+                    "atk": 60,
+                    "matk": 60,
+                    "def": 76
+                },
+                {
+                    "dupe": 3,
+                    "atk": 60,
+                    "matk": 60,
+                    "def": 76
+                },
+                {
+                    "dupe": 4,
+                    "atk": 60,
+                    "matk": 60,
+                    "def": 76,
+                    "end": 4
+                },
+                {
+                    "dupe": 5,
+                    "atk": 60,
+                    "matk": 60,
+                    "def": 76,
+                    "end": 4
+                }
+            ]
+        },
+        {
+            "name": "Valtos",
+            "type": "valtos",
+            "atk": 1800,
+            "matk": 5400,
+            "hp": 51840,
+            "def": 4564,
+            "spd": 120,
+            "acc": 205,
+            "dmgres": 164,
+            "crate": 10.8,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 101,
+            "end": 51,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "hp": 320,
+                    "def": 55
+                },
+                {
+                    "dupe": 2,
+                    "hp": 320,
+                    "def": 55
+                },
+                {
+                    "dupe": 3,
+                    "hp": 320,
+                    "def": 55
+                },
+                {
+                    "dupe": 4,
+                    "hp": 320,
+                    "def": 55,
+                    "spd": 2
+                },
+                {
+                    "dupe": 5,
+                    "hp": 320,
+                    "def": 55,
+                    "spd": 2
+                }
+            ]
+        },
+        {
+            "name": "Vanessa Enoteca",
+            "type": "vanessa_enoteca",
+            "atk": 1710,
+            "matk": 5130,
+            "hp": 49248,
+            "def": 5187,
+            "spd": 110,
+            "acc": 205,
+            "dmgres": 226,
+            "crate": 10.8,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 101,
+            "end": 66,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "end": 2,
+                    "def": 110
+                },
+                {
+                    "dupe": 2,
+                    "end": 2,
+                    "def": 110
+                },
+                {
+                    "dupe": 3,
+                    "end": 2,
+                    "def": 110
+                },
+                {
+                    "dupe": 4,
+                    "end": 2,
+                    "def": 110,
+                    "dmgres": 4
+                },
+                {
+                    "dupe": 5,
+                    "end": 2,
+                    "def": 110,
+                    "dmgres": 4
+                }
+            ]
+        },
+        {
+            "name": "Vanessa [Swimsuit]",
+            "type": "vanessa_swimsuit",
+            "atk": 3960,
+            "matk": 11880,
+            "hp": 40500,
+            "def": 3207,
+            "spd": 103,
+            "acc": 210,
+            "dmgres": 201,
+            "crate": 15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "matk": 400,
+                    "dmgres": 6
+                },
+                {
+                    "dupe": 2,
+                    "matk": 400,
+                    "dmgres": 6
+                },
+                {
+                    "dupe": 3,
+                    "matk": 400,
+                    "dmgres": 6
+                },
+                {
+                    "dupe": 4,
+                    "matk": 400,
+                    "dmgres": 6,
+                    "crate": 3.5
+                },
+                {
+                    "dupe": 5,
+                    "matk": 400,
+                    "dmgres": 6,
+                    "crate": 3.5
+                }
+            ]
+        },
+        {
+            "name": "Vanessa [Red Thread of Fate]",
+            "type": "vanessa_red_thread_of_fate",
+            "atk": 1900,
+            "matk": 5700,
+            "hp": 54720,
+            "def": 5764,
+            "spd": 110,
+            "acc": 205,
+            "dmgres": 226,
+            "crate": 10.81,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 101,
+            "end": 66,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "matk": 400,
+                    "cres": 5
+                },
+                {
+                    "dupe": 2,
+                    "matk": 400,
+                    "cres": 5
+                },
+                {
+                    "dupe": 3,
+                    "matk": 400,
+                    "cres": 5
+                },
+                {
+                    "dupe": 4,
+                    "matk": 400,
+                    "cres": 5,
+                    "dmgres": 10
+                },
+                {
+                    "dupe": 5,
+                    "matk": 400,
+                    "cres": 5,
+                    "dmgres": 10
+                }
+            ]
+        },
+        {
+            "name": "Vanessa [Secret Agent]",
+            "type": "vanessa_secret_agent",
+            "atk": 2755,
+            "matk": 8265,
+            "hp": 46980,
+            "def": 3969,
+            "spd": 112,
+            "acc": 207,
+            "dmgres": 221,
+            "crate": 13.51,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 104,
+            "end": 47,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "matk": 400,
+                    "hp": 1600
+                },
+                {
+                    "dupe": 2,
+                    "matk": 400,
+                    "hp": 1600
+                },
+                {
+                    "dupe": 3,
+                    "matk": 400,
+                    "hp": 1600
+                },
+                {
+                    "dupe": 4,
+                    "matk": 400,
+                    "hp": 1600,
+                    "spd": 2
+                },
+                {
+                    "dupe": 5,
+                    "matk": 400,
+                    "hp": 1600,
+                    "spd": 2
+                }
+            ]
+        },
+        {
+            "name": "Vetto",
+            "type": "vetto",
+            "atk": 7200,
+            "matk": 2400,
+            "hp": 73800,
+            "def": 5413,
+            "spd": 100,
+            "acc": 201,
+            "dmgres": 210,
+            "crate": 12.15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 96,
+            "end": 63,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "matk": 190,
+                    "atk": 190,
+                    "hp": 740
+                },
+                {
+                    "dupe": 2,
+                    "matk": 190,
+                    "atk": 190,
+                    "hp": 740
+                },
+                {
+                    "dupe": 3,
+                    "matk": 190,
+                    "atk": 190,
+                    "hp": 740
+                },
+                {
+                    "dupe": 4,
+                    "matk": 190,
+                    "atk": 190,
+                    "hp": 740,
+                    "def": 250
+                },
+                {
+                    "dupe": 5,
+                    "matk": 190,
+                    "atk": 190,
+                    "hp": 740,
+                    "def": 250
+                }
+            ]
+        },
+        {
+            "name": "Vetto [Despair]",
+            "type": "vetto_despair",
+            "atk": 6480,
+            "matk": 2160,
+            "hp": 88571,
+            "def": 4871,
+            "spd": 100,
+            "acc": 201,
+            "dmgres": 210,
+            "crate": 12.15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 96,
+            "end": 69,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "matk": 190,
+                    "atk": 190,
+                    "hp": 740
+                },
+                {
+                    "dupe": 2,
+                    "matk": 190,
+                    "atk": 190,
+                    "hp": 740
+                },
+                {
+                    "dupe": 3,
+                    "matk": 190,
+                    "atk": 190,
+                    "hp": 740
+                },
+                {
+                    "dupe": 4,
+                    "matk": 190,
+                    "atk": 190,
+                    "hp": 740,
+                    "def": 250
+                },
+                {
+                    "dupe": 5,
+                    "matk": 190,
+                    "atk": 190,
+                    "hp": 740,
+                    "def": 250
+                }
+            ]
+        },
+        {
+            "name": "William Vangeance",
+            "type": "william_vangeance",
+            "atk": 4000,
+            "matk": 4000,
+            "hp": 57600,
+            "def": 5072,
+            "spd": 120,
+            "acc": 205,
+            "dmgres": 164,
+            "crate": 10.8,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 101,
+            "end": 51,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "def": 140,
+                    "hp": 800
+                },
+                {
+                    "dupe": 2,
+                    "def": 140,
+                    "hp": 800
+                },
+                {
+                    "dupe": 3,
+                    "def": 140,
+                    "hp": 800
+                },
+                {
+                    "dupe": 4,
+                    "def": 140,
+                    "hp": 800,
+                    "spd": 3
+                },
+                {
+                    "dupe": 5,
+                    "def": 140,
+                    "hp": 800,
+                    "spd": 3
+                }
+            ]
+        },
+        {
+            "name": "William [Party]",
+            "type": "william_party",
+            "atk": 4800,
+            "matk": 4800,
+            "hp": 70110,
+            "def": 6224,
+            "spd": 100,
+            "acc": 201,
+            "dmgres": 315,
+            "crate": 12.15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 96,
+            "end": 63,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "cres": 5,
+                    "atk": 400
+                },
+                {
+                    "dupe": 2,
+                    "cres": 5,
+                    "atk": 400
+                },
+                {
+                    "dupe": 3,
+                    "cres": 5,
+                    "atk": 400
+                },
+                {
+                    "dupe": 4,
+                    "cres": 5,
+                    "atk": 400,
+                    "def": 500
+                },
+                {
+                    "dupe": 5,
+                    "cres": 5,
+                    "atk": 400,
+                    "def": 500
+                }
+            ]
+        },
+        {
+            "name": "Yami Sukehiro",
+            "type": "yami_sukehiro",
+            "atk": 9720,
+            "matk": 3240,
+            "hp": 42750,
+            "def": 3207,
+            "spd": 103,
+            "acc": 221,
+            "dmgres": 201,
+            "crate": 22.03,
+            "cdmg": 57.5,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "pen": 6,
+                    "atk": 375,
+                    "matk": 375
+                },
+                {
+                    "dupe": 2,
+                    "pen": 6,
+                    "atk": 375,
+                    "matk": 375
+                },
+                {
+                    "dupe": 3,
+                    "pen": 6,
+                    "atk": 375,
+                    "matk": 375
+                },
+                {
+                    "dupe": 4,
+                    "pen": 6,
+                    "atk": 375,
+                    "matk": 375,
+                    "acc": 10
+                },
+                {
+                    "dupe": 5,
+                    "pen": 6,
+                    "atk": 375,
+                    "matk": 375,
+                    "acc": 10
+                }
+            ]
+        },
+        {
+            "name": "Yami [Ceremony]",
+            "type": "yami_ceremony",
+            "atk": 9720,
+            "matk": 3240,
+            "hp": 40500,
+            "def": 3207,
+            "spd": 109,
+            "acc": 231,
+            "dmgres": 181,
+            "crate": 16.49,
+            "cdmg": 55,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 400,
+                    "hp": 1600
+                },
+                {
+                    "dupe": 2,
+                    "atk": 400,
+                    "hp": 1600
+                },
+                {
+                    "dupe": 3,
+                    "atk": 400,
+                    "hp": 1600
+                },
+                {
+                    "dupe": 4,
+                    "atk": 400,
+                    "hp": 1600,
+                    "crate": 3.5
+                },
+                {
+                    "dupe": 5,
+                    "atk": 400,
+                    "hp": 1600,
+                    "crate": 3.5
+                }
+            ]
+        },
+        {
+            "name": "Yami [Clover Academy]",
+            "type": "yami_clover_academy",
+            "atk": 10800,
+            "matk": 3600,
+            "hp": 45000,
+            "def": 3207,
+            "spd": 103,
+            "acc": 210,
+            "dmgres": 201,
+            "crate": 15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 400,
+                    "hp": 1000
+                },
+                {
+                    "dupe": 2,
+                    "atk": 400,
+                    "hp": 1000
+                },
+                {
+                    "dupe": 3,
+                    "atk": 400,
+                    "hp": 1000
+                },
+                {
+                    "dupe": 4,
+                    "atk": 400,
+                    "hp": 1000,
+                    "cdmg": 10
+                },
+                {
+                    "dupe": 5,
+                    "atk": 400,
+                    "hp": 1000,
+                    "cdmg": 10
+                }
+            ]
+        },
+        {
+            "name": "Yuno",
+            "type": "yuno",
+            "atk": 2916,
+            "matk": 8749,
+            "hp": 38475,
+            "def": 2886,
+            "spd": 103,
+            "acc": 221,
+            "dmgres": 201,
+            "crate": 22.03,
+            "cdmg": 57.5,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 56,
+                    "matk": 56,
+                    "crate": 1
+                },
+                {
+                    "dupe": 2,
+                    "atk": 56,
+                    "matk": 56,
+                    "crate": 1
+                },
+                {
+                    "dupe": 3,
+                    "atk": 56,
+                    "matk": 56,
+                    "crate": 1
+                },
+                {
+                    "dupe": 4,
+                    "atk": 56,
+                    "matk": 56,
+                    "crate": 1,
+                    "cdmg": 3
+                },
+                {
+                    "dupe": 5,
+                    "atk": 56,
+                    "matk": 56,
+                    "crate": 1,
+                    "cdmg": 3
+                }
+            ]
+        },
+        {
+            "name": "Yuno [Golden Dawn]",
+            "type": "yuno_golden_dawn",
+            "atk": 2900,
+            "matk": 8700,
+            "hp": 52200,
+            "def": 3608,
+            "spd": 107,
+            "acc": 207,
+            "dmgres": 201,
+            "crate": 13.5,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 104,
+            "end": 59,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "def": 170,
+                    "hp": 1045
+                },
+                {
+                    "dupe": 2,
+                    "def": 170,
+                    "hp": 1045
+                },
+                {
+                    "dupe": 3,
+                    "def": 170,
+                    "hp": 1045
+                },
+                {
+                    "dupe": 4,
+                    "def": 170,
+                    "hp": 1045,
+                    "dmgres": 10
+                },
+                {
+                    "dupe": 5,
+                    "def": 170,
+                    "hp": 1045,
+                    "dmgres": 10
+                }
+            ]
+        },
+        {
+            "name": "Yuno [Spirit Dive]",
+            "type": "yuno_spirit_dive",
+            "atk": 3240,
+            "matk": 9720,
+            "hp": 42750,
+            "def": 3207,
+            "spd": 103,
+            "acc": 221,
+            "dmgres": 201,
+            "crate": 22.03,
+            "cdmg": 57.5,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "def": 200,
+                    "matk": 500,
+                    "crate": 4
+                },
+                {
+                    "dupe": 2,
+                    "def": 200,
+                    "matk": 500,
+                    "crate": 4
+                },
+                {
+                    "dupe": 3,
+                    "def": 200,
+                    "matk": 500,
+                    "crate": 4
+                },
+                {
+                    "dupe": 4,
+                    "def": 200,
+                    "matk": 500,
+                    "spd": 3
+                },
+                {
+                    "dupe": 5,
+                    "def": 200,
+                    "matk": 500,
+                    "spd": 3
+                }
+            ]
+        },
+        {
+            "name": "Yuno [Swimsuit]",
+            "type": "yuno_swimsuit",
+            "atk": 2755,
+            "matk": 8265,
+            "hp": 46980,
+            "def": 3969,
+            "spd": 112,
+            "acc": 207,
+            "dmgres": 221,
+            "crate": 13.5,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 104,
+            "end": 47,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "def": 200,
+                    "matk": 350
+                },
+                {
+                    "dupe": 2,
+                    "def": 200,
+                    "matk": 350
+                },
+                {
+                    "dupe": 3,
+                    "def": 200,
+                    "matk": 350
+                },
+                {
+                    "dupe": 4,
+                    "def": 200,
+                    "matk": 350,
+                    "cdmg": 10
+                },
+                {
+                    "dupe": 5,
+                    "def": 200,
+                    "matk": 350,
+                    "cdmg": 10
+                }
+            ]
+        },
+        {
+            "name": "Zora Ideale",
+            "type": "zora_ideale",
+            "atk": 8265,
+            "matk": 2755,
+            "hp": 46980,
+            "def": 3969,
+            "spd": 112,
+            "acc": 207,
+            "dmgres": 221,
+            "crate": 13.5,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 104,
+            "end": 47,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "def": 200,
+                    "atk": 400,
+                    "end": 5
+                },
+                {
+                    "dupe": 2,
+                    "def": 200,
+                    "atk": 400,
+                    "end": 5
+                },
+                {
+                    "dupe": 3,
+                    "def": 200,
+                    "atk": 400,
+                    "end": 5
+                },
+                {
+                    "dupe": 4,
+                    "def": 200,
+                    "atk": 400,
+                    "end": 5,
+                    "dmgres": 10
+                },
+                {
+                    "dupe": 5,
+                    "def": 200,
+                    "atk": 400,
+                    "end": 5,
+                    "dmgres": 10
+                }
+            ]
+        },
+        {
+            "name": "Zora [Secret Agent]",
+            "type": "zora_secret_agent",
+            "atk": 10260,
+            "matk": 3420,
+            "hp": 49500,
+            "def": 3207,
+            "spd": 103,
+            "acc": 210,
+            "dmgres": 201,
+            "crate": 15,
+            "cdmg": 40,
+            "cres": 0,
+            "pen": 122,
+            "end": 57,
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "def": 200,
+                    "atk": 400,
+                    "cdmg": 3
+                },
+                {
+                    "dupe": 2,
+                    "def": 200,
+                    "atk": 400,
+                    "cdmg": 3
+                },
+                {
+                    "dupe": 3,
+                    "def": 200,
+                    "atk": 400,
+                    "cdmg": 3
+                },
+                {
+                    "dupe": 4,
+                    "def": 200,
+                    "atk": 400,
+                    "cres": 5
+                },
+                {
+                    "dupe": 5,
+                    "def": 200,
+                    "atk": 400,
+                    "cres": 5
+                }
+            ]
+        }
+    ],
+    "enchantments": {
+        "gear": {
+            "atk": {
+                "min_value": 1,
+                "max_value": 125,
+                "step": 1
+            },
+            "matk": {
+                "min_value": 1,
+                "max_value": 125,
+                "step": 1
+            },
+            "def": {
+                "min_value": 1,
+                "max_value": 65,
+                "step": 1
+            },
+            "hp": {
+                "min_value": 1,
+                "max_value": 280,
+                "step": 1
+            },
+            "acc": {
+                "min_value": 1,
+                "max_value": 18,
+                "step": 1
+            },
+            "dmgres": {
+                "min_value": 1,
+                "max_value": 18,
+                "step": 1
+            },
+            "crate": {
+                "min_value": 0.1,
+                "max_value": 7.5,
+                "step": 0.01
+            },
+            "cdmg": {
+                "min_value": 0.1,
+                "max_value": 5,
+                "step": 0.01
+            },
+            "cres": {
+                "min_value": 0.1,
+                "max_value": 7.5,
+                "step": 0.01
+            },
+            "atk%": {
+                "min_value": 0.1,
+                "max_value": 5,
+                "step": 0.01
+            },
+            "matk%": {
+                "min_value": 0.1,
+                "max_value": 5,
+                "step": 0.01
+            },
+            "def%": {
+                "min_value": 0.1,
+                "max_value": 4,
+                "step": 0.01
+            },
+            "hp%": {
+                "min_value": 0.1,
+                "max_value": 4,
+                "step": 0.01
+            }
+        },
+        "accessory": {
+            "atk": {
+                "min_value": 1,
+                "max_value": 210,
+                "step": 1
+            },
+            "matk": {
+                "min_value": 1,
+                "max_value": 210,
+                "step": 1
+            },
+            "def": {
+                "min_value": 1,
+                "max_value": 92,
+                "step": 1
+            },
+            "hp": {
+                "min_value": 1,
+                "max_value": 597,
+                "step": 1
+            },
+            "acc": {
+                "min_value": 1,
+                "max_value": 25,
+                "step": 1
+            },
+            "dmgres": {
+                "min_value": 1,
+                "max_value": 25,
+                "step": 1
+            },
+            "crate": {
+                "min_value": 0.1,
+                "max_value": 1.1,
+                "step": 0.01
+            },
+            "cdmg": {
+                "min_value": 0.01,
+                "max_value": 0.66,
+                "step": 0.01
+            },
+            "cres": {
+                "min_value": 0.1,
+                "max_value": 1.1,
+                "step": 0.01
+            },
+            "atk%": {
+                "min_value": 0.1,
+                "max_value": 7,
+                "step": 0.01
+            },
+            "matk%": {
+                "min_value": 0.1,
+                "max_value": 7,
+                "step": 0.01
+            },
+            "def%": {
+                "min_value": 0.1,
+                "max_value": 7,
+                "step": 0.01
+            },
+            "hp%": {
+                "min_value": 0.1,
+                "max_value": 5,
+                "step": 0.01
+            }
+        }
+    },
+    "stone_talent": [
+        {
+            "type": "support",
+            "quality": "normal",
+            "name": "CRIT RES",
+            "stats": [
+                {
+                    "type": "cres",
+                    "value": 3
+                }
+            ]
+        },
+        {
+            "type": "support",
+            "quality": "normal",
+            "name": "HP",
+            "stats": [
+                {
+                    "type": "hp",
+                    "value": 2500
+                }
+            ]
+        },
+        {
+            "type": "support",
+            "quality": "normal",
+            "name": "SPD",
+            "stats": [
+                {
+                    "type": "spd",
+                    "value": 1
+                }
+            ]
+        },
+        {
+            "type": "support",
+            "quality": "rare",
+            "name": "CRIT RES",
+            "stats": [
+                {
+                    "type": "cres",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "type": "support",
+            "quality": "rare",
+            "name": "HP",
+            "stats": [
+                {
+                    "type": "hp",
+                    "value": 3500
+                }
+            ]
+        },
+        {
+            "type": "support",
+            "quality": "rare",
+            "name": "SPD",
+            "stats": [
+                {
+                    "type": "spd",
+                    "value": 2
+                }
+            ]
+        },
+        {
+            "type": "support",
+            "quality": "legendary",
+            "name": "CRIT RES",
+            "stats": [
+                {
+                    "type": "cres",
+                    "value": 7
+                }
+            ]
+        },
+        {
+            "type": "support",
+            "quality": "legendary",
+            "name": "HP",
+            "stats": [
+                {
+                    "type": "hp",
+                    "value": 4600
+                }
+            ]
+        },
+        {
+            "type": "support",
+            "quality": "legendary",
+            "name": "SPD",
+            "stats": [
+                {
+                    "type": "spd",
+                    "value": 3
+                }
+            ]
+        },
+        {
+            "type": "support",
+            "quality": "shiny",
+            "name": "CRIT RES / HP",
+            "stats": [
+                {
+                    "type": "cres",
+                    "value": 7
+                },
+                {
+                    "type": "hp",
+                    "value": 4600
+                }
+            ]
+        },
+        {
+            "type": "support",
+            "quality": "shiny",
+            "name": "HP / SPD",
+            "stats": [
+                {
+                    "type": "hp",
+                    "value": 4600
+                },
+                {
+                    "type": "spd",
+                    "value": 3
+                }
+            ]
+        },
+        {
+            "type": "support",
+            "quality": "shiny",
+            "name": "SPD / CRIT RES",
+            "stats": [
+                {
+                    "type": "spd",
+                    "value": 3
+                },
+                {
+                    "type": "cres",
+                    "value": 7
+                }
+            ]
+        },
+        {
+            "type": "defense",
+            "quality": "normal",
+            "name": "DMG RES",
+            "stats": [
+                {
+                    "type": "dmgres",
+                    "value": 12
+                }
+            ]
+        },
+        {
+            "type": "defense",
+            "quality": "normal",
+            "name": "DEF",
+            "stats": [
+                {
+                    "type": "def",
+                    "value": 800
+                }
+            ]
+        },
+        {
+            "type": "defense",
+            "quality": "normal",
+            "name": "END",
+            "stats": [
+                {
+                    "type": "end",
+                    "value": 3
+                }
+            ]
+        },
+        {
+            "type": "defense",
+            "quality": "rare",
+            "name": "DMG RES",
+            "stats": [
+                {
+                    "type": "dmgres",
+                    "value": 17
+                }
+            ]
+        },
+        {
+            "type": "defense",
+            "quality": "rare",
+            "name": "DEF",
+            "stats": [
+                {
+                    "type": "def",
+                    "value": 1200
+                }
+            ]
+        },
+        {
+            "type": "defense",
+            "quality": "rare",
+            "name": "END",
+            "stats": [
+                {
+                    "type": "end",
+                    "value": 4
+                }
+            ]
+        },
+        {
+            "type": "defense",
+            "quality": "legendary",
+            "name": "DMG RES",
+            "stats": [
+                {
+                    "type": "dmgres",
+                    "value": 25
+                }
+            ]
+        },
+        {
+            "type": "defense",
+            "quality": "legendary",
+            "name": "DEF",
+            "stats": [
+                {
+                    "type": "def",
+                    "value": 2000
+                }
+            ]
+        },
+        {
+            "type": "defense",
+            "quality": "legendary",
+            "name": "END",
+            "stats": [
+                {
+                    "type": "end",
+                    "value": 6
+                }
+            ]
+        },
+        {
+            "type": "defense",
+            "quality": "shiny",
+            "name": "DMG RES / DEF",
+            "stats": [
+                {
+                    "type": "dmgres",
+                    "value": 25
+                },
+                {
+                    "type": "def",
+                    "value": 2000
+                }
+            ]
+        },
+        {
+            "type": "defense",
+            "quality": "shiny",
+            "name": "DEF / END",
+            "stats": [
+                {
+                    "type": "def",
+                    "value": 2000
+                },
+                {
+                    "type": "end",
+                    "value": 6
+                }
+            ]
+        },
+        {
+            "type": "defense",
+            "quality": "shiny",
+            "name": "END / DMG RES",
+            "stats": [
+                {
+                    "type": "end",
+                    "value": 6
+                },
+                {
+                    "type": "dmgres",
+                    "value": 25
+                }
+            ]
+        },
+        {
+            "type": "attack",
+            "quality": "normal",
+            "name": "M-ATK",
+            "stats": [
+                {
+                    "type": "matk",
+                    "value": 270
+                },
+                {
+                    "type": "atk",
+                    "value": 270
+                }
+            ]
+        },
+        {
+            "type": "attack",
+            "quality": "normal",
+            "name": "CRIT DMG",
+            "stats": [
+                {
+                    "type": "cdmg",
+                    "value": 5
+                }
+            ]
+        },
+        {
+            "type": "attack",
+            "quality": "normal",
+            "name": "ACC",
+            "stats": [
+                {
+                    "type": "acc",
+                    "value": 14
+                }
+            ]
+        },
+        {
+            "type": "attack",
+            "quality": "rare",
+            "name": "M-ATK",
+            "stats": [
+                {
+                    "type": "matk",
+                    "value": 380
+                },
+                {
+                    "type": "atk",
+                    "value": 380
+                }
+            ]
+        },
+        {
+            "type": "attack",
+            "quality": "rare",
+            "name": "CRIT DMG",
+            "stats": [
+                {
+                    "type": "cdmg",
+                    "value": 7
+                }
+            ]
+        },
+        {
+            "type": "attack",
+            "quality": "rare",
+            "name": "ACC",
+            "stats": [
+                {
+                    "type": "acc",
+                    "value": 20
+                }
+            ]
+        },
+        {
+            "type": "attack",
+            "quality": "legendary",
+            "name": "M-ATK",
+            "stats": [
+                {
+                    "type": "matk",
+                    "value": 500
+                },
+                {
+                    "type": "matk",
+                    "value": 500
+                }
+            ]
+        },
+        {
+            "type": "attack",
+            "quality": "legendary",
+            "name": "CRIT DMG",
+            "stats": [
+                {
+                    "type": "cdmg",
+                    "value": 10
+                }
+            ]
+        },
+        {
+            "type": "attack",
+            "quality": "legendary",
+            "name": "ACC",
+            "stats": [
+                {
+                    "type": "acc",
+                    "value": 28
+                }
+            ]
+        },
+        {
+            "type": "attack",
+            "quality": "shiny",
+            "name": "M-ATK / CRIT DMG",
+            "stats": [
+                {
+                    "type": "matk",
+                    "value": 500
+                },
+                {
+                    "type": "atk",
+                    "value": 500
+                },
+                {
+                    "type": "cdmg",
+                    "value": 10
+                }
+            ]
+        },
+        {
+            "type": "attack",
+            "quality": "shiny",
+            "name": "CRIT DMG / ACC" ,
+            "stats": [
+                {
+                    "type": "cdmg",
+                    "value": 10
+                },
+                {
+                    "type": "acc",
+                    "value": 28
+                }
+            ]
+        },
+        {
+            "type": "attack",
+            "quality": "shiny",
+            "name": "ACC / M-ATK",
+            "stats": [
+                {
+                    "type": "acc",
+                    "value": 28
+                },
+                {
+                    "type": "matk",
+                    "value": 500
+                },
+                {
+                    "type": "atk",
+                    "value": 500
+                }
+            ]
+        }
+    ]
+}
