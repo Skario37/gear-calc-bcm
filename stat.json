@@ -254,7 +254,129 @@
                 "type": "crate",
                 "min_value": 7.5,
                 "max_value": 12.18,
-                "step": 0.34
+                "step": 0.39
+            },
+            "min_slots": 1,
+            "max_slots": 4,
+            "slot_incr": 4,
+            "slot_stats": [
+                {
+                    "name":"ATK",
+                    "type":"atk",
+                    "min_value":315,
+                    "max_value":630,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"ATK %",
+                    "type":"atk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name": "MATK",
+                    "type":"matk",
+                    "min_value":315,
+                    "max_value":630,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name": "MATK %",
+                    "type":"matk%",
+                    "min_value":2,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"DEF",
+                    "type":"def",
+                    "min_value":46,
+                    "max_value":92,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DEF %",
+                    "type":"def%",
+                    "min_value":1,
+                    "max_value":5,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"HP",
+                    "type":"hp",
+                    "min_value":225,
+                    "max_value":450,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"HP %",
+                    "type":"hp%",
+                    "min_value":1,
+                    "max_value":3,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"ACC",
+                    "type":"acc",
+                    "min_value":9,
+                    "max_value":19,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"DMG RES",
+                    "type":"dmgres",
+                    "min_value":9,
+                    "max_value":19,
+                    "genre": "flat",
+                    "step": 1
+                },
+                {
+                    "name":"CRIT Rate",
+                    "type":"crate",
+                    "min_value":0.41,
+                    "max_value":0.82,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT DMG",
+                    "type":"cdmg",
+                    "min_value":0.33,
+                    "max_value":0.66,
+                    "genre": "%",
+                    "step": 0.01
+                },
+                {
+                    "name":"CRIT RES",
+                    "type":"cres",
+                    "min_value":0.33,
+                    "max_value":0.66,
+                    "genre": "%",
+                    "step": 0.01
+                }
+            ]
+        },
+        {
+            "name": "CRIT DMG",
+            "title": "normal",
+            "type": "ring",
+            "min_lvl": 0,
+            "max_lvl": 12,
+            "main_stat": {
+                "type": "cdmg",
+                "min_value": 6,
+                "max_value": 9.72,
+                "step": 0.31
             },
             "min_slots": 1,
             "max_slots": 4,

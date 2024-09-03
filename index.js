@@ -601,7 +601,7 @@ function addAccStats(obj) {
         }
 
 
-        mainStat.innerText = `${obj.acc.name} ${(obj.acc.main_stat.min_value + (obj.acc.main_stat.step * inputLevel.value)).toPrecision(3)}`;
+        mainStat.innerText = `${obj.acc.name} ${this.toFixed(obj.acc.main_stat.min_value + (obj.acc.main_stat.step * inputLevel.value), 2)}`;
         this.updateDetails();
     });
 
@@ -1066,16 +1066,21 @@ function updateDetails() {
     });
 
 
-    detailAtk.innerText = Math.round(tempStats.atk * (1 + tempStats["atk%"] / 100));
-    detailMatk.innerText = Math.round(tempStats.matk * (1 + tempStats["matk%"] / 100));
-    detailDef.innerText = Math.round(tempStats.def * (1 + tempStats["def%"] / 100));
-    detailHP.innerText = Math.round(tempStats.hp * (1 + tempStats["hp%"] / 100));
+    detailAtk.innerText = toFixed(tempStats.atk * (1 + tempStats["atk%"] / 100), 2);
+    detailMatk.innerText = toFixed(tempStats.matk * (1 + tempStats["matk%"] / 100), 2);
+    detailDef.innerText = toFixed(tempStats.def * (1 + tempStats["def%"] / 100), 2);
+    detailHP.innerText = toFixed(tempStats.hp * (1 + tempStats["hp%"] / 100), 2);
     detailAcc.innerText = tempStats.acc;
-    detailCrate.innerText = tempStats.crate.toPrecision(3) + "%";
-    detailCdmg.innerText = tempStats.cdmg.toPrecision(3) + "%";
-    detailCres.innerText = tempStats.cres.toPrecision(3) + "%";
+    detailCrate.innerText = toFixed(tempStats.crate,2) + "%";
+    detailCdmg.innerText = toFixed(tempStats.cdmg,2) + "%";
+    detailCres.innerText = toFixed(tempStats.cres,2) + "%";
     detailSpd.innerText = tempStats.spd;
     detailPen.innerText = tempStats.pen;
     detailEnd.innerText = tempStats.end;
     detailDmgres.innerText = tempStats.dmgres;
+}
+
+function toFixed(num, fixed) {
+    var re = new RegExp('^-?\\d+(?:\.\\d{0,' + (fixed || -1) + '})?');
+    return num.toString().match(re)[0];
 }

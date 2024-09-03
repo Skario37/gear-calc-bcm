@@ -283,7 +283,7 @@ body {
 }
 
 .parameters input.input-level, .parameters input.input-trans, .parameters input.input-slot, .parameters input.input-ench {
-    width: 5ch;
+    width: 7ch;
 }
 
 .parameters label + input  {
