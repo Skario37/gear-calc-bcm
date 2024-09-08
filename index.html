@@ -31,109 +31,97 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 </head>
 <body>
-
-    <div class="column inventory-column">
-        <div>
+    <div class="flex main-container">
+        <div class="container">
             <div>
-                <div class="column accessory-column" id="accessory-column">
-                    <div class="column" id="acc-earrings">
-                        <h3>Earrings:</h3>
+                <div class="character-card card-no-char" id="character-card">
+                    <div class="char-class-container">
+                        <img class="char-class" id="char-class" src="./img/external/character/no_class.png">
+                        <span class="char-level">100</span>
                     </div>
-                    <div class="column" id="acc-necklaces">
-                        <h3>Necklaces:</h3>
+                    
+                    <img class="character-img" id="character-img" src="./img/external/character/portrait/empty.png">
+                    <div class="flex dupe-container" id="dupe-container">
+                        <div id="dupe-less"><img class="arrow-img flip" src="./img/external/common/icon_arrow.png"></div>
+                        <div class="flex dupes">
+                            <img id="dupe-1" src="./img/external/character/no_dupe.png">
+                            <img id="dupe-2" src="./img/external/character/no_dupe.png">
+                            <img id="dupe-3" src="./img/external/character/no_dupe.png">
+                            <img id="dupe-4" src="./img/external/character/no_dupe.png">
+                            <img id="dupe-5" src="./img/external/character/no_dupe.png">
+                        </div>
+                        <div id="dupe-more"><img class="arrow-img" src="./img/external/common/icon_arrow.png"></div>
                     </div>
-                    <div class="column" id="acc-rings">
-                        <h3>Rings:</h3>
-                    </div>
+                    <div class="char-select"><select id="characters"></select></div>
                 </div>
             </div>
+        
             <div>
-                <div class="column talent-column" id="talent-column">
-                    <div class="column" id="talent-attack">
-                        <h3>Attack:</h3>
-                    </div>
-                    <div class="column" id="talent-defense">
-                        <h3>Defense:</h3>
-                    </div>
-                    <div class="column" id="talent-support">
-                        <h3>Support:</h3>
-                    </div>
+                <div class="stats-column stats-details" id="stats-details">
+                    <div><img src="./img/external/common/stat_atk.png"><h4>ATK:</h4><p id="detail-atk">0</p></div>
+                    <div><img src="./img/external/common/stat_matk.png"><h4>MATK:</h4><p id="detail-matk">0</p></div>
+                    <div><img src="./img/external/common/stat_def.png"><h4>DEF:</h4><p id="detail-def">0</p></div>
+                    <div><img src="./img/external/common/stat_hp.png"><h4>HP:</h4><p id="detail-hp">0</p></div>
+                    <div><img src="./img/external/common/stat_acc.png"><h4>ACC:</h4><p id="detail-acc">0</p></div>
+                    <div><img src="./img/external/common/stat_crate.png"><h4>CRIT Rate:</h4><p id="detail-crate">0</p></div>
+                    <div><img src="./img/external/common/stat_cdmg.png"><h4>CRIT DMG:</h4><p id="detail-cdmg">0</p></div>
+                    <div><img src="./img/external/common/stat_cres.png"><h4>CRIT RES:</h4><p id="detail-cres">0</p></div>
+                    <div><img src="./img/external/common/stat_spd.png"><h4>SPD:</h4><p id="detail-spd">0</p></div>
+                    <div><img src="./img/external/common/stat_pen.png"><h4>PEN:</h4><p id="detail-pen">0</p></div>
+                    <div><img src="./img/external/common/stat_end.png"><h4>Endurance:</h4><p id="detail-end">0</p></div>
+                    <div><img src="./img/external/common/stat_dmgres.png"><h4>DMG RES:</h4><p id="detail-dmgres">0</p></div>
                 </div>
             </div>
         </div>
-        
-        <div class="column gear-column" id="gear-column">
-            <h3>Gears:</h3>
-        </div>
-    </div>
     
-
-    
-    <div class="column grid-column" id="grid-column">
-        <h2>Accessories:</h2>
-        <div class="grid grid-accessory">
-            <div id="earring"></div><div id="necklace"></div><div id="ring"></div>
-        </div>
-        
-        <h2>Gears:</h2>
-        <div class="grid grid-gear">
-            <div></div><div></div><div></div><div></div><div></div><div></div>
-            <div></div><div></div><div></div><div></div><div></div><div></div>
-            <div></div><div></div><div></div><div></div><div></div><div></div>
-            <div></div><div></div><div></div><div></div><div></div><div></div>
-            <div></div><div></div><div></div><div></div><div></div><div></div>
-            <div></div><div></div><div></div><div></div><div></div><div></div>
-        </div>
-
-        <h2>Talents:</h2>
-        <div class="grid grid-talent">
-            <div class="cell attack" id="attack"></div><div class="cell defense" id="defense"></div><div class="cell support" id="support"></div>
-        </div>
-    </div>
-
-    
-    <div class="column stats-column" id="stats-column">
-        <div>
-            <div class="column">
-                <h2>Accessory Parameters:</h2>
-                <div class="parameters" id="acc-stats"></div>
+        <div class="flex flex-column">
+            <div class="flex container">
+                <div class="grid grid-accessory">
+                    <div id="earring" class="acc-slot earring"></div>
+                    <div id="necklace" class="acc-slot necklace"></div>
+                    <div id="ring" class="acc-slot ring"></div>
+                </div>
+                <div class="accessory-grid" id="accessory-column">
+                    <div class="flex" id="acc-earrings"></div>
+                    <div class="flex" id="acc-necklaces"></div>
+                    <div class="flex" id="acc-rings"></div>
+                </div>
             </div>
-            <div class="column">
-                <h2>Gear Parameters:</h2>
-                <div class="parameters" id="gear-stats"></div>
+        
+            <div class="flex container">
+                <div class="gear-container">
+                    <div class="grid grid-gear">
+                        <div></div><div></div><div></div><div></div><div></div><div></div>
+                        <div></div><div></div><div></div><div></div><div></div><div></div>
+                        <div></div><div></div><div></div><div></div><div></div><div></div>
+                        <div></div><div></div><div></div><div></div><div></div><div></div>
+                        <div></div><div></div><div></div><div></div><div></div><div></div>
+                        <div></div><div></div><div></div><div></div><div></div><div></div>
+                    </div>
+                </div>
+                <div class="gear-grid" id="gear-column"></div>
             </div>
             
-        </div>
-        <div class="details">
-            <div class="column">
-                <h2>Character</h2>
-                <div class="character-column">
-                    <div><select id="characters"></select></div>
-                    <div>
-                        <label>Dupes:</label>
-                        <input class="input-dupe" id="input-dupe" type="number" disabled="true" value="0" min="0" max="5" step="1">
-                    </div>
-                    <div><img id="character-img"></div>
+                    
+            <div class="flex container">
+                <div class="grid grid-talent">
+                    <div class="cell attack talent-slot" id="attack"></div><div class="cell defense talent-slot" id="defense"></div><div class="cell support talent-slot" id="support"></div>
                 </div>
-            </div>
-            <div class="column">
-                <h2>Details</h2>
-                <div class="stats-details" id="stats-details">
-                    <div><h4>ATK:</h4><p id="detail-atk">0</p></div>
-                    <div><h4>MATK:</h4><p id="detail-matk">0</p></div>
-                    <div><h4>DEF:</h4><p id="detail-def">0</p></div>
-                    <div><h4>HP:</h4><p id="detail-hp">0</p></div>
-                    <div><h4>ACC:</h4><p id="detail-acc">0</p></div>
-                    <div><h4>CRIT Rate:</h4><p id="detail-crate">0</p></div>
-                    <div><h4>CRIT DMG:</h4><p id="detail-cdmg">0</p></div>
-                    <div><h4>CRIT RES:</h4><p id="detail-cres">0</p></div>
-                    <div><h4>SPD:</h4><p id="detail-spd">0</p></div>
-                    <div><h4>PEN:</h4><p id="detail-pen">0</p></div>
-                    <div><h4>Endurance:</h4><p id="detail-end">0</p></div>
-                    <div><h4>DMG RES:</h4><p id="detail-dmgres">0</p></div>
+        
+                <div class="talent-grid" id="talent-column">
+                    <div class="flex" id="talent-attack"></div>
+                    <div class="flex" id="talent-defense"></div>
+                    <div class="flex" id="talent-support"></div>
                 </div>
             </div>
         </div>
     </div>
+    <div>
+        <div class="flex flex-column parameters-column">
+            <div class="parameters param-acc" id="acc-stats"></div>
+            <div class="parameters param-gear" id="gear-stats"></div>
+        </div>
+    </div>
+    
 </body>
 </html>
