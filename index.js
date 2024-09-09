@@ -1152,7 +1152,7 @@ function setCharacters() {
             levelContainer.classList.add("disabled");
             levelSpan.setAttribute("disabled", true);
             this.charLevels.disabled = true;
-            levelSpan.value = "∅";
+            levelSpan.value = 0;
 
             dupeContainer.classList.add("disabled");
             this.charDupes.value = 0;

@@ -1006,7 +1006,7 @@ body {
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 240px;
+    width: 300px;
     background-color: #555;
     color: #fff;
     text-align: center;
@@ -1020,6 +1020,12 @@ body {
     opacity: 0;
     transition: opacity 0.3s;
     font-size: 1em;
+    align-items: center;
+}
+
+.tooltip .tooltiptext img {
+    width: 60px;
+    height: 60px;
 }
 
 .tooltip .tooltiptext::after {
