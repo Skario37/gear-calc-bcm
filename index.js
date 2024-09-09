@@ -21,6 +21,14 @@ window.addEventListener("DOMContentLoaded", async () => {
         disabled: true
     } 
 
+    this.charLevels = {
+        value: 100,
+        min: 100,
+        max: 125,
+        step: 1,
+        disabled: true
+    }
+
     this.equipped = {
         accessories: [],
         gears: [],
@@ -79,7 +87,6 @@ function setTalentElements() {
         }
     });
 }
-
 
 function setAccElements() {
     const accEarringContainer = document.getElementById("acc-earrings");
@@ -1039,6 +1046,52 @@ function setCharacters() {
     const dupeMore = document.getElementById("dupe-more");
     const charImg = document.getElementById("character-img");
     const charClass = document.getElementById("char-class");
+    const levelContainer = document.getElementById("char-class-container");
+    const levelMore = document.getElementById("char-level-more");
+    const levelLess = document.getElementById("char-level-less");
+    const levelSpan = document.getElementById("char-level");
+    const charTooltip = document.getElementById("character-tooltip");
+
+    if (this.charLevels.disabled) {
+        levelContainer.classList.add("disabled");
+        levelSpan.setAttribute("disabled", true);
+    }
+    levelMore.addEventListener("click", e => {
+        if (this.charLevels.disabled) return;
+        if (this.charLevels.value === this.charLevels.max) return;
+        const char = this.data.character.find(c => charSelect.value === c.type);
+        if (char.trans.length === 0) return;
+        this.charLevels.value += this.charLevels.step;
+        levelSpan.value = this.charLevels.value;
+        this.updateDetails();
+    });
+    levelLess.addEventListener("click", e => {
+        if (this.charLevels.disabled) return;
+        if (this.charLevels.value === this.charLevels.min) return;
+        const char = this.data.character.find(c => charSelect.value === c.type);
+        if (char.trans.length === 0) return;
+        this.charLevels.value -= this.charLevels.step;
+        levelSpan.value = this.charLevels.value;
+        this.updateDetails();
+    });
+    levelSpan.addEventListener("change", e => {
+        const char = this.data.character.find(c => charSelect.value === c.type);
+        if (char.trans.length === 0) {
+            e.target.value = this.charLevels.min;
+            return;
+        }
+        if (e.target.value > this.charLevels.max) {
+            e.target.value = this.charLevels.max;
+            this.charLevels.value = this.charLevels.max;
+        } else if (e.target.value < this.charLevels.min) {
+            e.target.value = this.charLevels.min;
+            this.charLevels.value = this.charLevels.min;
+        } else {
+            this.charLevels.value = parseInt(e.target.value);
+        }
+        this.updateDetails();
+    });
+
 
     if (this.charDupes.disabled) dupeContainer.classList.add("disabled");
     dupeLess.addEventListener("click", e => {
@@ -1072,17 +1125,35 @@ function setCharacters() {
     });
 
     charSelect.addEventListener("change", e => {
+        this.charLevels.value = 100;
+
         if (e.target.value !== "empty") {
+            levelSpan.removeAttribute("disabled");
+            this.charLevels.disabled = false;
             dupeContainer.classList.remove("disabled");
             this.charDupes.disabled = false;
-
+            levelSpan.value = this.charLevels.value;
+            
             characterCard.classList.remove("card-sr");
             characterCard.classList.remove("card-ssr");
             characterCard.classList.remove("card-no-card");
             const char = this.data.character.find(c => c.type === e.target.value);
             characterCard.classList.add(`card-${char.quality}`);
             charClass.src = `./img/external/character/${char.class}.png`;
+
+            if (char.trans.length === 0) {
+                charTooltip.classList.add("visible");
+                levelContainer.classList.add("disabled");
+            } else {
+                charTooltip.classList.remove("visible");
+                levelContainer.classList.remove("disabled");
+            }
         } else {
+            levelContainer.classList.add("disabled");
+            levelSpan.setAttribute("disabled", true);
+            this.charLevels.disabled = true;
+            levelSpan.value = "∅";
+
             dupeContainer.classList.add("disabled");
             this.charDupes.value = 0;
             this.charDupes.disabled = true;
@@ -1095,6 +1166,7 @@ function setCharacters() {
             characterCard.classList.add("card-no-char");
 
             charClass.src = "./img/external/character/no_class.png";
+            charTooltip.classList.remove("visible");
         }
 
         charImg.src = `./img/external/character/portrait/${e.target.value}.png`;
@@ -1152,6 +1224,14 @@ function updateDetails() {
                 if (dupe) {
                     tempStats[key] += (dupe[key] || 0); // character dupes
                 }
+            }
+
+            // Level - 100 because characters starts lvl100
+            tempStats[key] += (detailStats.gain_per_level[key] * (this.charLevels.value - 100)) || 0;
+            
+            const transArray = detailStats.trans.filter(t => t.max_lvl <= this.charLevels.value);
+            for (const trans of transArray) {
+                tempStats[key] += trans.stats[key] || 0;
             }
         };
     }

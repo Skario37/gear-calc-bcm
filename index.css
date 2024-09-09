@@ -54,6 +54,13 @@ body {
     overflow-x: auto;
 }
 
+.rotate90 {
+    transform: rotateZ(90deg);
+}
+.rotate270 {
+    transform: rotateZ(270deg);
+}
+
 /* CHARACTER */
 
 .character-card {
@@ -74,8 +81,46 @@ body {
     left: 5px;
 }
 
+.char-class-container .flex {
+    align-items: center;
+    gap: 0;
+}
+
+.char-class-container .arrow-img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    filter: none;
+    vertical-align: middle
+}
+
+.char-class-container.disabled .arrow-img {
+    cursor: default;
+    filter: grayscale(100%) opacity(0.5);
+}
+
 .char-class {
     width: 30px;
+}
+
+.char-level-container {
+    width: 100%;
+}
+
+.char-level {
+    font-size: 1.2em;
+    font-weight: 900;
+    border: none;
+    background: none;
+    width: 2.4em;
+    text-align: center;
+}
+
+.char-level::-webkit-outer-spin-button,
+.char-level::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    margin: 0;
 }
 
 .char-select {
@@ -99,8 +144,8 @@ body {
 .character-img {
     width: 130px;
     position: absolute;
-    right: 4px;
-    bottom: 4px;
+    right: 6px;
+    bottom: 3px;
 }
 
 .dupe-container {
@@ -944,4 +989,56 @@ body {
     background-image:   url("./img/external/common/stat_hp.png"), 
                         url("./img/external/common/slot_2x3.png");
     filter: brightness(0) saturate(100%) invert(87%) sepia(25%) saturate(563%) hue-rotate(26deg) brightness(89%) contrast(80%) opacity(0.6);
+}
+
+/* TOOLTIP */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.tooltip.visible {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 240px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 175%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 1em;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 25%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #555 transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip img {
+    width: 22px;
+    vertical-align: middle;
 }

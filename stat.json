@@ -2741,6 +2741,45 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level": {
+                "atk": 44.06,
+                "matk": 44.06,
+                "def": 20.21,
+                "hp": 275.4
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -2793,6 +2832,45 @@
             "cres": 0,
             "pen": 96,
             "end": 63,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 58.75,
+                "matk": 0,
+                "def": 34.1,
+                "hp": 451.66
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -2840,6 +2918,45 @@
             "cres": 0,
             "pen": 96,
             "end": 82,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 71.81,
+                "matk": 0,
+                "def": 35.99,
+                "hp": 526.93
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -2887,6 +3004,8 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [],
+            "gain_per_level": {},
             "dupes": [
                 {
                     "dupe": 1,
@@ -2937,6 +3056,45 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 107.71,
+                "matk": 0,
+                "def": 22.45,
+                "hp": 275.4
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -2984,6 +3142,45 @@
             "cres": 0,
             "pen": 96,
             "end": 63,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 65.28,
+                "matk": 0,
+                "def": 43.56,
+                "hp": 476.75
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -3031,6 +3228,45 @@
             "cres": 0,
             "pen": 104,
             "end": 47,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 56.2,
+                "matk": 18.73,
+                "def": 27.78,
+                "hp": 319.46
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -3078,6 +3314,45 @@
             "cres": 0,
             "pen": 101,
             "end": 51,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 40.8,
+                "matk": 13.6,
+                "def": 35.5,
+                "hp": 391.68
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -3125,6 +3400,45 @@
             "cres": 0,
             "pen": 101,
             "end": 51,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 24.48,
+                "matk": 73.44,
+                "def": 22.45,
+                "hp": 306
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -3172,6 +3486,45 @@
             "cres": 0,
             "pen": 101,
             "end": 60,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 27.91,
+                "matk": 27.91,
+                "def": 25.26,
+                "hp": 376.75
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -3224,6 +3577,45 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 26.93,
+                "matk": 80.78,
+                "def": 22.45,
+                "hp": 275.4
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -3276,6 +3668,45 @@
             "cres": 0,
             "pen": 101,
             "end": 60,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 10000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 10000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 12.27,
+                "matk": 36.82,
+                "def": 28.06,
+                "hp": 440.64
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -3323,6 +3754,45 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 26.93,
+                "matk": 80.78,
+                "def": 22.45,
+                "hp": 275.4
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -3375,6 +3845,45 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 26.93,
+                "matk": 80.78,
+                "def": 22.45,
+                "hp": 275.4
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -3422,6 +3931,45 @@
             "cres": 0,
             "pen": 101,
             "end": 51,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 12.24,
+                "matk": 36.72,
+                "def": 31.95,
+                "hp": 352.51
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -3469,6 +4017,8 @@
             "cres": 0,
             "pen": 101,
             "end": 51,
+            "trans": [],
+            "gain_per_level":{},
             "dupes": [
                 {
                     "dupe": 1,
@@ -3521,6 +4071,45 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 23.26,
+                "matk": 69.77,
+                "def": 22.45,
+                "hp": 336.6
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -3569,6 +4158,46 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":
+            {
+                "atk": 26.93,
+                "matk": 80.78,
+                "def": 22.45,
+                "hp": 275.4
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -3616,6 +4245,45 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 19.83,
+                "matk": 59.49,
+                "def": 20.21,
+                "hp": 261.63
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -3668,6 +4336,45 @@
             "cres": 0,
             "pen": 101,
             "end": 60,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 13.6,
+                "matk": 40.8,
+                "def": 32.27,
+                "hp": 391.68
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -3715,6 +4422,45 @@
             "cres": 0,
             "pen": 101,
             "end": 66,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 34.88,
+                "matk": 11.63,
+                "def": 36.31,
+                "hp": 334.89
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -3762,6 +4508,8 @@
             "cres": 0,
             "pen": 101,
             "end": 60,
+            "trans": [],
+            "gain_per_level":{},
             "dupes": [
                 {
                     "dupe": 1,
@@ -3809,6 +4557,45 @@
             "cres": 0,
             "pen": 101,
             "end": 60,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 12.92,
+                "matk": 38.76,
+                "def": 32.27,
+                "hp": 430.85
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -3856,6 +4643,45 @@
             "cres": 0,
             "pen": 104,
             "end": 47,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 33.72,
+                "matk": 33.72,
+                "def": 25.01,
+                "hp": 287.52
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -3908,6 +4734,45 @@
             "cres": 0,
             "pen": 122,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 69.77,
+                "matk": 23.26,
+                "def": 22.45,
+                "hp": 336.6
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -3960,6 +4825,45 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 73.44,
+                "matk": 24.48,
+                "def": 22.45,
+                "hp": 306
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -4007,6 +4911,45 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 24.48,
+                "matk": 73.44,
+                "def": 22.45,
+                "hp": 306
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -4054,6 +4997,45 @@
             "cres": 0,
             "pen": 101,
             "end": 60,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 10000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 10000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 12.66,
+                "matk": 37.98,
+                "def": 28.06,
+                "hp": 409.8
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -4106,6 +5088,45 @@
             "cres": 0,
             "pen": 101,
             "end": 66,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 12.92,
+                "matk": 38.76,
+                "def": 40.34,
+                "hp": 372.1
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -4153,6 +5174,45 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 80.78,
+                "matk": 26.93,
+                "def": 22.45,
+                "hp": 275.4
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -4205,6 +5265,45 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 0,
+                "matk": 88.13,
+                "def": 22.45,
+                "hp": 290.7
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -4252,6 +5351,45 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 26.93,
+                "matk": 80.78,
+                "def": 22.45,
+                "hp": 275.4
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -4304,6 +5442,45 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 22.03,
+                "matk": 66.1,
+                "def": 22.45,
+                "hp": 290.7
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -4356,6 +5533,45 @@
             "cres": 0,
             "pen": 114,
             "end": 53,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 21.69,
+                "matk": 65.08,
+                "def": 20.2,
+                "hp": 390.46
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -4408,6 +5624,45 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 44.06,
+                "matk": 44.06,
+                "def": 20.21,
+                "hp": 275.4
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -4460,6 +5715,45 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 53.86,
+                "matk": 53.86,
+                "def": 22.45,
+                "hp": 275.4
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -4507,6 +5801,45 @@
             "cres": 0,
             "pen": 104,
             "end": 59,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 17.75,
+                "matk": 53.24,
+                "def": 22.73,
+                "hp": 319.46
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -4559,6 +5892,45 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 22.03,
+                "matk": 66.1,
+                "def": 22.45,
+                "hp": 275.4
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -4606,6 +5978,45 @@
             "cres": 0,
             "pen": 96,
             "end": 63,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 44.06,
+                "matk": 14.69,
+                "def": 49.25,
+                "hp": 451.66
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -4653,6 +6064,45 @@
             "cres": 0,
             "pen": 96,
             "end": 63,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 16.32,
+                "matk": 48.96,
+                "def": 37.88,
+                "hp": 501.84
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -4700,6 +6150,45 @@
             "cres": 0,
             "pen": 101,
             "end": 60,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 11.63,
+                "matk": 34.88,
+                "def": 25.26,
+                "hp": 396.58
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -4752,6 +6241,45 @@
             "cres": 0,
             "pen": 101,
             "end": 60,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 12.92,
+                "matk": 38.76,
+                "def": 28.06,
+                "hp": 440.64
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -4799,6 +6327,45 @@
             "cres": 0,
             "pen": 101,
             "end": 60,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 10000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 10000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 12.66,
+                "matk": 37.98,
+                "def": 28.06,
+                "hp": 409.8
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -4846,6 +6413,45 @@
             "cres": 0,
             "pen": 117,
             "end": 53,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 19.52,
+                "matk": 58.57,
+                "def": 18.19,
+                "hp": 351.41
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -4893,6 +6499,45 @@
             "cres": 0,
             "pen": 101,
             "end": 60,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 12.24,
+                "matk": 36.72,
+                "def": 29.05,
+                "hp": 352.51
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -4945,6 +6590,45 @@
             "cres": 0,
             "pen": 101,
             "end": 60,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 10000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 10000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 12.66,
+                "matk": 37.98,
+                "def": 28.06,
+                "hp": 409.8
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -4997,6 +6681,45 @@
             "cres": 0,
             "pen": 104,
             "end": 47,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 18.73,
+                "matk": 56.2,
+                "def": 27.78,
+                "hp": 319.46
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -5044,6 +6767,45 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 24.48,
+                "matk": 73.44,
+                "def": 22.45,
+                "hp": 306
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -5091,6 +6853,45 @@
             "cres": 0,
             "pen": 96,
             "end": 63,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 19.09,
+                "matk": 57.28,
+                "def": 35.23,
+                "hp": 491.8
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -5141,6 +6942,45 @@
             "cres": 0,
             "pen": 104,
             "end": 59,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 19.72,
+                "matk": 59.16,
+                "def": 25.25,
+                "hp": 354.96
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -5193,6 +7033,45 @@
             "cres": 0,
             "pen": 104,
             "end": 68,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 18.34,
+                "matk": 55.02,
+                "def": 25.25,
+                "hp": 390.46
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -5243,6 +7122,45 @@
             "cres": 0,
             "pen": 101,
             "end": 60,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 10000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 10000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 0,
+                "matk": 50.65,
+                "def": 28.06,
+                "hp": 409.8
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -5290,6 +7208,45 @@
             "cres": 0,
             "pen": 96,
             "end": 63,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 0,
+                "matk": 65.28,
+                "def": 37.88,
+                "hp": 501.84
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -5337,6 +7294,45 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 73.44,
+                "matk": 24.48,
+                "def": 22.45,
+                "hp": 306
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -5389,6 +7385,45 @@
             "cres": 0,
             "pen": 104,
             "end": 68,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 18.34,
+                "matk": 55.02,
+                "def": 25.25,
+                "hp": 390.46
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -5436,6 +7471,45 @@
             "cres": 0,
             "pen": 101,
             "end": 51,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 13.6,
+                "matk": 40.8,
+                "def": 35.5,
+                "hp": 391.68
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -5483,6 +7557,45 @@
             "cres": 0,
             "pen": 111,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 32.64,
+                "matk": 32.64,
+                "def": 29.04,
+                "hp": 352.51
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -5535,6 +7648,45 @@
             "cres": 0,
             "pen": 114,
             "end": 53,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 58.57,
+                "matk": 19.52,
+                "def": 18.19,
+                "hp": 351.41
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -5587,6 +7739,45 @@
             "cres": 0,
             "pen": 96,
             "end": 63,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 44.06,
+                "matk": 14.69,
+                "def": 39.22,
+                "hp": 429.07
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -5634,6 +7825,45 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 19.83,
+                "matk": 59.49,
+                "def": 20.21,
+                "hp": 261.63
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -5686,6 +7916,45 @@
             "cres": 0,
             "pen": 101,
             "end": 60,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 13.95,
+                "matk": 41.86,
+                "def": 25.26,
+                "hp": 376.75
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -5738,6 +8007,45 @@
             "cres": 0,
             "pen": 101,
             "end": 51,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 12.24,
+                "matk": 36.72,
+                "def": 31.95,
+                "hp": 352.51
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -5785,6 +8093,45 @@
             "cres": 0,
             "pen": 101,
             "end": 66,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 11.63,
+                "matk": 34.88,
+                "def": 36.31,
+                "hp": 334.89
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -5832,6 +8179,45 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 26.93,
+                "matk": 80.78,
+                "def": 22.45,
+                "hp": 275.4
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -5879,6 +8265,45 @@
             "cres": 0,
             "pen": 101,
             "end": 66,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 12.92,
+                "matk": 38.76,
+                "def": 40.34,
+                "hp": 372.1
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -5926,6 +8351,8 @@
             "cres": 0,
             "pen": 104,
             "end": 47,
+            "trans": [],
+            "gain_per_level":{},
             "dupes": [
                 {
                     "dupe": 1,
@@ -5973,6 +8400,45 @@
             "cres": 0,
             "pen": 96,
             "end": 63,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 48.96,
+                "matk": 16.32,
+                "def": 37.88,
+                "hp": 501.84
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -6025,6 +8491,45 @@
             "cres": 0,
             "pen": 96,
             "end": 69,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 44.06,
+                "matk": 14.69,
+                "def": 34.09,
+                "hp": 577.12
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -6077,6 +8582,45 @@
             "cres": 0,
             "pen": 101,
             "end": 51,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 27.2,
+                "matk": 27.2,
+                "def": 35.5,
+                "hp": 391.68
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -6124,6 +8668,45 @@
             "cres": 0,
             "pen": 96,
             "end": 63,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 32.64,
+                "matk": 32.64,
+                "def": 43.56,
+                "hp": 476.75
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -6171,6 +8754,45 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 66.1,
+                "matk": 22.03,
+                "def": 22.45,
+                "hp": 290.7
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -6223,6 +8845,45 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 66.1,
+                "matk": 22.03,
+                "def": 22.45,
+                "hp": 275.4
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -6270,6 +8931,45 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 73.44,
+                "matk": 24.48,
+                "def": 22.45,
+                "hp": 306
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -6317,6 +9017,45 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 12000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 19.83,
+                "matk": 59.49,
+                "def": 20.21,
+                "hp": 261.63
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -6369,6 +9108,45 @@
             "cres": 0,
             "pen": 104,
             "end": 59,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 19.72,
+                "matk": 59.16,
+                "def": 25.25,
+                "hp": 354.96
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -6416,6 +9194,45 @@
             "cres": 0,
             "pen": 106,
             "end": 57,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 22.03,
+                "matk": 66.1,
+                "def": 22.45,
+                "hp": 290.7
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -6466,6 +9283,45 @@
             "cres": 0,
             "pen": 104,
             "end": 47,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 18.73,
+                "matk": 56.2,
+                "def": 27.78,
+                "hp": 319.46
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -6513,6 +9369,45 @@
             "cres": 0,
             "pen": 104,
             "end": 47,
+            "trans": [
+                {
+                    "trans_lvl": 1,
+                    "max_lvl": 105,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 2,
+                    "max_lvl": 110,
+                    "stats": {
+                        "hp": 20000
+                    }
+                },
+                {
+                    "trans_lvl": 3,
+                    "max_lvl": 115,
+                    "stats": {}
+                },
+                {
+                    "trans_lvl": 4,
+                    "max_lvl": 120,
+                    "stats": {
+                        "spd": 2
+                    }
+                },
+                {
+                    "trans_lvl": 5,
+                    "max_lvl": 125,
+                    "stats": {}
+                }
+            ],
+            "gain_per_level":{
+                "atk": 56.2,
+                "matk": 18.73,
+                "def": 27.78,
+                "hp": 319.46
+            },
             "dupes": [
                 {
                     "dupe": 1,
@@ -6565,6 +9460,8 @@
             "cres": 0,
             "pen": 122,
             "end": 57,
+            "trans": [],
+            "gain_per_level":{},
             "dupes": [
                 {
                     "dupe": 1,

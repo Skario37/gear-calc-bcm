@@ -35,9 +35,15 @@
         <div class="container">
             <div>
                 <div class="character-card card-no-char" id="character-card">
-                    <div class="char-class-container">
+                    <div id="char-class-container" class="char-class-container disabled">
                         <img class="char-class" id="char-class" src="./img/external/character/no_class.png">
-                        <span class="char-level">100</span>
+                        <div class="flex flex-column">
+                            <div id="char-level-more"><img class="arrow-img rotate270" src="./img/external/common/icon_arrow.png"></div>
+                            <div class="char-level-container">
+                                <input id="char-level" class="char-level" value="0" type="number"></input>
+                            </div>
+                            <div id="char-level-less"><img class="arrow-img rotate90" src="./img/external/common/icon_arrow.png"></div>
+                        </div>
                     </div>
                     
                     <img class="character-img" id="character-img" src="./img/external/character/portrait/empty.png">
@@ -52,7 +58,13 @@
                         </div>
                         <div id="dupe-more"><img class="arrow-img" src="./img/external/common/icon_arrow.png"></div>
                     </div>
-                    <div class="char-select"><select id="characters"></select></div>
+                    <div class="char-select">
+                        <span id="character-tooltip" class="tooltip">
+                            <img src="./img/external/common/locked.png">
+                            <span class="tooltiptext">Some functions are locked for this character</span>
+                        </span>
+                        <select id="characters"></select>
+                    </div>
                 </div>
             </div>
         
