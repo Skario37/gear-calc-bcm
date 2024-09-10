@@ -1,3 +1,11 @@
+const NO_DUPE_IMG_SRC = "./img/external/character/no_dupe.png";
+const DUPE_IMG_SRC = "./img/external/character/dupe.png";
+const NO_CLASS_IMG_SRC = "./img/external/character/no_class.png";
+const BG_EARRING_IMG_SRC = "./img/external/accessory/bg_earring.png";
+const BG_NECKLACE_IMG_SRC = "./img/external/accessory/bg_necklace.png";
+const BG_RING_IMG_SRC = "./img/external/accessory/bg_ring.png";
+const ICON_ARROW_IMG_SRC = "./img/external/common/icon_arrow.png";
+
 window.addEventListener("DOMContentLoaded", async () => {
     this.data = await getData("stat.json");
 
@@ -475,27 +483,37 @@ function removeGearStats(i) {
 function addAccStats(obj) {
     const container = document.getElementById("acc-stats");
 
+    const levelName = `stats-acc-${obj.i}-level`;
+
     const div = document.createElement("div");
+    const mainLevelContainer = document.createElement("div");
+    const icon = document.createElement("img");
+    const labelLevel = document.createElement("label");
+    const inputLevel = document.createElement("input");
+    const levelContainer = document.createElement("div");
+    const mainStat = document.createElement("p");
+    const slotsContainer = document.createElement("div");
+    const slotTitleContainer = document.createElement("div");
+    const slotTitleName = document.createElement("h4");
+    const slotTitleStat = document.createElement("h4");
+    const slotTitleEnch = document.createElement("h4");
+
     div.setAttribute("id", `stats-acc-${obj.i}`);
     div.classList.add(`param-${obj.element.dataset.type}`);
 
-    const mainLevelContainer = document.createElement("div");
     mainLevelContainer.classList.add("main-level-container");
 
-    const icon = document.createElement("img");
     if (obj.element.dataset.type === "earring") {
-        icon.src = "./img/external/accessory/bg_earring.png";
+        icon.src = BG_EARRING_IMG_SRC;
     } else if (obj.element.dataset.type === "necklace") {
-        icon.src = "./img/external/accessory/bg_necklace.png";
+        icon.src = BG_NECKLACE_IMG_SRC;
     } else if (obj.element.dataset.type === "ring") {
-        icon.src = "./img/external/accessory/bg_ring.png";
+        icon.src = BG_RING_IMG_SRC;
     }
 
-    const levelName = `stats-acc-${obj.i}-level`;
-    const labelLevel = document.createElement("label");
     labelLevel.setAttribute("for", levelName);
     labelLevel.innerText = "Level:";
-    const inputLevel = document.createElement("input");
+    
     inputLevel.classList.add("input-level");
     inputLevel.name = levelName;
     inputLevel.type = "number";
@@ -503,53 +521,56 @@ function addAccStats(obj) {
     inputLevel.max = obj.acc.max_lvl;
     inputLevel.step = 1;
     inputLevel.value = obj.acc.min_lvl;
-    const levelContainer = document.createElement("div");
+
+    slotTitleContainer.classList.add("grid-slot");
+
+    mainStat.innerText = `${obj.acc.name} ${obj.acc.main_stat.min_value}`;
+    slotTitleName.innerText = "Name:";
+    slotTitleStat.innerText = "Stat:";
+    slotTitleEnch.innerText = "Enchantment:";
+    
     levelContainer.appendChild(labelLevel);
     levelContainer.appendChild(inputLevel);
-
-    const mainStat = document.createElement("p");
-    mainStat.innerText = `${obj.acc.name} ${obj.acc.main_stat.min_value}`;
 
     levelContainer.appendChild(mainStat);
     mainLevelContainer.appendChild(levelContainer);
     mainLevelContainer.appendChild(icon);
 
-    const slotsContainer = document.createElement("div");
-    const slotTitleContainer = document.createElement("div");
-    slotTitleContainer.classList.add("grid-slot");
-    const slotTitleName = document.createElement("h4");
-    slotTitleName.innerText = "Name:";
-    const slotTitleStat = document.createElement("h4");
-    slotTitleStat.innerText = "Stat:";
-    const slotTitleEnch = document.createElement("h4");
-    slotTitleEnch.innerText = "Enchantment:";
     slotTitleContainer.appendChild(slotTitleName);
     slotTitleContainer.appendChild(slotTitleStat);
     slotTitleContainer.appendChild(slotTitleEnch);
     slotsContainer.appendChild(slotTitleContainer);
+
     for (let i = 0; i < obj.acc.max_slots; i++) {
         const slotContainer = document.createElement("div");
-        slotContainer.classList.add("grid-slot");
         const slotSelect = document.createElement("select");
+        const emptyOption = document.createElement("option");
+        const slotInput = document.createElement("input");
+        const enchSlotInput = document.createElement("input");
+
+        const slotRank = document.createElement("img");
+        const enchSlotRank = document.createElement("img");
+        const divSlot = document.createElement("div");
+        const divEnchSlot = document.createElement("div");
+
+        slotContainer.classList.add("grid-slot");
+
         slotSelect.classList.add("slot-select")
         if (i != 0) slotSelect.setAttribute("disabled",true);
         slotSelect.dataset.i = i;
 
-        const emptyOption = document.createElement("option");
-        emptyOption.value = "empty";
-        emptyOption.innerText = "...";
-        slotSelect.appendChild(emptyOption);
-
-        const slotInput = document.createElement("input");
         slotInput.classList.add("input-slot");
         slotInput.type = "number";
         slotInput.setAttribute("disabled", true);
 
-        const enchSlotInput = document.createElement("input");
         enchSlotInput.classList.add("input-ench");
         enchSlotInput.type = "number";
         enchSlotInput.setAttribute("disabled", true);
 
+        emptyOption.value = "empty";
+        emptyOption.innerText = "...";
+        
+        slotSelect.appendChild(emptyOption);
         obj.acc.slot_stats.forEach(stat => {
             const slotOption = document.createElement("option");
             slotOption.value = stat.type;
@@ -557,11 +578,6 @@ function addAccStats(obj) {
 
             slotSelect.appendChild(slotOption);
         });
-
-        const slotRank = document.createElement("img");
-        const enchSlotRank = document.createElement("img");
-        const divSlot = document.createElement("div");
-        const divEnchSlot = document.createElement("div");
 
         divSlot.appendChild(slotRank);
         divSlot.appendChild(slotInput);
@@ -573,97 +589,13 @@ function addAccStats(obj) {
         slotContainer.appendChild(divEnchSlot);
         slotsContainer.appendChild(slotContainer);
 
-        slotSelect.addEventListener("change", e => {
-            const selects = slotsContainer.querySelectorAll("select");
-
-            const indexes = [];
-            
-            for (let j = 0; j < selects.length; j++) {
-                indexes.push(selects[j].selectedIndex);
-            }
-            
-            for (let j = 0; j < selects.length; j++) {
-                const options = selects[j].querySelectorAll("option");
-                for (let k = 1; k < options.length; k++) {
-                    if (indexes.includes(k)) {
-                        options[k].setAttribute("disabled", true)
-                    } else {
-                        options[k].removeAttribute("disabled");
-                    }
-                }
-            }
-
-            const slotStats = obj.acc.slot_stats.find(s => s.type === e.target.value);
-            const enchStats = this.data.enchantments.accessory[e.target.value];
-
-            if (e.target.value !== "empty") {
-                slotInput.min = slotStats.min_value;
-                slotInput.max = slotStats.max_value;
-                slotInput.step = slotStats.step;
-                slotInput.value = slotStats.min_value;
-                
-                enchSlotInput.min = enchStats.min_value;
-                enchSlotInput.max = enchStats.max_value;
-                enchSlotInput.step = enchStats.step;
-                enchSlotInput.value = 0;
-
-                slotInput.removeEventListener("change", this._handleSlotInputChange);
-                enchSlotInput.removeEventListener("change", this._handleEnchSlotInputChange);
-
-                this._handleSlotInputChange = (si) => handleSlotInputChange.call(this, si, slotStats, slotRank);
-                this._handleEnchSlotInputChange = (si) => handleEnchSlotInputChange.call(this, si, enchStats, enchSlotRank);
-
-                slotInput.addEventListener("change", this._handleSlotInputChange);
-                enchSlotInput.addEventListener("change", this._handleEnchSlotInputChange);
-
-                slotInput.removeAttribute("disabled");
-                enchSlotInput.removeAttribute("disabled");
-            } else {
-                slotInput.setAttribute("disabled", true);
-                slotInput.value = "";
-                divSlot.appendChild(slotInput);
-
-                enchSlotInput.setAttribute("disabled", true);
-                enchSlotInput.value = "";
-                divEnchSlot.appendChild(enchSlotInput);
-            }
-
-            this.updateRank(parseFloat(slotInput.value), slotStats, slotRank);
-            this.updateRank(parseFloat(enchSlotInput.value), enchStats, enchSlotRank);
-            this.updateDetails();
-        });
+        const slotSelectEvents = {}; // Used to store slotInput & enchSlotInput events
+        const _handleSlotSelectChange = (e) => handleAccSlotSelectChange(e, obj, slotSelectEvents, {slotInput, enchSlotInput, slotsContainer, divSlot, divEnchSlot});
+        slotSelect.addEventListener("change", _handleSlotSelectChange);
     }
 
-    inputLevel.addEventListener("change", e => {
-        const value = parseInt(e.target.value);
-        if (value > obj.acc.max_lvl) e.target.value = obj.acc.max_lvl;
-        if (value < obj.acc.min_lvl) e.target.value = obj.acc.min_lvl;
-
-        const sl = Math.floor(value / obj.acc.slot_incr);
-        
-        for (let i = sl + 1; i < 4; i++) {
-            const select = slotsContainer.querySelector(`select[data-i='${i}']`);
-            select.options[0].selected = true;
-            
-            select.setAttribute("disabled",true);
-            const slotInput = select.nextElementSibling;
-            slotInput.setAttribute("disabled",true);
-            slotInput.value = "";
-
-            const enchSlotInput = slotInput.nextElementSibling;
-            enchSlotInput.setAttribute("disabled", true);
-            enchSlotInput.value = "";
-        }
-
-        for (let i = 0; i <= sl; i++) {
-            const select = slotsContainer.querySelector(`select[data-i='${i}']`);
-            select.removeAttribute("disabled");
-        }
-
-
-        mainStat.innerText = `${obj.acc.name} ${this.toFixed(obj.acc.main_stat.min_value + (obj.acc.main_stat.step * inputLevel.value), 2)}`;
-        this.updateDetails();
-    });
+    const _handleInputLevelChange = (e) => handleAccInputLevelChange(e, obj, {inputLevel, slotsContainer, mainStat});
+    inputLevel.addEventListener("change", _handleInputLevelChange);
 
     div.appendChild(mainLevelContainer);
     div.appendChild(slotsContainer);
@@ -674,21 +606,37 @@ function addAccStats(obj) {
 function addGearStats(obj) {
     const container = document.getElementById("gear-stats");
 
+    const levelName = `stats-gear-${obj.i}-level`;
+
     const div = document.createElement("div");
+    const bgDiv = document.createElement("div");
+    const mainLevelContainer = document.createElement("div");
+    const levelContainer = document.createElement("div");
+    const labelLevel = document.createElement("label");
+    const inputLevel = document.createElement("input");
+    const mainStat = document.createElement("p");
+    const transContainer = document.createElement("div");
+    const transImgContainer = document.createElement("div");
+    const transLessDiv = document.createElement("div");
+    const transLess = document.createElement("img");
+    const transMoreDiv = document.createElement("div");
+    const transMore = document.createElement("img");
+    const slotsContainer = document.createElement("div");
+    const slotTitleContainer = document.createElement("div");
+    const slotTitleName = document.createElement("h4");
+    const slotTitleStat = document.createElement("h4");
+    const slotTitleEnch = document.createElement("h4");
+
+
     div.setAttribute("id", `stats-gear-${obj.i}`);
 
-    const bgDiv = document.createElement("div");
     bgDiv.classList.add("bg-gear", `bg-gear-${obj.gear.title}`, `bg-gear-${obj.gear.col}x${obj.gear.row}`);
     
-    const mainLevelContainer = document.createElement("div");
     mainLevelContainer.classList.add("main-level-container");
 
-    const levelContainer = document.createElement("div");
-    const levelName = `stats-gear-${obj.i}-level`;
-    const labelLevel = document.createElement("label");
     labelLevel.setAttribute("for", levelName);
     labelLevel.innerText = "Level:";
-    const inputLevel = document.createElement("input");
+    
     inputLevel.classList.add("input-level");
     inputLevel.name = levelName;
     inputLevel.type = "number";
@@ -699,25 +647,17 @@ function addGearStats(obj) {
     levelContainer.appendChild(labelLevel);
     levelContainer.appendChild(inputLevel);
     
-    const mainStat = document.createElement("p");
     mainStat.innerText = `${obj.gear.name} ${obj.gear.main_stat.min_value}`;
-
-    const transContainer = document.createElement("div");
-    transContainer.classList.add("trans-container", "disabled");
     
-    const transImgContainer = document.createElement("div");
+    transContainer.classList.add("trans-container", "disabled");
     transImgContainer.classList.add("trans-base");
     
-    const transLessDiv = document.createElement("div");
-    const transLess = document.createElement("img");
     transLess.classList.add("arrow-img", "flip");
-    transLess.src = "./img/external/common/icon_arrow.png";
+    transLess.src = ICON_ARROW_IMG_SRC;
     transLessDiv.appendChild(transLess);
 
-    const transMoreDiv = document.createElement("div");
-    const transMore = document.createElement("img");
     transMore.classList.add("arrow-img");
-    transMore.src = "./img/external/common/icon_arrow.png";
+    transMore.src = ICON_ARROW_IMG_SRC;
     transMoreDiv.appendChild(transMore);
 
     transContainer.appendChild(transLessDiv);
@@ -744,15 +684,14 @@ function addGearStats(obj) {
     mainLevelContainer.appendChild(levelContainer);
     mainLevelContainer.appendChild(transContainer);
 
-    const slotsContainer = document.createElement("div");
-    const slotTitleContainer = document.createElement("div");
+    
     slotTitleContainer.classList.add("grid-slot");
-    const slotTitleName = document.createElement("h4");
+    
     slotTitleName.innerText = "Name:";
-    const slotTitleStat = document.createElement("h4");
     slotTitleStat.innerText = "Stat:";
-    const slotTitleEnch = document.createElement("h4");
     slotTitleEnch.innerText = "Enchantment:";
+
+
     slotTitleContainer.appendChild(slotTitleName);
     slotTitleContainer.appendChild(slotTitleStat);
     slotTitleContainer.appendChild(slotTitleEnch);
@@ -760,29 +699,30 @@ function addGearStats(obj) {
 
     for (let i = 0; i < obj.gear.max_slots; i++) {
         const slotContainer = document.createElement("div");
+        const slotSelect = document.createElement("select");
+        const emptyOption = document.createElement("option");
+        const slotInput = document.createElement("input");
+        const enchSlotInput = document.createElement("input");
+
         slotContainer.classList.add("grid-slot");
 
-        const slotSelect = document.createElement("select");
-        slotSelect.classList.add("slot-select");
         if (i != 0) slotSelect.setAttribute("disabled",true);
+        slotSelect.classList.add("slot-select");
         slotSelect.dataset.i = i;
         slotSelect.dataset.slot = "normal";
 
-        const emptyOption = document.createElement("option");
         emptyOption.value = "empty";
         emptyOption.innerText = "...";
-        slotSelect.appendChild(emptyOption);
 
-        const slotInput = document.createElement("input");
         slotInput.classList.add("input-slot");
         slotInput.type = "number";
         slotInput.setAttribute("disabled", true);
-        
-        const enchSlotInput = document.createElement("input");
+
         enchSlotInput.classList.add("input-ench");
         enchSlotInput.type = "number";
         enchSlotInput.setAttribute("disabled", true);
 
+        slotSelect.appendChild(emptyOption);
         obj.gear.slot_stats.forEach(stat => {
             const slotOption = document.createElement("option");
             slotOption.value = stat.type;
@@ -791,67 +731,15 @@ function addGearStats(obj) {
             slotSelect.appendChild(slotOption);
         });
 
+        
         slotContainer.appendChild(slotSelect);
         slotContainer.appendChild(slotInput);
         slotContainer.appendChild(enchSlotInput);
         slotsContainer.appendChild(slotContainer);
 
-        slotSelect.addEventListener("change", e => {
-            const selects = slotsContainer.querySelectorAll("select[data-slot='normal']");
-
-            const indexes = [];
-            
-            for (let j = 0; j < selects.length; j++) {
-                indexes.push(selects[j].selectedIndex);
-            }
-            
-            for (let j = 0; j < selects.length; j++) {
-                const options = selects[j].querySelectorAll("option");
-                for (let k = 1; k < options.length; k++) {
-                    if (indexes.includes(k)) {
-                        options[k].setAttribute("disabled", true)
-                    } else {
-                        options[k].removeAttribute("disabled");
-                    }
-                }
-            }
-
-            if (e.target.value !== "empty") {
-                const slotStats = obj.gear.slot_stats.find(s => s.type === e.target.value);
-                const enchStats = this.data.enchantments.gear[e.target.value];
-
-                slotInput.min = slotStats.min_value;
-                slotInput.max = slotStats.max_value;
-                slotInput.step = slotStats.step;
-                slotInput.value = slotStats.min_value;
-
-                enchSlotInput.min = enchStats.min_value;
-                enchSlotInput.max = enchStats.max_value;
-                enchSlotInput.step = enchStats.step;
-                enchSlotInput.value = 0;
-
-                slotInput.removeEventListener("change", this._handleSlotInputChange);
-                enchSlotInput.removeEventListener("change", this._handleEnchSlotInputChange);
-
-                this._handleSlotInputChange = (si) => handleSlotInputChange.call(this, si, slotStats);
-                this._handleEnchSlotInputChange = (si) => handleEnchSlotInputChange.call(this, si, enchStats);
-
-                slotInput.addEventListener("change", this._handleSlotInputChange);
-                enchSlotInput.addEventListener("change", this._handleEnchSlotInputChange);
-
-                slotInput.removeAttribute("disabled");
-                enchSlotInput.removeAttribute("disabled");
-            } else {
-                slotInput.setAttribute("disabled", true);
-                slotInput.value = "";
-                slotContainer.appendChild(slotInput);
-
-                enchSlotInput.setAttribute("disabled", true);
-                enchSlotInput.value = "";
-                slotContainer.appendChild(enchSlotInput);
-            }
-            this.updateDetails();
-        });
+        const slotSelectEvents = {}; // Used to store slotInput & enchSlotInput events
+        const _handleSlotSelectChange = (e) => handleGearSlotSelectChange(e, obj, slotSelectEvents, {slotInput, enchSlotInput, slotsContainer});
+        slotSelect.addEventListener("change", _handleSlotSelectChange);
     }
     
     const slotTransContainer = document.createElement("div");
@@ -860,11 +748,12 @@ function addGearStats(obj) {
     slotTransSelect.classList.add("slot-select")
     slotTransSelect.setAttribute("disabled",true);
     slotTransSelect.dataset.slot = "trans";
+
     const emptyOption = document.createElement("option");
     emptyOption.value = "empty";
     emptyOption.innerText = "...";
-    slotTransSelect.appendChild(emptyOption);
-
+    
+    
     const slotTransInput = document.createElement("input");
     slotTransInput.classList.add("input-slot");
     slotTransInput.type = "number";
@@ -875,6 +764,7 @@ function addGearStats(obj) {
     enchSlotTransInput.type = "number";
     enchSlotTransInput.setAttribute("disabled", true);
 
+    slotTransSelect.appendChild(emptyOption);
     obj.gear.slot_stats.forEach(stat => {
         const slotOption = document.createElement("option");
         slotOption.value = stat.type;
@@ -882,144 +772,25 @@ function addGearStats(obj) {
 
         slotTransSelect.appendChild(slotOption);
     });
-
     slotTransContainer.appendChild(slotTransSelect);
     slotTransContainer.appendChild(slotTransInput);
     slotTransContainer.appendChild(enchSlotTransInput);
     slotsContainer.appendChild(slotTransContainer);
 
-    slotTransSelect.addEventListener("change", e => {
-        const slotStats = obj.gear.slot_stats.find(s => s.type === e.target.value);
-        const enchStats = this.data.enchantments.gear[e.target.value];
+    const transSelectEvents = {}; // Used to store slotInput & enchSlotInput events
+    const _handleInputLevelChange = (e) => handleGearInputLevelChange(e, obj, mainStat, {transContainer, slotTransSelect, slotTransInput, enchSlotTransInput, inputLevel, slotsContainer});
+    const _handleTransMoreClick = (e) => handleTransMoreClick(e, obj, mainStat, {slotTransSelect, inputLevel});
+    const _handleTransLessClick = (e) => handleTransLessClick(e, obj, mainStat, {slotTransSelect, slotTransInput, enchSlotTransInput, inputLevel});
+    const _handleSlotTransSelectChange = (e) => handleSlotTransSelectChange(e, obj, transSelectEvents, {slotTransInput, enchSlotTransInput, slotTransContainer});
 
-        if (e.target.value !== "empty") {
-            slotTransInput.min = slotStats.min_value;
-            slotTransInput.max = slotStats.max_value;
-            slotTransInput.step = slotStats.step;
-            slotTransInput.value = slotStats.min_value;
-
-            enchSlotTransInput.min = enchStats.min_value;
-            enchSlotTransInput.max = enchStats.max_value;
-            enchSlotTransInput.step = enchStats.step;
-            enchSlotTransInput.value = 0;
-
-            slotTransInput.removeEventListener("change", this._handleSlotInputChange);
-            enchSlotTransInput.removeEventListener("change", this._handleEnchSlotInputChange);
-
-            this._handleSlotInputChange = (si) => handleSlotInputChange.call(this, si, slotStats);
-            this._handleEnchSlotInputChange = (si) => handleEnchSlotInputChange.call(this, si, enchStats);
-
-            slotTransInput.addEventListener("change", this._handleSlotInputChange);
-            enchSlotTransInput.addEventListener("change", this._handleEnchSlotInputChange);
-
-            slotTransInput.removeAttribute("disabled");
-            enchSlotTransInput.removeAttribute("disabled");
-        } else {
-            slotTransInput.setAttribute("disabled", true);
-            slotTransInput.value = "";
-            slotTransContainer.appendChild(slotTransInput);
-
-            enchSlotTransInput.setAttribute("disabled", true);
-            enchSlotTransInput.value = "";
-            slotTransContainer.appendChild(enchSlotTransInput);
-        }
-        this.updateDetails();
-    });
-
-
-    inputLevel.addEventListener("change", e => {
-        const value = parseInt(e.target.value);
-        if (value > obj.gear.max_lvl) e.target.value = obj.gear.max_lvl;
-        if (value < obj.gear.min_lvl) e.target.value = obj.gear.min_lvl;
-
-        if (value === 12) {
-            obj.trans.disabled = false;
-            transContainer.classList.remove("disabled");
-        }
-        else {
-            obj.trans.value = 0;
-            obj.trans.disabled = true;
-            transContainer.classList.add("disabled");
-            for (let i = 1; i <= obj.trans.max; i++) {
-                const transImg = document.getElementById(`trans-img-${i}`);
-                transImg?.classList.remove("on-trans");
-            }
-
-            slotTransSelect.options[0].selected = true;
-            slotTransSelect.setAttribute("disabled", true);
-
-            slotTransInput.setAttribute("disabled", true);
-            slotTransInput.value = "";
-
-            enchSlotTransInput.setAttribute("disabled", true);
-            enchSlotTransInput.value = "";
-        }
-
-        const sl = Math.floor(value / obj.gear.slot_incr);
-        
-        for (let i = sl + 1; i < 4; i++) {
-            const select = slotsContainer.querySelector(`select[data-i='${i}']`);
-            select.options[0].selected = true;
-            
-            select.setAttribute("disabled", true);
-            const slotInput = select.nextElementSibling;
-            slotInput.setAttribute("disabled", true);
-            slotInput.value = "";
-
-            const enchSlotInput = slotInput.nextElementSibling;
-            enchSlotInput.setAttribute("disabled", true);
-            enchSlotInput.value = "";
-        }
-
-        for (let i = 0; i <= sl; i++) {
-            const select = slotsContainer.querySelector(`select[data-i='${i}']`);
-            select.removeAttribute("disabled");
-        }
-
-
-        mainStat.innerText = `${obj.gear.name} ${obj.gear.main_stat.min_value + (obj.gear.main_stat.step * inputLevel.value) + (obj.gear.gain_per_trans * obj.trans.value)}`;
-        this.updateDetails();
-    });
-
-    transLessDiv.addEventListener("click", e => {
-        if (obj.trans.disabled) return;
-        if (obj.trans.value === obj.trans.min) return;
-        const transImg = document.getElementById(`trans-${obj.i}-img-${obj.trans.value}`);
-        transImg.classList.remove("on-trans");
-        obj.trans.value -= obj.trans.step;
-
-        mainStat.innerText = `${obj.gear.name} ${obj.gear.main_stat.min_value + (obj.gear.main_stat.step * inputLevel.value) + (obj.gear.gain_per_trans * obj.trans.value)}`;
-
-        slotTransSelect.options[0].selected = true;
-        slotTransSelect.setAttribute("disabled", true);
-
-        slotTransInput.setAttribute("disabled", true);
-        slotTransInput.value = "";
-
-        enchSlotTransInput.setAttribute("disabled", true);
-        enchSlotTransInput.value = "";
-
-        this.updateDetails();
-    });
-
-    transMoreDiv.addEventListener("click", e => {
-        if (obj.trans.disabled) return;
-        if (obj.trans.value === obj.trans.max) return;
-        obj.trans.value += obj.trans.step;
-        if (obj.trans.value === obj.trans.max) {
-            slotTransSelect.removeAttribute("disabled");
-        }
-        const transImg = document.getElementById(`trans-${obj.i}-img-${obj.trans.value}`);
-        transImg.classList.add("on-trans");
-
-        mainStat.innerText = `${obj.gear.name} ${obj.gear.main_stat.min_value + (obj.gear.main_stat.step * inputLevel.value) + (obj.gear.gain_per_trans * obj.trans.value)}`;
-        this.updateDetails();
-    });   
+    inputLevel.addEventListener("change", _handleInputLevelChange);
+    transMoreDiv.addEventListener("click", _handleTransMoreClick);
+    transLessDiv.addEventListener("click", _handleTransLessClick);
+    slotTransSelect.addEventListener("change", _handleSlotTransSelectChange);
 
     div.appendChild(bgDiv);
     div.appendChild(mainLevelContainer);
     div.appendChild(mainStat);
-
     div.appendChild(slotsContainer);
 
     container.appendChild(div);
@@ -1049,74 +820,14 @@ function setCharacters() {
     const levelContainer = document.getElementById("char-class-container");
     const levelMore = document.getElementById("char-level-more");
     const levelLess = document.getElementById("char-level-less");
-    const levelSpan = document.getElementById("char-level");
+    const levelInput = document.getElementById("char-level");
     const charTooltip = document.getElementById("character-tooltip");
-
-    if (this.charLevels.disabled) {
-        levelContainer.classList.add("disabled");
-        levelSpan.setAttribute("disabled", true);
-    }
-    levelMore.addEventListener("click", e => {
-        if (this.charLevels.disabled) return;
-        if (this.charLevels.value === this.charLevels.max) return;
-        const char = this.data.character.find(c => charSelect.value === c.type);
-        if (char.trans.length === 0) return;
-        this.charLevels.value += this.charLevels.step;
-        levelSpan.value = this.charLevels.value;
-        this.updateDetails();
-    });
-    levelLess.addEventListener("click", e => {
-        if (this.charLevels.disabled) return;
-        if (this.charLevels.value === this.charLevels.min) return;
-        const char = this.data.character.find(c => charSelect.value === c.type);
-        if (char.trans.length === 0) return;
-        this.charLevels.value -= this.charLevels.step;
-        levelSpan.value = this.charLevels.value;
-        this.updateDetails();
-    });
-    levelSpan.addEventListener("change", e => {
-        const char = this.data.character.find(c => charSelect.value === c.type);
-        if (char.trans.length === 0) {
-            e.target.value = this.charLevels.min;
-            return;
-        }
-        if (e.target.value > this.charLevels.max) {
-            e.target.value = this.charLevels.max;
-            this.charLevels.value = this.charLevels.max;
-        } else if (e.target.value < this.charLevels.min) {
-            e.target.value = this.charLevels.min;
-            this.charLevels.value = this.charLevels.min;
-        } else {
-            this.charLevels.value = parseInt(e.target.value);
-        }
-        this.updateDetails();
-    });
-
-
-    if (this.charDupes.disabled) dupeContainer.classList.add("disabled");
-    dupeLess.addEventListener("click", e => {
-        if (this.charDupes.disabled) return;
-        if (this.charDupes.value === this.charDupes.min) return;
-        const dupe = document.getElementById(`dupe-${this.charDupes.value}`);
-        dupe.src = "./img/external/character/no_dupe.png";
-        this.charDupes.value -= this.charDupes.step;
-        this.updateDetails();
-    });
-
-    dupeMore.addEventListener("click", e => {
-        if (this.charDupes.disabled) return;
-        if (this.charDupes.value === this.charDupes.max) return;
-        this.charDupes.value += this.charDupes.step;
-        const dupe = document.getElementById(`dupe-${this.charDupes.value}`);
-        dupe.src = "./img/external/character/dupe.png";
-        this.updateDetails();
-    });    
 
     const emptyCharOption = document.createElement("option");
     emptyCharOption.value = "empty";
     emptyCharOption.innerText = "Select a character...";
     charSelect.appendChild(emptyCharOption);
-    
+
     this.data.character.forEach(c => {
         const charOption = document.createElement("option");
         charOption.value = c.type;
@@ -1124,54 +835,43 @@ function setCharacters() {
         if (c.type) charSelect.appendChild(charOption);
     });
 
-    charSelect.addEventListener("change", e => {
-        this.charLevels.value = 100;
+    if (this.charLevels.disabled) {
+        levelContainer.classList.add("disabled");
+        levelInput.setAttribute("disabled", true);
+    }
+    if (this.charDupes.disabled) {
+        dupeContainer.classList.add("disabled");
+    }
 
-        if (e.target.value !== "empty") {
-            levelSpan.removeAttribute("disabled");
-            this.charLevels.disabled = false;
-            dupeContainer.classList.remove("disabled");
-            this.charDupes.disabled = false;
-            levelSpan.value = this.charLevels.value;
-            
-            characterCard.classList.remove("card-sr");
-            characterCard.classList.remove("card-ssr");
-            characterCard.classList.remove("card-no-card");
-            const char = this.data.character.find(c => c.type === e.target.value);
-            characterCard.classList.add(`card-${char.quality}`);
-            charClass.src = `./img/external/character/${char.class}.png`;
+    const _handleLevelMoreClick = (e) => handleLevelMoreClick(e, {charSelect, levelInput});
+    const _handleLevelLessClick = (e) => handleLevelLessClick(e, {charSelect, levelInput});
+    const _handleLevelInputChange = (e) => handleLevelInputChange(e, charSelect);
+    const _handleDupeLessClick = (e) => handleDupeLessClick(e);
+    const _handleDupeMoreClick = (e) => handleDupeMoreClick(e);
+    const _handleCharSelectChange = (e) => handleCharSelectChange(e, {levelInput, dupeContainer, characterCard, charTooltip, levelContainer, charClass, charImg})
 
-            if (char.trans.length === 0) {
-                charTooltip.classList.add("visible");
-                levelContainer.classList.add("disabled");
-            } else {
-                charTooltip.classList.remove("visible");
-                levelContainer.classList.remove("disabled");
-            }
-        } else {
-            levelContainer.classList.add("disabled");
-            levelSpan.setAttribute("disabled", true);
-            this.charLevels.disabled = true;
-            levelSpan.value = 0;
 
-            dupeContainer.classList.add("disabled");
-            this.charDupes.value = 0;
-            this.charDupes.disabled = true;
-            for (let i = 1; i <= this.charDupes.max; i++) {
-                const dupe = document.getElementById(`dupe-${i}`);
-                dupe.src = "./img/external/character/no_dupe.png";
-            }
-            characterCard.classList.remove("card-sr");
-            characterCard.classList.remove("card-ssr");
-            characterCard.classList.add("card-no-char");
+    levelMore.addEventListener("click", _handleLevelMoreClick);
+    levelLess.addEventListener("click", _handleLevelLessClick);
+    levelInput.addEventListener("change", _handleLevelInputChange);
+    dupeLess.addEventListener("click", _handleDupeLessClick);
+    dupeMore.addEventListener("click", _handleDupeMoreClick); 
+    charSelect.addEventListener("change", _handleCharSelectChange);
+}
 
-            charClass.src = "./img/external/character/no_class.png";
-            charTooltip.classList.remove("visible");
-        }
+function updateRank(value, stats, rankElem) {
+    return;
 
-        charImg.src = `./img/external/character/portrait/${e.target.value}.png`;
-        this.updateDetails();
-    });
+    // Don't know the rank distribution so i wont do it for now
+    if (value === 0 || value === "") rankElem.src = "";
+    else if (value === stats.max_value) rankElem.src = "./img/external/common/rank_ss.png";
+    else {
+        const ratio = (stats.max_value - stats.min_value) / 4;
+        if (value <= stats.min_value + ratio * 1) rankElem.src = "./img/external/common/rank_c.png";
+        else if (value <= stats.min_value + ratio * 2) rankElem.src = "./img/external/common/rank_b.png";
+        else if (value <= stats.min_value + ratio * 3) rankElem.src = "./img/external/common/rank_a.png";
+        else if (value <= stats.min_value + ratio * 4) rankElem.src = "./img/external/common/rank_s.png";
+    }
 }
 
 function updateDetails() {
@@ -1187,7 +887,6 @@ function updateDetails() {
     const detailPen = document.getElementById("detail-pen");
     const detailEnd = document.getElementById("detail-end");
     const detailDmgres = document.getElementById("detail-dmgres");
-
     const gearStatsElem = document.getElementById("gear-stats");
     const accStatsElem = document.getElementById("acc-stats");
 
@@ -1296,40 +995,431 @@ function updateDetails() {
     detailDmgres.innerText = tempStats.dmgres;
 }
 
-function handleSlotInputChange(si, slotStats, rankElem) {
-    const value = parseFloat(si.target.value);
-    if (value > slotStats.max_value) si.target.value = slotStats.max_value;
-    if (value < slotStats.min_value) si.target.value = slotStats.min_value;
+function handleAccSlotSelectChange(e, obj, events, elements) {
+    const selects = elements.slotsContainer.querySelectorAll("select");
 
-    this.updateRank(parseFloat(si.target.value), slotStats, rankElem);
+    const indexes = [];
+    
+    for (let j = 0; j < selects.length; j++) {
+        indexes.push(selects[j].selectedIndex);
+    }
+    
+    for (let j = 0; j < selects.length; j++) {
+        const options = selects[j].querySelectorAll("option");
+        for (let k = 1; k < options.length; k++) {
+            if (indexes.includes(k)) {
+                options[k].setAttribute("disabled", true)
+            } else {
+                options[k].removeAttribute("disabled");
+            }
+        }
+    }
+    
+    const slotStats = obj.acc.slot_stats.find(s => s.type === e.target.value);
+    const enchStats = this.data.enchantments.accessory[e.target.value];
+
+    if (e.target.value === "empty") {
+        elements.slotInput.setAttribute("disabled", true);
+        elements.slotInput.value = "";
+        elements.divSlot.appendChild(elements.slotInput);
+
+        elements.enchSlotInput.setAttribute("disabled", true);
+        elements.enchSlotInput.value = "";
+        elements.divEnchSlot.appendChild(elements.enchSlotInput);
+    } else {
+        elements.slotInput.min = slotStats.min_value;
+        elements.slotInput.max = slotStats.max_value;
+        elements.slotInput.step = slotStats.step;
+        elements.slotInput.value = slotStats.min_value;
+        
+        elements.enchSlotInput.min = enchStats.min_value;
+        elements.enchSlotInput.max = enchStats.max_value;
+        elements.enchSlotInput.step = enchStats.step;
+        elements.enchSlotInput.value = 0;
+
+        elements.slotInput.removeEventListener("change", events._handleSlotInputChange);
+        elements.enchSlotInput.removeEventListener("change", events._handleEnchSlotInputChange);
+
+        events._handleSlotInputChange = (e) => handleSlotInputChange(e, slotStats);
+        events._handleEnchSlotInputChange = (e) => handleEnchSlotInputChange(e, enchStats);
+
+        elements.slotInput.addEventListener("change", events._handleSlotInputChange);
+        elements.enchSlotInput.addEventListener("change", events._handleEnchSlotInputChange);
+
+        elements.slotInput.removeAttribute("disabled");
+        elements.enchSlotInput.removeAttribute("disabled");
+    }
+
     this.updateDetails();
 }
 
-function updateRank(value, stats, rankElem) {
-    return;
+function handleAccInputLevelChange(e, obj, elements) {
+    const value = this.isNumber(e.target.value) ? parseInt(e.target.value) : obj.acc.min_lvl;
 
-    // Don't know the rank distribution so i wont do it for now
-    if (value === 0 || value === "") rankElem.src = "";
-    else if (value === stats.max_value) rankElem.src = "./img/external/common/rank_ss.png";
-    else {
-        const ratio = (stats.max_value - stats.min_value) / 4;
-        if (value <= stats.min_value + ratio * 1) rankElem.src = "./img/external/common/rank_c.png";
-        else if (value <= stats.min_value + ratio * 2) rankElem.src = "./img/external/common/rank_b.png";
-        else if (value <= stats.min_value + ratio * 3) rankElem.src = "./img/external/common/rank_a.png";
-        else if (value <= stats.min_value + ratio * 4) rankElem.src = "./img/external/common/rank_s.png";
+    if (value > obj.acc.max_lvl) e.target.value = obj.acc.max_lvl;
+    else if (value < obj.acc.min_lvl) e.target.value = obj.acc.min_lvl;
+    else e.target.value = value;
+
+    const sl = Math.floor(value / obj.acc.slot_incr);
+    
+    for (let i = sl + 1; i < 4; i++) {
+        const select = elements.slotsContainer.querySelector(`select[data-i='${i}']`);
+        select.options[0].selected = true;
+        select.setAttribute("disabled",true);
+
+        const slotInput = select.nextElementSibling;
+        slotInput.setAttribute("disabled",true);
+        slotInput.value = "";
+
+        const enchSlotInput = slotInput.nextElementSibling;
+        enchSlotInput.setAttribute("disabled", true);
+        enchSlotInput.value = "";
     }
+
+    for (let i = 0; i <= sl; i++) {
+        const select = elements.slotsContainer.querySelector(`select[data-i='${i}']`);
+        select.removeAttribute("disabled");
+    }
+
+
+    elements.mainStat.innerText = `${obj.acc.name} ${this.toFixed(obj.acc.main_stat.min_value + (obj.acc.main_stat.step * elements.inputLevel.value), 2)}`;
+    this.updateDetails();
 }
 
-function handleEnchSlotInputChange(si, enchStats, rankElem) {
-    const value = parseFloat(si.target.value);
-    if (value > enchStats.max_value) si.target.value = enchStats.max_value;
-    if (value < enchStats.min_value && value !== 0) si.target.value = enchStats.min_value;
+function handleGearSlotSelectChange(e, obj, events, elements) {
+    const selects = elements.slotsContainer.querySelectorAll("select[data-slot='normal']");
+    const indexes = [];
+    
+    for (let j = 0; j < selects.length; j++) {
+        indexes.push(selects[j].selectedIndex);
+    }
+    
+    for (let j = 0; j < selects.length; j++) {
+        const options = selects[j].querySelectorAll("option");
+        for (let k = 1; k < options.length; k++) {
+            if (indexes.includes(k)) {
+                options[k].setAttribute("disabled", true)
+            } else {
+                options[k].removeAttribute("disabled");
+            }
+        }
+    }
 
-    this.updateRank(parseFloat(si.target.value), enchStats, rankElem);
+    if (e.target.value === "empty") {
+        elements.slotInput.setAttribute("disabled", true);
+        elements.enchSlotInput.setAttribute("disabled", true);
+
+        elements.slotInput.value = "";
+        elements.enchSlotInput.value = "";
+        
+        slotContainer.appendChild(elements.slotInput);
+        elements.slotContainer.appendChild(elements.enchSlotInput);
+    } else {
+        const slotStats = obj.gear.slot_stats.find(s => s.type === e.target.value);
+        const enchStats = this.data.enchantments.gear[e.target.value];
+
+        elements.slotInput.min = slotStats.min_value;
+        elements.slotInput.max = slotStats.max_value;
+        elements.slotInput.step = slotStats.step;
+        elements.slotInput.value = slotStats.min_value;
+
+        elements.enchSlotInput.min = enchStats.min_value;
+        elements.enchSlotInput.max = enchStats.max_value;
+        elements.enchSlotInput.step = enchStats.step;
+        elements.enchSlotInput.value = 0;
+
+        elements.slotInput.removeEventListener("change", events._handleSlotInputChange);
+        elements.enchSlotInput.removeEventListener("change", events._handleEnchSlotInputChange);
+
+        events._handleSlotInputChange = (e) => handleSlotInputChange(e, slotStats);
+        events._handleEnchSlotInputChange = (e) => handleEnchSlotInputChange(e, enchStats);
+
+        elements.slotInput.addEventListener("change", events._handleSlotInputChange);
+        elements.enchSlotInput.addEventListener("change", events._handleEnchSlotInputChange);
+
+        elements.slotInput.removeAttribute("disabled");
+        elements.enchSlotInput.removeAttribute("disabled");
+    }
+    this.updateDetails();
+}
+
+function handleSlotTransSelectChange(e, obj, events, elements) {
+    const slotStats = obj.gear.slot_stats.find(s => s.type === e.target.value);
+    const enchStats = this.data.enchantments.gear[e.target.value];
+
+    if (e.target.value === "empty") {
+        elements.slotTransInput.setAttribute("disabled", true);
+        elements.enchSlotTransInput.setAttribute("disabled", true);
+
+        elements.slotTransInput.value = "";
+        elements.enchSlotTransInput.value = "";
+
+        slotTransContainer.appendChild(elements.slotTransInput);
+        elements.slotTransContainer.appendChild(elements.enchSlotTransInput);
+    } else {
+        elements.slotTransInput.min = slotStats.min_value;
+        elements.slotTransInput.max = slotStats.max_value;
+        elements.slotTransInput.step = slotStats.step;
+        elements.slotTransInput.value = slotStats.min_value;
+
+        elements.enchSlotTransInput.min = enchStats.min_value;
+        elements.enchSlotTransInput.max = enchStats.max_value;
+        elements.enchSlotTransInput.step = enchStats.step;
+        elements.enchSlotTransInput.value = 0;
+
+        elements.slotTransInput.removeEventListener("change", events._handleSlotInputChange);
+        elements.enchSlotTransInput.removeEventListener("change", events._handleEnchSlotInputChange);
+
+        events._handleSlotInputChange = (e) => handleSlotInputChange(e, slotStats);
+        events._handleEnchSlotInputChange = (e) => handleEnchSlotInputChange(e, enchStats);
+
+        elements.slotTransInput.addEventListener("change", events._handleSlotInputChange);
+        elements.enchSlotTransInput.addEventListener("change", events._handleEnchSlotInputChange);
+
+        elements.slotTransInput.removeAttribute("disabled");
+        elements.enchSlotTransInput.removeAttribute("disabled");
+    }
+
+    this.updateDetails();
+}
+
+function handleGearInputLevelChange(e, obj, mainStat, elements) {
+    const value = this.isNumber(e.target.value) ? parseInt(e.target.value) : obj.gear.min_lvl;
+
+    if (value > obj.gear.max_lvl) e.target.value = obj.gear.max_lvl;
+    else if (value < obj.gear.min_lvl) e.target.value = obj.gear.min_lvl;
+    else e.target.value = value;
+
+    if (value === obj.gear.max_lvl) {
+        obj.trans.disabled = false;
+        elements.transContainer.classList.remove("disabled");
+    } else {
+        obj.trans.value = 0;
+        obj.trans.disabled = true;
+        elements.transContainer.classList.add("disabled");
+        for (let i = 1; i <= obj.trans.max; i++) {
+            const transImg = document.getElementById(`trans-img-${i}`);
+            transImg?.classList.remove("on-trans");
+        }
+
+        elements.slotTransSelect.options[0].selected = true;
+        elements.slotTransSelect.setAttribute("disabled", true);
+
+        elements.slotTransInput.setAttribute("disabled", true);
+        elements.slotTransInput.value = "";
+
+        elements.enchSlotTransInput.setAttribute("disabled", true);
+        elements.enchSlotTransInput.value = "";
+    }
+
+    const sl = Math.floor(value / obj.gear.slot_incr);
+    
+    for (let i = sl + 1; i < 4; i++) {
+        const select = elements.slotsContainer.querySelector(`select[data-i='${i}']`);
+        select.options[0].selected = true;
+        
+        select.setAttribute("disabled", true);
+        const slotInput = select.nextElementSibling;
+        slotInput.setAttribute("disabled", true);
+        slotInput.value = "";
+
+        const enchSlotInput = slotInput.nextElementSibling;
+        enchSlotInput.setAttribute("disabled", true);
+        enchSlotInput.value = "";
+    }
+
+    for (let i = 0; i <= sl; i++) {
+        const select = elements.slotsContainer.querySelector(`select[data-i='${i}']`);
+        select.removeAttribute("disabled");
+    }
+
+
+    mainStat.innerText = `${obj.gear.name} ${obj.gear.main_stat.min_value + (obj.gear.main_stat.step * elements.inputLevel.value) + (obj.gear.gain_per_trans * obj.trans.value)}`;
+    this.updateDetails();
+}
+
+function handleTransLessClick(e, obj, mainStat, elements) {
+    if (obj.trans.disabled) return;
+    if (obj.trans.value === obj.trans.min) return;
+    const transImg = document.getElementById(`trans-${obj.i}-img-${obj.trans.value}`);
+    transImg.classList.remove("on-trans");
+    obj.trans.value -= obj.trans.step;
+
+    mainStat.innerText = `${obj.gear.name} ${obj.gear.main_stat.min_value + (obj.gear.main_stat.step * elements.inputLevel.value) + (obj.gear.gain_per_trans * obj.trans.value)}`;
+
+    elements.slotTransSelect.options[0].selected = true;
+
+    elements.slotTransSelect.setAttribute("disabled", true);
+    elements.slotTransInput.setAttribute("disabled", true);
+    elements.enchSlotTransInput.setAttribute("disabled", true);
+
+    elements.slotTransInput.value = "";
+    elements.enchSlotTransInput.value = "";
+
+    this.updateDetails();
+}
+
+function handleTransMoreClick(e, obj, mainStat, elements) {
+    if (obj.trans.disabled) return;
+    if (obj.trans.value === obj.trans.max) return;
+
+    obj.trans.value += obj.trans.step;
+
+    if (obj.trans.value === obj.trans.max) {
+        elements.slotTransSelect.removeAttribute("disabled");
+    }
+
+    const transImg = document.getElementById(`trans-${obj.i}-img-${obj.trans.value}`);
+    transImg.classList.add("on-trans");
+
+    mainStat.innerText = `${obj.gear.name} ${obj.gear.main_stat.min_value + (obj.gear.main_stat.step * elements.inputLevel.value) + (obj.gear.gain_per_trans * obj.trans.value)}`;
+    this.updateDetails();
+}
+
+function handleCharSelectChange(e, elements) {
+    const value = e.target.value;
+    this.charLevels.value = this.charLevels.min;
+
+    if (value === "empty") {
+        elements.levelContainer.classList.add("disabled");
+        elements.dupeContainer.classList.add("disabled");
+        elements.levelInput.setAttribute("disabled", true);
+
+        this.charLevels.disabled = true;
+
+        elements.levelInput.value = 0;
+        this.charDupes.value = 0;
+        this.charDupes.disabled = true;
+
+        for (let i = 1; i <= this.charDupes.max; i++) {
+            const dupe = document.getElementById(`dupe-${i}`);
+            dupe.src = NO_DUPE_IMG_SRC;
+        }
+
+        elements.characterCard.classList.remove("card-sr");
+        elements.characterCard.classList.remove("card-ssr");
+        elements.characterCard.classList.add("card-no-char");
+        elements.charTooltip.classList.remove("visible");
+
+        elements.charClass.src = NO_CLASS_IMG_SRC;
+    } else {
+        elements.levelInput.removeAttribute("disabled");
+        elements.dupeContainer.classList.remove("disabled");
+
+        this.charLevels.disabled = false;
+        this.charDupes.disabled = false;
+
+        elements.levelInput.value = this.charLevels.value;
+        
+        elements.characterCard.classList.remove("card-sr");
+        elements.characterCard.classList.remove("card-ssr");
+        elements.characterCard.classList.remove("card-no-card");
+        
+        const char = this.data.character.find(c => c.type === value);
+        elements.characterCard.classList.add(`card-${char.quality}`);
+        elements.charClass.src = `./img/external/character/${char.class}.png`;
+
+        if (char.trans.length === 0) {
+            elements.charTooltip.classList.add("visible");
+            elements.levelContainer.classList.add("disabled");
+        } else {
+            elements.charTooltip.classList.remove("visible");
+            elements.levelContainer.classList.remove("disabled");
+        }
+    }
+
+    elements.charImg.src = `./img/external/character/portrait/${value}.png`;
+    this.updateDetails();
+}
+
+function handleDupeLessClick(e) {
+    if (this.charDupes.disabled) return;
+    if (this.charDupes.value === this.charDupes.min) return;
+    const dupe = document.getElementById(`dupe-${this.charDupes.value}`);
+    dupe.src = NO_DUPE_IMG_SRC;
+    this.charDupes.value -= this.charDupes.step;
+    this.updateDetails();
+}
+
+function handleDupeMoreClick(e) {
+    if (this.charDupes.disabled) return;
+    if (this.charDupes.value === this.charDupes.max) return;
+    this.charDupes.value += this.charDupes.step;
+    const dupe = document.getElementById(`dupe-${this.charDupes.value}`);
+    dupe.src = DUPE_IMG_SRC;
+    this.updateDetails();
+}
+
+function handleLevelInputChange(e, charSelect) {
+    const value = this.isNumber(e.target.value) ? parseInt(e.target.value) : this.charLevels.min;
+    
+    // Dont change level if character dont have transcendance
+    const char = this.data.character.find(c => charSelect.value === c.type);
+    if (char.trans.length === 0) {
+        e.target.value = this.charLevels.min;
+        return;
+    }
+
+    if (value > this.charLevels.max) {
+        e.target.value = this.charLevels.max;
+        this.charLevels.value = this.charLevels.max;
+    } else if (e.target.value < this.charLevels.min) {
+        e.target.value = this.charLevels.min;
+        this.charLevels.value = this.charLevels.min;
+    } else {
+        e.target.value = value;
+        this.charLevels.value = value;
+    }
+    this.updateDetails();
+}
+
+function handleLevelMoreClick(e, elements) {
+    if (this.charLevels.disabled) return;
+    if (this.charLevels.value === this.charLevels.max) return;
+    const char = this.data.character.find(c => elements.charSelect.value === c.type);
+    if (char.trans.length === 0) return;
+    this.charLevels.value += this.charLevels.step;
+    elements.levelInput.value = this.charLevels.value;
+    this.updateDetails();
+}
+
+function handleLevelLessClick(e, elements) {
+    if (this.charLevels.disabled) return;
+    if (this.charLevels.value === this.charLevels.min) return;
+    const char = this.data.character.find(c => elements.charSelect.value === c.type);
+    if (char.trans.length === 0) return;
+    this.charLevels.value -= this.charLevels.step;
+    elements.levelInput.value = this.charLevels.value;
+    this.updateDetails();
+}
+
+function handleSlotInputChange(e, slotStats, rankElem) {
+    const value = this.isNumber(e.target.value) ? parseFloat(e.target.value) : slotStats.min_value;
+    if (value > slotStats.max_value) e.target.value = slotStats.max_value;
+    else if (value < slotStats.min_value) e.target.value = slotStats.min_value;
+    else e.target.value = value;
+    const newValue = parseFloat(e.target.value);
+
+    this.updateRank(newValue, slotStats, rankElem);
+    this.updateDetails();
+}
+
+function handleEnchSlotInputChange(e, enchStats, rankElem) {
+    const value = this.isNumber(e.target.value) ? parseFloat(e.target.value) : enchStats.min_value;
+    if (value > enchStats.max_value) e.target.value = enchStats.max_value;
+    else if (value < enchStats.min_value && value !== 0) e.target.value = enchStats.min_value;
+    else e.target.value = value;
+    const newValue = parseFloat(e.target.value);
+
+    this.updateRank(newValue, enchStats, rankElem);
     this.updateDetails();
 }
 
 function toFixed(num, fixed) {
     var re = new RegExp('^-?\\d+(?:\.\\d{0,' + (fixed || -1) + '})?');
     return num.toString().match(re)[0];
+}
+
+function isNumber(value) {
+    return value !== '' && !isNaN(Number(value));
 }
