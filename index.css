@@ -503,21 +503,25 @@ body {
 .parameters .main-level-container .trans-container .trans-base .trans-img-1 {
     transform: rotate(0deg);
     top: -10px;
+    pointer-events: none;
 }
 
 .parameters .main-level-container .trans-container .trans-base .trans-img-2 {
     transform: rotate(90deg);
     right: 16px;
+    pointer-events: none;
 }
 
 .parameters .main-level-container .trans-container .trans-base .trans-img-3 {
     transform: rotate(180deg);
     bottom: -10px;
+    pointer-events: none;
 }
 
 .parameters .main-level-container .trans-container .trans-base .trans-img-4 {
     transform: rotate(270deg);
     left: 16px;
+    pointer-events: none;
 }
 
 .parameters .main-level-container .trans-container .arrow-img {
