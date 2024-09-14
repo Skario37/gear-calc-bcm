@@ -236,14 +236,16 @@ function setGridGearCellEvents() {
             const gearId = e.dataTransfer.getData("text/plain");
             const gearElement = document.getElementById(gearId);
             if (!gearElement.classList.contains("gear")) return;
-            
-            const targetIndex = Array.from(this.gridGearCells).indexOf(e.target);
+
+            const target = e.target.closest("div")
+            const targetIndex = Array.from(this.gridGearCells).indexOf(target);
             const targetRow = Math.floor(targetIndex / 6);
             const targetCol = targetIndex % 6;
 
-            
             const gearRow = parseInt(gearElement.dataset.row);
             const gearCol = parseInt(gearElement.dataset.col);
+
+            if (gearElement === target) return;
         
             if (canPlaceGear(targetRow, targetCol, gearRow, gearCol)) {
                 placeGear(targetRow, targetCol, gearRow, gearCol, gearElement);
