@@ -7370,6 +7370,55 @@
         },
         {
             "quality": "ssr",
+            "class": "blue_atk",
+            "name": "Rhya [Third Eye: Disloyal]",
+            "type": "rhya_third_eye_disloyal",
+            "atk": 11880,
+            "matk": 3960,
+            "hp": 40500,
+            "def": 3207,
+            "spd": 103,
+            "acc": 210,
+            "dmgres": 201,
+            "crate": 15,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "trans": [],
+            "gain_per_level":{},
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 400,
+                    "hp": 1600
+                },
+                {
+                    "dupe": 2,
+                    "atk": 400,
+                    "hp": 1600
+                },
+                {
+                    "dupe": 3,
+                    "atk": 400,
+                    "hp": 1600
+                },
+                {
+                    "dupe": 4,
+                    "atk": 400,
+                    "hp": 1600,
+                    "crate": 5
+                },
+                {
+                    "dupe": 5,
+                    "atk": 400,
+                    "hp": 1600,
+                    "crate": 5
+                }
+            ]
+        },
+        {
+            "quality": "ssr",
             "class": "green_deb",
             "name": "Rill Boismortier",
             "type": "rill_boismortier",
