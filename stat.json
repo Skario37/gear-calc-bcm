@@ -2597,8 +2597,8 @@
         {
             "name": "HP",
             "title": "health",
-            "col": 2,
-            "row": 3,
+            "col": 3,
+            "row": 2,
             "min_lvl": 0,
             "max_lvl": 12,
             "main_stat": {
@@ -3470,6 +3470,55 @@
             ]
         },
         {
+            "quality": "ssr",
+            "class": "red_atk",
+            "name": "Charlotte [Swimsuit]",
+            "type": "charlotte_swimsuit",
+            "atk": 9720,
+            "matk": 3240,
+            "hp": 40500,
+            "def": 3207,
+            "spd": 106,
+            "acc": 231,
+            "dmgres": 181,
+            "crate": 16.49,
+            "cdmg": 55,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "trans": [],
+            "gain_per_level": {},
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 400,
+                    "cres": 3
+                },
+                {
+                    "dupe": 2,
+                    "atk": 400,
+                    "cres": 3
+                },
+                {
+                    "dupe": 3,
+                    "atk": 400,
+                    "cres": 3
+                },
+                {
+                    "dupe": 4,
+                    "atk": 400,
+                    "cres": 3,
+                    "spd": 2
+                },
+                {
+                    "dupe": 5,
+                    "atk": 400,
+                    "cres": 3,
+                    "spd": 2
+                }
+            ]
+        },
+        {
             "quality": "sr",
             "class": "blue_heal",
             "name": "Charmy Pappitson",
@@ -3734,6 +3783,55 @@
                     "hp": 1800,
                     "def": 280,
                     "dmgres": 15
+                }
+            ]
+        },
+        {
+            "quality": "ssr",
+            "class": "red_deb",
+            "name": "Dorothy Unsworth",
+            "type": "dorothy_unsworth",
+            "atk": 2755,
+            "matk": 8265,
+            "hp": 46980,
+            "def": 3969,
+            "spd": 112,
+            "acc": 207,
+            "dmgres": 221,
+            "crate": 13.5,
+            "cdmg": 50,
+            "cres": 0,
+            "pen": 104,
+            "end": 47,
+            "trans": [],
+            "gain_per_level": {},
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "matk": 400,
+                    "hp": 1600
+                },
+                {
+                    "dupe": 2,
+                    "matk": 400,
+                    "hp": 1600
+                },
+                {
+                    "dupe": 3,
+                    "matk": 400,
+                    "hp": 1600
+                },
+                {
+                    "dupe": 4,
+                    "matk": 400,
+                    "hp": 1600,
+                    "spd": 3
+                },
+                {
+                    "dupe": 5,
+                    "matk": 400,
+                    "hp": 1600,
+                    "spd": 3
                 }
             ]
         },
@@ -4225,6 +4323,58 @@
                     "atk": 200,
                     "matk": 200,
                     "crate": 3.5
+                }
+            ]
+        },
+        {
+            "quality": "ssr",
+            "class": "dark_atk",
+            "name": "Fuegoleon [Fire Spirit]",
+            "type": "fuegoleon_fire_spirit",
+            "atk": 3420,
+            "matk": 10260,
+            "hp": 49500,
+            "def": 3207,
+            "spd": 103,
+            "acc": 210,
+            "dmgres": 201,
+            "crate": 14.99,
+            "cdmg": 40,
+            "cres": 0,
+            "pen": 122,
+            "end": 57,
+            "trans": [],
+            "gain_per_level": {},
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "hp": 1500,
+                    "def": 200,
+                    "matk": 600
+                },
+                {
+                    "dupe": 2,
+                    "hp": 1500,
+                    "def": 200,
+                    "matk": 600
+                },
+                {
+                    "dupe": 3,
+                    "hp": 1500,
+                    "def": 200,
+                    "matk": 600
+                },
+                {
+                    "dupe": 4,
+                    "def": 200,
+                    "matk": 600,
+                    "crate": 10
+                },
+                {
+                    "dupe": 5,
+                    "def": 200,
+                    "matk": 600,
+                    "crate": 10
                 }
             ]
         },
@@ -9046,6 +9196,58 @@
                     "atk": 400,
                     "hp": 1000,
                     "cdmg": 10
+                }
+            ]
+        },
+        {
+            "quality": "ssr",
+            "class": "red_atk",
+            "name": "Yami [Swimsuit]",
+            "type": "yami_swimsuit",
+            "atk": 9720,
+            "matk": 3240,
+            "hp": 42750,
+            "def": 3207,
+            "spd": 103,
+            "acc": 221,
+            "dmgres": 201,
+            "crate": 22.04,
+            "cdmg": 57.5,
+            "cres": 0,
+            "pen": 106,
+            "end": 57,
+            "trans": [],
+            "gain_per_level": {},
+            "dupes": [
+                {
+                    "dupe": 1,
+                    "atk": 400,
+                    "def": 200,
+                    "crate": 5
+                },
+                {
+                    "dupe": 2,
+                    "atk": 400,
+                    "def": 200,
+                    "crate": 5
+                },
+                {
+                    "dupe": 3,
+                    "atk": 400,
+                    "def": 200,
+                    "cdmg": 5
+                },
+                {
+                    "dupe": 4,
+                    "atk": 400,
+                    "def": 200,
+                    "cdmg": 5
+                },
+                {
+                    "dupe": 5,
+                    "atk": 400,
+                    "def": 200,
+                    "cdmg": 5
                 }
             ]
         },

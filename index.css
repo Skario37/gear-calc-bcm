@@ -1052,3 +1052,14 @@ body {
     width: 22px;
     vertical-align: middle;
 }
+
+
+
+@media only screen and (max-width: 1024px) {
+    
+}
+
+
+@media only screen and (max-width: 768px) {
+
+}
