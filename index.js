@@ -1063,19 +1063,28 @@ function handleAccInputLevelChange(e, obj, elements) {
     else e.target.value = value;
 
     const sl = Math.floor(value / obj.acc.slot_incr);
-    
+
+    const removedIndexes = [];
+
     for (let i = sl + 1; i < 4; i++) {
         const select = elements.slotsContainer.querySelector(`select[data-i='${i}']`);
+        removedIndexes.push(select.selectedIndex);
         select.options[0].selected = true;
         select.setAttribute("disabled",true);
-
-        const slotInput = select.nextElementSibling;
+        const slotInput = select.parentElement.getElementsByClassName("input-slot")[0];
         slotInput.setAttribute("disabled",true);
         slotInput.value = "";
 
-        const enchSlotInput = slotInput.nextElementSibling;
+        const enchSlotInput = select.parentElement.getElementsByClassName("input-ench")[0];
         enchSlotInput.setAttribute("disabled", true);
         enchSlotInput.value = "";
+    }
+
+    for (let i = 0; i < 4; i++) {
+        const select = elements.slotsContainer.querySelector(`select[data-i='${i}']`);
+        for (let j = 0; j < removedIndexes.length; j++) {
+            select.options[removedIndexes[j]].removeAttribute("disabled");
+        }
     }
 
     for (let i = 0; i <= sl; i++) {
@@ -1199,10 +1208,15 @@ function handleGearInputLevelChange(e, obj, mainStat, elements) {
         obj.trans.value = 0;
         obj.trans.disabled = true;
         elements.transContainer.classList.add("disabled");
-        for (let i = 1; i <= obj.trans.max; i++) {
-            const transImg = document.getElementById(`trans-img-${i}`);
-            transImg?.classList.remove("on-trans");
+
+        const transImgElements = elements.transContainer.getElementsByClassName("on-trans");
+        for (let i = transImgElements.length - 1; i >= 0; i--) {
+            transImgElements[i].classList.remove("on-trans");
         }
+        // for (let i = 1; i <= obj.trans.max; i++) {
+        //     const transImg = document.getElementById(`trans-img-${i}`);
+        //     transImg?.classList.remove("on-trans");
+        // }
 
         elements.slotTransSelect.options[0].selected = true;
         elements.slotTransSelect.setAttribute("disabled", true);
@@ -1215,11 +1229,13 @@ function handleGearInputLevelChange(e, obj, mainStat, elements) {
     }
 
     const sl = Math.floor(value / obj.gear.slot_incr);
+
+    const removedIndexes = [];
     
     for (let i = sl + 1; i < 4; i++) {
         const select = elements.slotsContainer.querySelector(`select[data-i='${i}']`);
+        removedIndexes.push(select.selectedIndex);
         select.options[0].selected = true;
-        
         select.setAttribute("disabled", true);
         const slotInput = select.nextElementSibling;
         slotInput.setAttribute("disabled", true);
@@ -1228,6 +1244,13 @@ function handleGearInputLevelChange(e, obj, mainStat, elements) {
         const enchSlotInput = slotInput.nextElementSibling;
         enchSlotInput.setAttribute("disabled", true);
         enchSlotInput.value = "";
+    }
+
+    for (let i = 0; i < 4; i++) {
+        const select = elements.slotsContainer.querySelector(`select[data-i='${i}']`);
+        for (let j = 0; j < removedIndexes.length; j++) {
+            select.options[removedIndexes[j]].removeAttribute("disabled");
+        }
     }
 
     for (let i = 0; i <= sl; i++) {
