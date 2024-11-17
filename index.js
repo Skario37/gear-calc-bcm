@@ -296,6 +296,7 @@ function canPlaceGear(row, col, width, height) {
 
 function placeTalent(i, talentElement) {
     const clonedTalent = talentElement.cloneNode(true);
+    let lastTapTime = 0;
     clonedTalent.setAttribute("id", `${clonedTalent.id}-${this.equipped.talents.length}`);
     clonedTalent.classList.add("on-grid");
 
@@ -316,6 +317,18 @@ function placeTalent(i, talentElement) {
         this.updateDetails();
     });
 
+    clonedTalent.addEventListener("touchstart", (e) => {
+        e.preventDefault();
+        const currentTime = new Date().getTime();
+        const tapLength = currentTime - lastTapTime;
+        lastTapTime = currentTime;
+        if (tapLength < 300 && tapLength > 0) {
+            removeTalent(clonedTalent);
+            this.updateDetails();
+        }
+        
+    });
+
     const objTalent = {
         element: clonedTalent,
         talent: JSON.parse(JSON.stringify(
@@ -333,6 +346,7 @@ function placeTalent(i, talentElement) {
 
 function placeAcc(i, accElement) {
     const clonedAcc = accElement.cloneNode(true);
+    let lastTapTime = 0;
     clonedAcc.setAttribute("id", `${clonedAcc.id}-${this.equipped.accessories.length}`);
     clonedAcc.classList.add("on-grid");
 
@@ -353,6 +367,17 @@ function placeAcc(i, accElement) {
         this.updateDetails();
     });
 
+    clonedAcc.addEventListener("touchstart", (e) => {
+        e.preventDefault();
+        const currentTime = new Date().getTime();
+        const tapLength = currentTime - lastTapTime;
+        lastTapTime = currentTime;
+        if (tapLength < 300 && tapLength > 0) {
+            removeAcc(clonedAcc);
+            this.updateDetails();
+        }
+    });
+
     const objAcc = {
         element: clonedAcc,
         acc: JSON.parse(JSON.stringify(
@@ -371,6 +396,7 @@ function placeAcc(i, accElement) {
 
 function placeGear(row, col, width, height, gearElement) {
     const clonedGear = gearElement.cloneNode(true);
+    let lastTapTime = 0;
     clonedGear.setAttribute("id", `${clonedGear.dataset.type}-${clonedGear.dataset.col}x${clonedGear.dataset.row}-${this.equipped.gearAlwaysUp}`);
     clonedGear.classList.add("on-grid");
 
@@ -399,6 +425,17 @@ function placeGear(row, col, width, height, gearElement) {
         e.preventDefault();
         removeGear(clonedGear);
         this.updateDetails();
+    });
+
+    clonedGear.addEventListener("touchstart", (e) => {
+        e.preventDefault();
+        const currentTime = new Date().getTime();
+        const tapLength = currentTime - lastTapTime;
+        lastTapTime = currentTime;
+        if (tapLength < 300 && tapLength > 0) {
+            removeGear(clonedGear);
+            this.updateDetails();
+        }
     });
 
     const objGear = {
@@ -1213,10 +1250,6 @@ function handleGearInputLevelChange(e, obj, mainStat, elements) {
         for (let i = transImgElements.length - 1; i >= 0; i--) {
             transImgElements[i].classList.remove("on-trans");
         }
-        // for (let i = 1; i <= obj.trans.max; i++) {
-        //     const transImg = document.getElementById(`trans-img-${i}`);
-        //     transImg?.classList.remove("on-trans");
-        // }
 
         elements.slotTransSelect.options[0].selected = true;
         elements.slotTransSelect.setAttribute("disabled", true);

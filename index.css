@@ -44,6 +44,7 @@ body {
 
 .main-container {
     justify-content: space-around;
+    margin: 5px 5px 20px 5px;
 }
 
 .grid {
@@ -843,7 +844,8 @@ body {
 }
 
 .parameters.param-gear {
-    margin: auto 20px;
+    justify-content: center;
+    margin: 5px 20px;
 }
 
 .parameters > div {
@@ -1056,10 +1058,93 @@ body {
 
 
 @media only screen and (max-width: 1024px) {
-    
+    .main-container {
+        flex-direction: column;
+    }
+
+    .container > :first-child {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3px;
+    }
+
+    .character-card {
+        height: 40vw;
+        width: 80vw;
+        max-height: 160px;
+        max-width: 320px;
+    }
+
+    .stats-details {
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 0;
+        gap: 0 5vw;
+    }
+
+    .flex.flex-column {
+        gap: 0;
+    }
+
+    .flex.container {
+        flex-direction: column;
+    }
+
+    .grid-accessory, .grid-talent {
+        width: 100%;
+    }
+
+    .accessory-grid {
+        display: initial;
+        margin: auto;
+    }
+
+    .accessory-grid > div {
+        overflow: auto;
+        margin: 3px 0px 3px 0px;
+    }
+    .accessory {
+        flex-shrink: 0;
+        font-size: 0.75em;
+    }
+
+    .gear-container {
+        margin: auto;
+    }
+
+    .gear-grid {
+        display: flex;
+        overflow: auto;
+        margin: auto;
+    }
+
+    .gear {
+        flex-shrink: 0;
+    }
+
+    .talent-grid {
+        margin-left: 0;
+        margin: auto;
+    }
+
+    .talent-grid > div {
+        overflow: auto;
+        margin: 3px 0px 3px 0px;
+    }
+
+    .talent-stone {
+        flex-shrink: 0;
+    }
 }
 
 
 @media only screen and (max-width: 768px) {
-
+    .accessory-grid {
+        margin: 3px 0px 3px 0px;
+    }
+    .gear-grid {
+        margin: 3px 0px 3px 0px;
+    }
 }
